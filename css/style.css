@@ -160,6 +160,7 @@ main #restaurants {
     justify-content: center;
     align-items: center;
     gap: 14px;
+    padding-bottom: 59px;
 }
 
 main #restaurants h2 {
@@ -205,6 +206,14 @@ main section .landingpage-restaurant img {
     object-position: 100% 100%;
 }
 
+main section .landingpage-restaurant #la-note {
+    object-position: 100% 62%;
+}
+
+main section .landingpage-restaurant .hide-tag-new-restaurant {
+    object-position: 100% 150%;
+}
+
 main section .tag-new-restaurant {
     position: relative;
     top: -151px;
@@ -216,6 +225,10 @@ main section .tag-new-restaurant {
     line-height: 28px;
     background-color: var(--tertiaire-color);
     color:#008766;
+}
+
+main section .hide-tag {
+    display: none;
 }
 
 main section .restaurant-label {
@@ -241,7 +254,6 @@ main section .restaurant-label-info {
 main section .restaurant-label-info p {
     font-weight: 300;
     font-size: 17px;
-
 }
 
 
@@ -249,22 +261,8 @@ main section .restaurant-label-info p {
 
 /*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
 
-/*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
+/*- - - - - - - - - - - - - - - Footer starts - - - - - - - - - - - - - - -*/
 
-/*- - - - - - - - - - - - - - - Header starts - - - - - - - - - - - - - - -*/
 
-/*- - - - - - - - - - - - - - - Header ends - - - - - - - - - - - - - - -*/
 
-/*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
-
-/*- - - - - - - - - - - - - - - Header starts - - - - - - - - - - - - - - -*/
-
-/*- - - - - - - - - - - - - - - Header ends - - - - - - - - - - - - - - -*/
-
-/*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
-
-/*- - - - - - - - - - - - - - - Header starts - - - - - - - - - - - - - - -*/
-
-/*- - - - - - - - - - - - - - - Header ends - - - - - - - - - - - - - - -*/
-
-/*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
+/*- - - - - - - - - - - - - - - Footer ends - - - - - - - - - - - - - - -*/
