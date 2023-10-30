@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-h1 h2 h3 {
+* h1 h2 h3 {
     font-family: 'Shrikhand', serif;
     color: black;
 }
@@ -34,6 +34,12 @@ h1 h2 h3 {
 
 .btn-shadow {
     box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
 }
 
 .fa-thin {
@@ -183,8 +189,6 @@ main section .landingpage-restaurant a {
     width: 100%;
     border-radius: 15px;
     background-color: white;
-    text-decoration: none;
-    cursor: pointer;
     color: black;
 }
 
@@ -263,6 +267,29 @@ main section .restaurant-label-info p {
 
 /*- - - - - - - - - - - - - - - Footer starts - - - - - - - - - - - - - - -*/
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 375px;
+    height: 186px;
+    padding: 22px 25px 22px 25px;
+    gap: 16px;
+    background-color: #353535;
+    color: white;
+}
+
+footer a {
+    display: flex;
+    gap: 15px;
+}
+
+footer a h3 {
+    margin: 0;
+    height: 17px;
+    padding-bottom: 16px;
+    font-family: 'Shrikhand';
+}
 
 
 /*- - - - - - - - - - - - - - - Footer ends - - - - - - - - - - - - - - -*/
