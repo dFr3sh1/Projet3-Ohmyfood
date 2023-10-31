@@ -47,10 +47,65 @@ a {
     cursor: pointer;
     color: white;
 }
+/* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
 
-.fa-thin {
-    color: var(--main-color);
+.heart-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -54px;
+    left: 134px;
+    font-size: 16px;
 }
+
+.like-btn {
+    box-sizing: border-box;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -20px;
+    left: 0;
+    fill: transparent;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.like {
+    width: 30px;
+    height: 30px;
+}
+
+input[type="checkbox"]:checked + .like-btn::before {
+    animation: glow 0.6s ease-in 0.4s forwards;
+}
+
+input[type="checkbox"]:checked + .like-btn::after {
+    animation: ease-in 0.4s forwards; 
+    
+}
+
+input[type="checkbox"]:checked + .like-btn{
+    fill: var(--main-color);
+    outline: none;
+    border: none;
+}
+
+
+
+/* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */   
 
 /*- - - - - - - - - - - - - - - Header begins - - - - - - - - - - - - - - -*/
 
