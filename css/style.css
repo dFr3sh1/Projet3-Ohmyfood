@@ -92,13 +92,24 @@ input[type="checkbox"]:checked + .like-btn::before {
 
 input[type="checkbox"]:checked + .like-btn::after {
     animation: ease-in 0.4s forwards; 
-    
 }
 
-input[type="checkbox"]:checked + .like-btn{
-    fill: var(--main-color);
-    outline: none;
-    border: none;
+input[type="checkbox"]:checked + .like-btn > .liked{
+    display: block;
+    transition: all 1s;
+}
+
+.liked {
+    display: none;
+}
+
+.like {
+    display: block;
+}
+
+input[type="checkbox"]:checked + .like-btn > .like{
+    display: none;
+    transition: all 1s;
 }
 
 
