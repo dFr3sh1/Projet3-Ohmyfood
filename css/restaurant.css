@@ -131,6 +131,76 @@ header img {
     left: -31px;
 }
 
+/* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
+
+.heart-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    left: 0;
+    font-size: 16px;
+}
+
+.like-btn {
+    box-sizing: border-box;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -20px;
+    left: 0;
+    fill: transparent;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+input[type="checkbox"]:checked + .like-btn::before {
+    animation: ease-in 0.4s forwards;
+}
+
+input[type="checkbox"]:checked + .like-btn::after {
+    animation: ease-in 0.4s forwards; 
+}
+
+input[type="checkbox"]:checked + .like-btn > .liked{
+    display: block;
+    transition: all 1s;
+}
+
+.liked {
+    display: none;
+}
+
+.like {
+    display: block;
+}
+
+.like-size {
+    width: 30px;
+    height: 30px;
+}
+
+input[type="checkbox"]:checked + .like-btn > .like{
+    display: none;
+    transition: all 1s;
+}
+
+
+
+/* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
+
+
 /* - - - - - - - - -  Header starts - - - - - - - - - - - - - - */
 
 /* - - - - - - - - -  Main starts - - - - - - - - - - - - - - - */
