@@ -56,20 +56,19 @@ a {
 
 .heart-btn {
     position: relative;
-    width: 30px;
-    height: 30px;
+    /*width: 30px;
+    height: 30px;*/
     top: -54px;
-    left: 134px;
-    font-size: 16px;
+    left: 135px;
 }
 
 .like-btn {
     box-sizing: border-box;
     position: relative;
-    width: 30px;
-    height: 30px;
-    top: -20px;
-    left: 0;
+    /*width: 30px;
+    height: 30px;*/
+    top: -25px;
+    left: 0px;
     fill: transparent;
     background: transparent;
     outline: none;
@@ -78,6 +77,8 @@ a {
 
 input[type="checkbox"] {
     position: relative;
+    /*width: 30px;
+    height: 30px;*/
     border: none;
     outline: none;
     cursor: pointer;
@@ -86,21 +87,16 @@ input[type="checkbox"] {
     z-index: 2;
 }
 
-input[type="checkbox"]:checked + .like-btn::before {
-    animation: ease-in 0.4s forwards;
-}
-
-input[type="checkbox"]:checked + .like-btn::after {
-    animation: ease-in 0.4s forwards; 
-}
-
-input[type="checkbox"]:checked + .like-btn > .liked{
-    display: block;
-    transition: all 1s;
-}
-
 .liked {
+    position: absolute;
+    z-index: 1;
     display: none;
+    left: -9px;
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    transition: all 1s ease-in-out;
 }
 
 .like {
@@ -110,14 +106,26 @@ input[type="checkbox"]:checked + .like-btn > .liked{
 .like-size {
     width: 30px;
     height: 30px;
+    font-size: 30px;
 }
 
-input[type="checkbox"]:checked + .like-btn > .like{
+input[type="checkbox"]:checked + .like-btn::before {
+    animation: ease-in 0.4s forwards;
+}
+
+input[type="checkbox"]:checked + .like-btn::after {
+    animation: ease-in 0.4s forwards;
+}
+
+input[type="checkbox"]:checked + * .liked{
+    display: block;
+    transition: all 1s;    
+}
+
+input[type="checkbox"]:checked + * .like{
     display: none;
     transition: all 1s;
 }
-
-
 
 /* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
 
@@ -252,6 +260,7 @@ main #restaurants h2 {
 }
 
 main section .landingpage-restaurant  {
+    position: relative;
     box-sizing: border-box;
     padding-bottom: 14px;
     width: 340px;
