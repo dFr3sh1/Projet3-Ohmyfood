@@ -58,20 +58,17 @@ a {
 
 /* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
 
-.heart-btn {
+main .heart-btn {
     position: relative;
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
+    top: -36px;
+    left: 114px;
 }
 
-.like-btn {
+main .heart-btn .like-btn {
     box-sizing: border-box;
     position: relative;
-    width: 30px;
-    height: 30px;
-    top: -20px;
-    left: 0;
+    top: 45px;
+    left: -138px;
     fill: transparent;
     background: transparent;
     outline: none;
@@ -88,27 +85,46 @@ input[type="checkbox"] {
     z-index: 2;
 }
 
+.liked {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    left: -9px;
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    transition: all 1s ease-in-out;
+}
+
 .like {
+    display: block;
+}
+
+.like-size {
+    position: relative;
     width: 30px;
     height: 30px;
+    font-size: 30px;
 }
 
 input[type="checkbox"]:checked + .like-btn::before {
-    animation: glow 0.6s ease-in 0.4s forwards;
+    animation: ease-in 0.4s forwards;
 }
 
 input[type="checkbox"]:checked + .like-btn::after {
-    animation: ease-in 0.4s forwards; 
-    
+    animation: ease-in 0.4s forwards;
 }
 
-input[type="checkbox"]:checked + .like-btn{
-    fill: var(--main-color);
-    outline: none;
-    border: none;
+input[type="checkbox"]:checked + .liked{
+    display: block;
+    transition: all 1s;    
 }
 
-
+input[type="checkbox"]:checked + .like{
+    display: none;
+    transition: all 1s;
+}
 
 /* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
 
@@ -130,75 +146,6 @@ header img {
     width: 162px;
     left: -31px;
 }
-
-/* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
-
-.heart-btn {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    top: 8px;
-    left: 0;
-    font-size: 16px;
-}
-
-.like-btn {
-    box-sizing: border-box;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    top: -20px;
-    left: 0;
-    fill: transparent;
-    background: transparent;
-    outline: none;
-    border: none;
-}
-
-input[type="checkbox"] {
-    position: relative;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
-}
-
-input[type="checkbox"]:checked + .like-btn::before {
-    animation: ease-in 0.4s forwards;
-}
-
-input[type="checkbox"]:checked + .like-btn::after {
-    animation: ease-in 0.4s forwards; 
-}
-
-input[type="checkbox"]:checked + .like-btn > .liked{
-    display: block;
-    transition: all 1s;
-}
-
-.liked {
-    display: none;
-}
-
-.like {
-    display: block;
-}
-
-.like-size {
-    width: 30px;
-    height: 30px;
-}
-
-input[type="checkbox"]:checked + .like-btn > .like{
-    display: none;
-    transition: all 1s;
-}
-
-
-
-/* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
 
 
 /* - - - - - - - - -  Header starts - - - - - - - - - - - - - - */
@@ -231,6 +178,7 @@ main .central-title {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    width: 100%;
     top: -56px;
     padding: 0 20px 0 13px;
     border-top-right-radius: 15px;
@@ -263,6 +211,7 @@ main section .menu {
     justify-content: space-around;
     align-items: flex-start;
     gap: 17px;
+    
 }
 
 main section .downline-title-plats {
@@ -295,6 +244,28 @@ main section .plat h3 {
     height: 19px;
 }
 
+main section .choiced-plat {
+    position: absolute;
+    top: 107px;
+    left: 280px;
+    background-color: #99E2D0;
+    width: 69px;
+    height: 69px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+main section .choiced-plat .circled-choiced {
+    position: absolute;
+    color: #99e2d0;
+    z-index: 2;
+    top: 23px;
+    left: 24px;
+    background: white;
+    border-radius: 25px;
+}
 /* - - - - - - - - -  Main ends - - - - - - - - - - - - - - - */
 
 
