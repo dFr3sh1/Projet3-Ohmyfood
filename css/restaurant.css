@@ -65,8 +65,7 @@ main .heart-btn {
     justify-content: center;
     align-items: center;
     width: 10%;
-    top: 6px;
-    left: 4px;
+    top: 9px;
 }
 
 main .heart-btn .like-btn {
@@ -171,6 +170,12 @@ header img {
 main {
     box-sizing: border-box;
     background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     color: black;
 }
@@ -213,11 +218,16 @@ main section {
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: flex-start;
-    padding-left: 13px;
 }
 
 main .central-zone {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     top: -20px;
 }
 
@@ -227,7 +237,11 @@ main section .menu {
     justify-content: space-around;
     align-items: flex-start;
     gap: 17px;
-    
+    padding: 0 0 20px 0;
+}
+
+main section h2.titles-plats {
+    margin: 0;
 }
 
 main section .downline-title-plats {
@@ -244,26 +258,53 @@ main section .plat {
     box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.10)
 }
 
-main section .plat h3 {
-    margin: auto;
-    padding: 10px 10px 5px 10px;
+input.checking-plat {
+    width: 100%;
+    height: 69px;
 }
 
-.plat-description {
+main .plat button {
+    width: 100%;
+    height: 69px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+}
+
+main section .plat h3 {
+    margin: 0;
+    padding: 10px 10px 12px 10px;
+}
+
+main section .checked-plat {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+main section .plat-description {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 10px;
     margin-bottom: 0;
     height: 19px;
     font-weight: 300;
 }
 
+main .plat-description :nth-last-child(1) {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 main section .choiced-plat {
     position: absolute;
-    top: 106.5px;
+    top: 66.9px;
     left: 280px;
     background-color: #99E2D0;
     width: 69px;
@@ -272,9 +313,10 @@ main section .choiced-plat {
     border-bottom-right-radius: 15px;
     font-size: 20px;
     text-align: center;
+    z-index: -1;
 }
 
-main section .choiced-plat .circled-choiced {
+main section .circled-choiced {
     position: absolute;
     color: #99e2d0;
     z-index: 2;
@@ -283,6 +325,31 @@ main section .choiced-plat .circled-choiced {
     background: white;
     border-radius: 25px;
 }
+
+/* - - - - - - - - - Animation selected plat starts - - - - - - - - - */
+
+input[type="checkbox"]:checked + .checked-plat-btn::before {
+    animation: ease-in 0.4s forwards;
+    transition: margin-right 2s;
+}
+
+input[type="checkbox"]:checked + .checked-plat-btn::after {
+    animation: ease-in 0.4s forwards;
+    transition: margin-right 2s;
+}
+
+input[type="checkbox"]:checked + .checked-plat-btn > .checked-plat{
+    transition: margin-right 2s;    
+}
+
+input[type="checkbox"]:checked + .checked-plat-btn > .unchecked-plat{
+    transition: margin-right 2s;
+}
+
+/* - - - - - - - - - Animation selected plat ends - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 /* - - - - - - - - -  Main ends - - - - - - - - - - - - - - - */
 
 
