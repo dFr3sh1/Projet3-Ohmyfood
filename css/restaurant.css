@@ -60,36 +60,42 @@ a {
 
 main .heart-btn {
     position: relative;
-    top: -36px;
-    left: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    top: 6px;
+    left: 4px;
 }
 
 main .heart-btn .like-btn {
     box-sizing: border-box;
     position: relative;
-    top: 45px;
-    left: -138px;
     fill: transparent;
     background: transparent;
     outline: none;
     border: none;
+    width: 32px;
+    height: 32px;
 }
 
 input[type="checkbox"] {
-    position: relative;
+    position: absolute;
     border: none;
     outline: none;
     cursor: pointer;
     opacity: 0;
     cursor: pointer;
     z-index: 2;
+    width: 32px;
+    height: 27px;
 }
 
 .liked {
     position: absolute;
     z-index: 1;
     display: none;
-    left: -9px;
     color: transparent;
     background-image: linear-gradient(#9356DC, #FF79DA);
     background-clip: content-box;
@@ -102,10 +108,12 @@ input[type="checkbox"] {
 }
 
 .like-size {
-    position: relative;
-    width: 30px;
-    height: 30px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
     font-size: 30px;
+    top: 0px;
+    left: 0px;
 }
 
 input[type="checkbox"]:checked + .like-btn::before {
@@ -116,14 +124,22 @@ input[type="checkbox"]:checked + .like-btn::after {
     animation: ease-in 0.4s forwards;
 }
 
-input[type="checkbox"]:checked + .liked{
+input[type="checkbox"]:checked + .like-btn > .liked{
     display: block;
     transition: all 1s;    
 }
 
-input[type="checkbox"]:checked + .like{
+input[type="checkbox"]:checked + .like-btn > .like{
     display: none;
     transition: all 1s;
+}
+
+main .central-title {
+    box-sizing: border-box;
+}
+
+main .central-title h1 {
+    width: 90%;
 }
 
 /* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
@@ -242,11 +258,12 @@ main section .plat h3 {
     padding: 10px;
     margin-bottom: 0;
     height: 19px;
+    font-weight: 300;
 }
 
 main section .choiced-plat {
     position: absolute;
-    top: 107px;
+    top: 106.5px;
     left: 280px;
     background-color: #99E2D0;
     width: 69px;
