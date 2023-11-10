@@ -1,370 +1,485 @@
 @charset "UTF-8";
-body {
-  box-sizing: border-box;
-  max-width: 375px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0;
-}
 
-* h1 h2 h3 {
-  font-family: "Shrikhand", serif;
-  color: black;
-}
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
+                    /*Base starts*/
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-:root {
-  --main-color: #9356DC;
-  --secondary-color: #FF79DA;
-  --tertiaire-color: #99E2D0;
-  font-family: "Roboto", sans-serif;
-}
+      /* - - - -  Composants starts - - - - */
 
-.purple-btn {
-  width: 218px;
-  height: 50px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  size: 16px;
-  font-weight: 500;
-  text-align: center;
-  border: none;
-  border-radius: 25px;
-}
-
-.purple-btn:hover {
-  filter: brightness(110%) drop-shadow(0px 10px 15px -4px rgba(0, 0, 0, 0.25));
-  transition: 1s;
-}
-
-.btn-shadow {
-  box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-}
-
-.fa-regular {
-  font-size: 25px;
-  color: black;
-}
-
-/* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
-.heart-btn {
-  position: relative;
-  top: -54px;
-  left: 135px;
-}
-
-.like-btn {
-  box-sizing: border-box;
-  position: relative;
-  top: -25px;
-  left: 0px;
-  fill: transparent;
-  background: transparent;
-  outline: none;
-  border: none;
-}
-
-input[type=checkbox] {
-  position: relative;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.liked {
-  position: absolute;
-  z-index: 1;
-  display: none;
-  left: -9px;
-  color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  transition: all 1s ease-in-out;
-}
-
-.like {
-  display: block;
-}
-
-.like-size {
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
-}
-
-input[type=checkbox]:checked + .like-btn::before {
-  animation: ease-in 0.4s forwards;
-}
-
-input[type=checkbox]:checked + .like-btn::after {
-  animation: ease-in 0.4s forwards;
-}
-
-input[type=checkbox]:checked + * .liked {
-  display: block;
-  transition: all 1s;
-}
-
-input[type=checkbox]:checked + * .like {
-  display: none;
-  transition: all 1s;
-}
-
-/* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*- - - - - - - - - - - - - - - Header begins - - - - - - - - - - - - - - -*/
-header {
-  position: relative;
-  top: 14px;
-  left: 89px;
-  height: 63px;
-}
-
-header img {
-  width: 197px;
-  height: 36px;
-  object-fit: contain;
-}
-
-/*- - - - - - - - - - - - - - - Header ends - - - - - - - - - - - - - - -*/
-/*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
-/*- - - - - - - - - - - - - - - Main starts - - - - - - - - - - - - - - -*/
-main {
-  background-color: #F6F6F6;
-}
-
-main section #homepage-location {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 23px 0;
-  gap: 17px;
-  background-color: #EAEAEA;
-  box-shadow: inset 0px 2px 5px -5px;
-  width: 100%;
-}
-
-main section div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 56px;
-}
-
-main section div h1 {
-  padding-top: 39px;
-  margin: 0;
-  width: 275px;
-  font-family: "Roboto";
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-main section div #subhead {
-  font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: center;
-  padding: 18px 0 28px 0;
-  margin: 0;
-}
-
-main section #steps {
-  background-color: white;
-}
-
-main section h2 {
-  position: relative;
-  left: -78px;
-  padding: 28px 0 0 0;
-  margin-bottom: 33px;
-}
-
-main section .steps-btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 322.49px;
-  border-radius: 20px;
-  border: none;
-  background: #F6F6F6;
-  height: 73px;
-  margin-bottom: 22px;
-}
-
-main section .steps-btn-number {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #9356DC;
-  color: white;
-  text-align: center;
-  font-size: 14.2px;
-  line-height: 24.62px;
-  left: -16px;
-}
-
-main section .steps-btn-icon {
-  padding-right: 28px;
-}
-
-main section p {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-/*- - - - - - - - - - - Section Restaurants - - - - - - - - - - - - - - - - - - - - */
-main #restaurants {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  padding-bottom: 59px;
-}
-
-main #restaurants h2 {
-  left: -100px;
-  margin-bottom: 11px;
-}
-
-main section .landingpage-restaurant {
-  position: relative;
-  box-sizing: border-box;
-  padding-bottom: 14px;
-  width: 340px;
-  height: 251px;
-}
-
-main section .landingpage-restaurant a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  border-radius: 15px;
-  background-color: white;
-  color: black;
-}
-
-main section figure {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 193px;
-  margin: 0;
-}
-
-main section .landingpage-restaurant img {
-  flex: 1;
-  width: 100%;
-  height: 90%;
-  vertical-align: middle;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-  object-position: 100% 100%;
-}
-
-main section .landingpage-restaurant #la-note {
-  object-position: 100% 62%;
-}
-
-main section .landingpage-restaurant .hide-tag-new-restaurant {
-  object-position: 100% 150%;
-}
-
-main section .tag-new-restaurant {
-  position: relative;
-  top: -151px;
-  right: -246px;
-  width: 80px;
-  height: 29px;
-  border-radius: 2px;
-  text-align: center;
-  line-height: 28px;
-  background-color: var(--tertiaire-color);
-  color: #008766;
-}
-
-main section .hide-tag {
-  display: none;
-}
-
-main section .restaurant-label {
-  position: relative;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  padding: 20px 20px 10px;
-  top: -15px;
-  margin: 0;
-  height: 60px;
-}
-
-main section .restaurant-label-info {
-  padding-bottom: 0;
-  align-items: flex-start;
-  line-height: 0px;
-}
-
-main section .restaurant-label-info p {
-  font-weight: 300;
-  font-size: 17px;
-}
-
-/*- - - - - - - - - - - - - - - Main ends - - - - - - - - - - - - - - -*/
-/*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
-/*- - - - - - - - - - - - - - - Footer starts - - - - - - - - - - - - - - -*/
-footer {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  width: 375px;
-  padding: 22px 25px 22px 25px;
-  gap: 16px;
-  background-color: #353535;
-  color: white;
-}
-
-footer a {
-  display: flex;
-  gap: 15px;
-}
-
-footer a h3 {
-  margin: 0;
-  height: 17px;
-  padding-bottom: 16px;
-  font-family: "Shrikhand";
-}
-
-footer div {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-/*- - - - - - - - - - - - - - - Footer ends - - - - - - - - - - - - - - -*/
-
+      :root {
+        --main-color: #9356DC;
+        --secondary-color: #FF79DA;
+        --tertiaire-color: #99E2D0;
+    
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    body {
+        box-sizing: border-box;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        margin: 0;
+    }
+    
+    * h1 h2 h3 {
+        font-family: 'Shrikhand', serif;
+    
+        color: black;
+    }
+    
+    .btn {
+        width: 218px;
+        height: 50px;
+    
+        border: none;
+        border-radius: 25px;
+    
+        background: linear-gradient(#FF79DA, #9356DC);
+        color: white;
+    
+        size: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .btn:hover {
+        filter:brightness(110%) drop-shadow( 0px 10px 15px -4px rgba(0, 0, 0, 0.25));
+        transition: 1s;
+    }
+    
+    .btn-shadow {
+        box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
+    }
+    
+    a {
+        color: white;
+    
+        text-decoration: none;
+    
+        cursor: pointer;
+        
+    }
+    
+    .fa-regular {
+        font-size: 25px;
+    
+        color: black;
+    }
+    
+    .posrel {
+        position: relative;
+    }
+    
+    /* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
+    
+    .like-area {
+        top: -50px;
+        left: 290px;
+    }
+    
+    .btn-like {
+        box-sizing: border-box;
+        position: relative;
+        top: -42px;
+    
+        outline: none;
+        border: none;
+    
+        fill: transparent;
+        background: transparent;
+    }
+    
+    input[type="checkbox"] {
+        top: -3px;
+        left: -3px;
+        z-index: 2;
+    
+        border: none;
+        outline: none;
+    
+        opacity: 0;
+    
+        cursor: pointer;
+        cursor: pointer;
+    }
+    
+    .is-liked {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: -11px;
+        left: 0px;
+    
+        background-clip: content-box;
+        
+        color: transparent;
+        background-image: linear-gradient(#9356DC, #FF79DA);
+        
+        -webkit-background-clip: text;
+    
+        transition: all 1s ease-in-out;
+    }
+    
+    .like {
+        display: block;
+        left: -6px;
+    }
+    
+    .like-size {
+        width: 30px;
+        height: 30px;
+    
+        font-size: 30px;
+    }
+    
+    input[type=checkbox]:checked + .btn-like::before {
+        animation: ease-in 0.4s forwards;
+    }
+    
+    input[type=checkbox]:checked + .btn-like::after {
+        animation: ease-in 0.4s forwards;
+    }
+    
+    input[type=checkbox]:checked + * .is-liked {
+        display: block;
+        transition: all 2s;
+    }
+    
+    input[type=checkbox]:checked + * .like {
+        display: none;
+        transition: all 2s;
+    }
+    
+    
+    /* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
+    
+    
+            /* - - - -  Composants ends - - - - */
+    
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+                        /* Base ends */
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+    
+    
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */   
+    
+    
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+                    /* Layout starts */
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+    
+    .l-header {
+        position: relative;
+        top: 14px;
+        left: 89px;
+        height: 63px;
+    }
+    
+    .l-main {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        background-color: #F6F6F6 ;
+    }
+    
+    .l-hero-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        padding-bottom: 56px;
+    }
+    
+    .l-restaurant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        gap: 14px;
+        padding-bottom: 59px;
+    }
+    
+    .l-footer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        width: 375px;
+    
+        padding: 22px 25px 22px 25px;
+        gap: 16px;
+    
+        background-color: #353535;
+        color: white;
+    }
+    
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+                    /* Layout ends */
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+    
+    
+    /*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
+    
+    
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+                    /* Modules starts */
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+    
+    /*- - - - - - - - - - - - - - - Header begins - - - - - - - - - - - - - - -*/
+    
+    .logo--img {
+        width: 197px;
+        height: 36px;
+        object-fit: contain;
+    }
+    
+    /*- - - - - - - - - - - - - - - Header ends - - - - - - - - - - - - - - -*/
+    
+    /*- - - - - - - - - - - - - - - Main starts - - - - - - - - - - - - - - -*/
+    
+    /*- - - - - - - - - - - - - - - Steps starts - - - - - - - - - - - - - - -*/
+    .homepage-location-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 23px 0;
+        width: 100%;
+        
+        gap: 17px;
+    
+        background-color: #EAEAEA;
+        box-shadow: inset 0px 2px 5px -5px;
+        
+    }
+    
+    .main-title {
+        width: 275px;
+    
+        padding-top: 39px;
+        margin: 0;
+        
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    
+    .subhead {
+        padding: 18px 0 28px 0;
+        margin: 0;
+    
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    
+    .steps-area {
+        background-color: white;
+    }
+    
+        .steps-area--title {
+            position: relative;
+            left: -78px;
+    
+            padding: 28px 0 0 0;
+            margin-bottom: 33px;
+        }
+    
+    .steps-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 322.49px;
+    
+        margin-bottom: 22px;
+        height: 73px;
+    
+        border-radius: 20px;
+        border: none;
+    
+        background: #F6F6F6;      
+    }
+    
+        .steps-box--number {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            left: -16px;
+    
+            border-radius: 50%;
+    
+            background-color: #9356DC;
+            color: white;
+            
+            text-align: center;
+            font-size: 14.2px;
+            line-height: 24.62px;           
+        }
+    
+        .steps-box--icon {
+            padding-right: 28px;
+        }
+    
+        .steps-box--instruction {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    
+    /*- - - - - - - - - - - - - - - Steps ends - - - - - - - - - - - - - - -*/
+    
+    /*- - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -*/
+    
+    /*- - - - - - - - - - - Restaurants starts - - - - - - - - - - - - - - - */
+    
+    .restaurant-area-title {
+        left: -100px;
+    
+        margin: 30px 0 0 0;
+    }
+    
+    .restaurant {
+        box-sizing: border-box;
+        width: 340px;
+        height: 251px;
+    
+        padding-bottom: 14px;
+    }   
+    
+        .restaurant--a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            height: 251px;
+            top: -3px;
+    
+            border-radius: 15px;
+    
+            background-color: white;
+            color: black;
+        }
+    
+        .restaurant--figure {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 171px;
+    
+            margin: 0;
+        }
+    
+        .restaurant--img {
+            width: 100%;
+            /*height: 231px;*/
+            vertical-align: middle;
+            object-fit: cover;
+            object-position: 100% -44px;
+            flex: 1;
+    
+            border-radius: 15px 15px 0 0;
+        }
+    
+        .restaurant--la-note {
+            object-position: 100% -150px;
+            height: 183px;
+        }
+    
+        .hide-new-restaurant-tag {
+            object-position: 100% 150%;
+            display: none;
+        }
+    
+        .restaurant--tag-new {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 80px;
+            height: 29px;
+    
+            border-radius: 2px;
+    
+            background-color: var(--tertiaire-color);
+            color:#008766;
+    
+            text-align: center;
+            line-height: 28px;
+        }
+    
+        .restaurant--label {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            width: 88%;
+    
+            padding: 20px 20px 0px;
+            margin: 0;
+            
+        }
+    
+        .restaurant--label-info {
+            align-items: flex-start;
+    
+            padding-bottom: 0;
+    
+            line-height: 0px;
+        }
+    
+        .restuarant--label-info-p {
+            padding-top: 5px;
+    
+            font-weight: 300;
+            font-size: 17px;
+        }
+    
+        /*- - - - - - - - - - - Restaurants ends - - - - - - - - - - - - - - - */
+    
+    /*- - - - - - - - - - - - - - - Main ends - - - - - - - - - - - - - - -*/
+    
+    
+    /*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
+    
+    
+    /*- - - - - - - - - - - - - - - Footer starts - - - - - - - - - - - - - - -*/
+    
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 7px;
+    }
+    
+    .footer-a {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .footer-title {
+        margin: 0;
+        height: 17px;
+        padding-bottom: 16px;
+        font-family: 'Shrikhand';
+    }
+    
+    
+    /*- - - - - - - - - - - - - - - Footer ends - - - - - - - - - - - - - - -*/
+    
+    /*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
+    
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+                    /* Modules ends */
+    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /*# sourceMappingURL=style.css.map */
