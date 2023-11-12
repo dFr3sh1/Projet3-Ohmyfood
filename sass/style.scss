@@ -1,10 +1,11 @@
+@import "libs/reset.scss";
+
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
                     /*Base starts*/
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 
       /* - - - -  Composants starts - - - - */
-
-      :root {
+:root {
         --main-color: #9356DC;
         --secondary-color: #FF79DA;
         --tertiaire-color: #99E2D0;
@@ -151,7 +152,7 @@ input[type=checkbox]:checked + * .like {
 }
 
 /* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
- 
+
             /* - - - -  Composants ends - - - - */
     
     /* - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -179,7 +180,7 @@ input[type=checkbox]:checked + * .like {
         flex-direction: column;
         justify-content: center;
     
-        background-color: #F6F6F6 ;
+        background-color: #F6F6F6;
     }
     
     .l-hero-div {
