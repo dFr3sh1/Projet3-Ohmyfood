@@ -1,13 +1,13 @@
 @charset "UTF-8";
+@import url("libs/functions.scss");
+@import url("components/buttons.scss");
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /*Base starts*/
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - -  Composants starts - - - - */
 :root {
-  --main-color: #9356DC;
-  --secondary-color: #FF79DA;
-  --tertiaire-color: #99E2D0;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -20,8 +20,8 @@ body {
 }
 
 * h1 h2 h3 {
-  font-family: Shrikhand, serif;
-  color: black;
+  font-family: "Shrikhand", serif;
+  color: rgb(0, 0, 0);
 }
 
 .steps-box, .btn {
@@ -33,26 +33,26 @@ body {
   height: 50px;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
+  background: linear-gradient(rgb(255, 122, 217), rgb(146, 87, 219));
+  color: rgb(255, 255, 255);
   size: 16px;
   font-weight: 500;
   text-align: center;
 }
 .btn:hover {
-  filter: brightness(110%) drop-shadow(0px 10px 15px -4px rgba(0, 0, 0, 0.25));
-  transition: 1s;
+  background: #9257db;
+  transition: all 2s;
 }
 
 a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
 }
 
 .fa-regular {
   font-size: 25px;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .posrel {
@@ -94,7 +94,7 @@ input[type=checkbox] {
   left: 0px;
   background-clip: content-box;
   color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-image: linear-gradient(rgb(146, 87, 219), rgb(255, 122, 217));
   -webkit-background-clip: text;
   transition: all 1s ease-in-out;
 }
@@ -113,16 +113,13 @@ input[type=checkbox] {
 input[type=checkbox]:checked + .btn-like::before {
   animation: ease-in 0.4s forwards;
 }
-
 input[type=checkbox]:checked + .btn-like::after {
   animation: ease-in 0.4s forwards;
 }
-
 input[type=checkbox]:checked + * .is-liked {
   display: block;
   transition: all 2s;
 }
-
 input[type=checkbox]:checked + * .like {
   display: none;
   transition: all 2s;
@@ -149,7 +146,7 @@ input[type=checkbox]:checked + * .like {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #F6F6F6;
+  background-color: rgb(245, 245, 245);
 }
 
 .l-hero-div {
@@ -176,8 +173,8 @@ input[type=checkbox]:checked + * .like {
   width: 375px;
   padding: 22px 25px 22px 25px;
   gap: 16px;
-  background-color: #353535;
-  color: white;
+  background-color: rgb(54, 54, 54);
+  color: rgb(255, 255, 255);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -204,7 +201,7 @@ input[type=checkbox]:checked + * .like {
   padding: 23px 0;
   width: 100%;
   gap: 17px;
-  background-color: #EAEAEA;
+  background-color: rgb(235, 235, 235);
   box-shadow: inset 0px 2px 5px -5px;
 }
 
@@ -232,7 +229,7 @@ input[type=checkbox]:checked + * .like {
 }
 
 .steps-area {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .steps-area--title {
@@ -252,7 +249,7 @@ input[type=checkbox]:checked + * .like {
   height: 73px;
   border-radius: 20px;
   border: none;
-  background: #F6F6F6;
+  background: rgb(245, 245, 245);
 }
 
 .steps-box--number {
@@ -261,8 +258,8 @@ input[type=checkbox]:checked + * .like {
   height: 24px;
   left: -16px;
   border-radius: 50%;
-  background-color: #9356DC;
-  color: white;
+  background-color: rgb(146, 87, 219);
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 14.2px;
   line-height: 24.62px;
@@ -301,8 +298,8 @@ input[type=checkbox]:checked + * .like {
   height: 251px;
   top: -3px;
   border-radius: 15px;
-  background-color: white;
-  color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .restaurant--figure {
@@ -340,7 +337,7 @@ input[type=checkbox]:checked + * .like {
   width: 80px;
   height: 29px;
   border-radius: 2px;
-  background-color: var(--tertiaire-color);
+  background-color: rgb(153, 227, 208);
   color: #008766;
   text-align: center;
   line-height: 28px;
@@ -387,7 +384,7 @@ input[type=checkbox]:checked + * .like {
   margin: 0;
   height: 17px;
   padding-bottom: 16px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", serif;
 }
 
 /*- - - - - - - - - - - - - - - Footer ends - - - - - - - - - - - - - - -*/

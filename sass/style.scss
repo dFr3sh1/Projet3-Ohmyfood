@@ -1,17 +1,27 @@
 
-
+@import url('libs/functions.scss');
+@import url('components/buttons.scss');
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
                     /*Base starts*/
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 
       /* - - - -  Composants starts - - - - */
 
+$purple-color: rgba(146, 87, 219, 1);
+$pink-color: rgba(255, 122, 217,1);
+$green-pastel-color: rgba(153, 227, 208, 1);
+$main-theme-color: $purple-color;
+$second-main-color:$pink-color;
+$tertiaire-color: $green-pastel-color;
+$gradient-theme-color: linear-gradient($second-main-color, $main-theme-color);
+$font-stack: ('Roboto', sans-serif);
+$font-logo: ('Shrikhand', serif);
+$base-font-size: 16px;
+
+
 :root {
-        --main-color: #9356DC;
-        --secondary-color: #FF79DA;
-        --tertiaire-color: #99E2D0;
-    
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-stack;
+        font-size: $base-font-size;
     }
     
     body {
@@ -25,9 +35,9 @@
     }
     
     * h1 h2 h3 {
-        font-family: Shrikhand, serif;
+        font-family: $font-logo;
     
-        color: black;
+        color: rgba(0, 0, 0, 1)
     }
 
     %shadow {
@@ -42,22 +52,21 @@
         border: none;
         border-radius: 25px;
     
-        background: linear-gradient(#FF79DA, #9356DC);
-        color: white;
+        background: $gradient-theme-color;
+        color: rgba(255, 255, 255,1);
     
         size: 16px;
         font-weight: 500;
         text-align: center;
-
+    
         &:hover {
-            filter:brightness(110%) drop-shadow( 0px 10px 15px -4px rgba(0, 0, 0, 0.25));
-            transition: 1s;
+            background: lighten($main-theme-color, 0.01);
+            transition: all 2s;
         }
-
     }
     
     a {
-        color: white;
+        color: rgba(255, 255, 255,1);
     
         text-decoration: none;
     
@@ -68,7 +77,7 @@
     .fa-regular {
         font-size: 25px;
     
-        color: black;
+        color: rgba(0, 0, 0, 1)
     }
     
     .posrel {
@@ -117,7 +126,7 @@ input[type="checkbox"] {
     background-clip: content-box;
     
     color: transparent;
-    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-image: linear-gradient($main-theme-color, $second-main-color);
     
     -webkit-background-clip: text;
 
@@ -136,23 +145,27 @@ input[type="checkbox"] {
     font-size: 30px;
 }
 
-input[type=checkbox]:checked + .btn-like::before {
-    animation: ease-in 0.4s forwards;
+input[type=checkbox] {
+    &:checked + .btn-like::before {
+        animation: ease-in 0.4s forwards;
+    }
+
+    &:checked + .btn-like::after {
+        animation: ease-in 0.4s forwards;
+    }
+
+    &:checked + * .is-liked {
+        display: block;
+        transition: all 2s;
+    }
+
+    &:checked + * .like {
+        display: none;
+        transition: all 2s;
+    }
+
 }
 
-input[type=checkbox]:checked + .btn-like::after {
-    animation: ease-in 0.4s forwards;
-}
-
-input[type=checkbox]:checked + * .is-liked {
-    display: block;
-    transition: all 2s;
-}
-
-input[type=checkbox]:checked + * .like {
-    display: none;
-    transition: all 2s;
-}
 
 /* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
 
@@ -183,7 +196,7 @@ input[type=checkbox]:checked + * .like {
         flex-direction: column;
         justify-content: center;
     
-        background-color: #F6F6F6;
+        background-color: rgba(245, 245, 245, 1);
     }
     
     .l-hero-div {
@@ -214,8 +227,8 @@ input[type=checkbox]:checked + * .like {
         padding: 22px 25px 22px 25px;
         gap: 16px;
     
-        background-color: #353535;
-        color: white;
+        background-color: rgba(54, 54, 54, 1);
+        color: rgba(255, 255, 255, 1);
     }
     
     /* - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -252,7 +265,7 @@ input[type=checkbox]:checked + * .like {
         
         gap: 17px;
     
-        background-color: #EAEAEA;
+        background-color: rgba(235, 235, 235, 1);
         box-shadow: inset 0px 2px 5px -5px;
         
     }
@@ -284,7 +297,7 @@ input[type=checkbox]:checked + * .like {
     }
     
     .steps-area {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 1);
     }
     
         .steps-area--title {
@@ -309,7 +322,7 @@ input[type=checkbox]:checked + * .like {
         border-radius: 20px;
         border: none;
     
-        background: #F6F6F6;      
+        background: rgba(245, 245, 245, 1);     
     }
     
         .steps-box--number {
@@ -320,8 +333,8 @@ input[type=checkbox]:checked + * .like {
     
             border-radius: 50%;
     
-            background-color: #9356DC;
-            color: white;
+            background-color: $main-theme-color;
+            color: rgba(255, 255, 255, 1);
             
             text-align: center;
             font-size: 14.2px;
@@ -368,8 +381,8 @@ input[type=checkbox]:checked + * .like {
     
             border-radius: 15px;
     
-            background-color: white;
-            color: black;
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(0, 0, 0, 1);
         }
     
         .restaurant--figure {
@@ -411,7 +424,7 @@ input[type=checkbox]:checked + * .like {
     
             border-radius: 2px;
     
-            background-color: var(--tertiaire-color);
+            background-color: $tertiaire-color;
             color:#008766;
     
             text-align: center;
@@ -471,7 +484,7 @@ input[type=checkbox]:checked + * .like {
         margin: 0;
         height: 17px;
         padding-bottom: 16px;
-        font-family: 'Shrikhand';
+        font-family: $font-logo;
     }
     
     
