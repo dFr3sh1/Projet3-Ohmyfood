@@ -1,6 +1,6 @@
 ///Main buttons for commanding in restaurants.
 
-btn {
+.btn {
     width: 218px;
     height: 50px;
 
@@ -15,7 +15,7 @@ btn {
     text-align: center;
 
     &:hover {
-        background: lighten($main-theme-color, 0.01);
+        background: lighten($main-theme-color, 0.01), lighten($second-main-color, 0.01);
         transition: all 2s;
     }
 };

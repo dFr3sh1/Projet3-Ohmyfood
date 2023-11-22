@@ -1,0 +1,10 @@
+/// Layout oh the main 
+
+.l-main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgba(245, 245, 245, 1);
+}

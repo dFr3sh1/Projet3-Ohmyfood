@@ -7,17 +7,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ecc5d81995.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/restaurant.css">
     <title>ohmyfood Les delices de sens</title>
 </head>
 <body>
     <header>
         <a href="../index.html">
-            <i class="fa-solid fa-arrow-left" style="color: #000000;"></i>
+            <i class="fa-solid fa-arrow-left"></i>
         </a>
         <img src="../images/logo/ohmyfood@2x.webp" alt="Logo ohmyfood">
     </header>
     <main>
-        <div >
+        <div class="central-photo">
             <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp" alt="Assiette gourmet de Les délices de sens à Ménilmontant">
         </div>
         <div class="central-title">
@@ -28,109 +29,156 @@
                     <i class="fa-regular fa-heart like like-size"></i>
                     <i class="fa-solid fa-heart liked like-size"></i>  
                 </button>
-            </div>
-            <section>
+            </div>                
+        </div>
+        <section>
+            <div class="central-zone">
                 <div class="menu">
                     <h2 class="titles-plats">ENTRÉES</h2>
                     <div class="downline-title-plats"></div>
                     <div class="plat">
-                        <h3>Tartare de thon</h3>
-                        <div>
-                            <p>Assaisonné au yuzu</p>
-                            <p>25€</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-circle-check" style="color: #99e2d0;"></i>
-                        </div>
+                        <input type="checkbox" class="checking-plat">
+                        <button class="checked-plat-btn">
+                            <div class="checked-plat unchecked-plat text-ellipsis">
+                                <h3>Tartare de thon</h3>
+                                <div class="plat-description">
+                                    <p>Assaisonné au yuzu</p>
+                                    <p>25€</p>
+                                </div>
+                            </div>
+                            <div class="choiced-plat unchoiced-plat">
+                                <i class="fa-regular fa-circle-check circled-choiced"></i>
+                            </div>
+                        </button>        
                     </div>
                     <div class="plat">
-                        <h3>Bouhée de homard croustillant</h3>
-                        <div>
-                            <p>Et sa farandole de petites légumes</p>
-                            <p>35€</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-circle-check" style="color: #99e2d0;"></i>
-                        </div>
+                        <input type="checkbox" class="checking-plat">
+                        <button class="checked-plat-btn">
+                            <div class="checked-plat unchecked-plat text-ellipsis">
+                                <h3>Bouchée de homard croustillant </h3>
+                                <div class="plat-description">
+                                    <p>Et sa farandole de petits légumes</p>
+                                    <p>35€</p>
+                                </div>
+                            </div>    
+                            <div class="choiced-plat unchoiced-plat">
+                                <i class="fa-regular fa-circle-check circled-choiced"></i>
+                            </div>
+                        </button>        
                     </div>
-                    <div class="plat">
-                        <h3>Poule rôti aux herbes de Provence</h3>
-                        <div>
-                            <p>Et sa crème de trouffe</p>
-                            <p>40€</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-circle-check" style="color: #99e2d0;"></i>
-                        </div>
+                    <div class="plat last-item-of-group">
+                        <input type="checkbox" class="checking-plat">
+                        <button class="checked-plat-btn">
+                            <div class="checked-plat unchecked-plat text-ellipsis">
+                                <h3>Poulet rôti aux herbes de Provence </h3>
+                                <div class="plat-description">
+                                    <p>Et sa crème de truffe</p>
+                                    <p>40€</p>
+                                </div>
+                            </div>    
+                            <div class="choiced-plat unchoiced-plat">
+                                <i class="fa-regular fa-circle-check circled-choiced"></i>
+                            </div>
+                        </button>    
                     </div>
                     <h2 class="titles-plats">PLATS</h2>
                     <div class="downline-title-plats"></div>
                     <div class="plat">
-                        <h3>Poule rôti aux herbes de Provence</h3>
-                        <div>
-                            <p>Et sa crème de trouffe</p>
-                            <p>40€</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-circle-check" style="color: #99e2d0;"></i>
-                        </div>
+                        <input type="checkbox" class="checking-plat">
+                        <button class="checked-plat-btn">
+                            <div class="checked-plat unchecked-plat text-ellipsis">
+                                <h3>Poulet rôti aux herbes de Provence </h3>
+                                <div class="plat-description">
+                                    <p>Et sa crème de truffe</p>
+                                    <p>40€</p>
+                                </div>
+                            </div>    
+                            <div class="choiced-plat unchoiced-plat">
+                                <i class="fa-regular fa-circle-check circled-choiced"></i>
+                            </div>
+                        </button>
                     </div>
                     <div class="plat">
-                        <h3>Langouste rôtie</h3>
-                        <div>
-                            <p>Et ses légumes de saison</p>
-                            <p>35€</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-circle-check" style="color: #99e2d0;"></i>
-                        </div>
+                        <input type="checkbox" class="checking-plat">
+                        <button class="checked-plat-btn">
+                            <div class="checked-plat unchecked-plat text-ellipsis">
+                                <h3>Langouste rôtie </h3>
+                                <div class="plat-description">
+                                    <p>Et ses légumes de saison</p>
+                                    <p>35€</p>
+                                </div>
+                            </div>
+                            <div class="choiced-plat unchoiced-plat">
+                                <i class="fa-regular fa-circle-check circled-choiced"></i>
+                            </div>
+                        </button>        
                     </div>
-                    <div class="plat">
-                        <h3>Côte de bœuf Angus</h3>
-                        <div>
-                            <p>Et sa purée de panais</p>
-                            <p>44€</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-circle-check" style="color: #99e2d0;"></i>
-                        </div>
+                    <div class="plat last-item-of-group">
+                        <input type="checkbox" class="checking-plat">
+                        <button class="checked-plat-btn">
+                            <div class="checked-plat unchecked-plat text-ellipsis">
+                                <h3>Côte de bœuf Angus </h3>
+                                <div class="plat-description">
+                                    <p>Et sa purée de panais</p>
+                                    <p>44€</p>
+                                </div>
+                            </div>    
+                            <div class="choiced-plat unchoiced-plat">
+                                <i class="fa-regular fa-circle-check circled-choiced"></i>
+                            </div>
+                        </button>        
                     </div>
                     <h2 class="titles-plats">DESSERTS</h2>
                     <div class="downline-title-plats"></div>
                     <div class="plat">
-                        <h3>Farandole de desserts</h3>
-                        <div>
-                            <p>Du chef</p>
-                            <p>18€</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-circle-check" style="color: #99e2d0;"></i>
-                        </div>
+                        <input type="checkbox" class="checking-plat">
+                        <button class="checked-plat-btn">
+                            <div class="checked-plat unchecked-plat text-ellipsis">
+                                <h3>Farandole de desserts</h3>
+                                <div class="plat-description">
+                                    <p>Du chef</p>
+                                    <p>18€</p>
+                                </div>
+                            </div>    
+                            <div class="choiced-plat unchoiced-plat">
+                                <i class="fa-regular fa-circle-check circled-choiced"></i>
+                            </div>
+                        </button>    
                     </div>
                     <div class="plat">
-                        <h3>Crème brulée</h3>
-                        <div>
-                            <p>Revisitée</p>
-                            <p>22€</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-circle-check" style="color: #99e2d0;"></i>
-                        </div>
+                        <input type="checkbox" class="checking-plat">
+                        <button class="checked-plat-btn">
+                            <div class="checked-plat unchecked-plat text-ellipsis">
+                                <h3>Crème brulée </h3>
+                                <div class="plat-description">
+                                    <p>Revisitée</p>
+                                    <p>22€</p>
+                                </div>
+                            </div>    
+                            <div class="choiced-plat unchoiced-plat">
+                                <i class="fa-regular fa-circle-check circled-choiced"></i>
+                            </div>
+                        </button>
                     </div>
-                    <div class="plat">
-                        <h3>Tiramisu</h3>
-                        <div>
-                            <p>À la noisette</p>
-                            <p>23€</p>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-circle-check" style="color: #99e2d0;"></i>
-                        </div>
+                    <div class="plat last-item-of-group">
+                        <input type="checkbox" class="checking-plat">
+                        <button class="checked-plat-btn">
+                            <div class="checked-plat unchecked-plat text-ellipsis">
+                                <h3>Tiramisu</h3>
+                                <div class="plat-description">
+                                    <p>À la noisette</p>
+                                    <p>23€</p>
+                                </div>
+                            </div>
+                            <div class="choiced-plat unchoiced-plat">
+                                <i class="fa-regular fa-circle-check circled-choiced"></i>
+                            </div>
+                        </button>    
                     </div>
-                    <button type="submit">Commander</button>
                 </div>
-            </section>         
-        </div>
+                <button type="submit" class="btn-purple">Commander</button>
+            </div>
+        </section>         
     </main>
     <footer>
         <a href="#"><h3>ohmyfood</h3></a>

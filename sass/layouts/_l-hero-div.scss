@@ -1,0 +1,9 @@
+/// Layout of the hero div of the landingpage
+
+.l-hero-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 56px;
+}

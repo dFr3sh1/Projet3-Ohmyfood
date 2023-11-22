@@ -205,6 +205,11 @@ main .central-photo img {
 
 }
 
+.restaurant--la-note {
+    object-position: 100% -100px;
+    height: 275px;
+}
+
 main .central-title {
     display: flex;
     flex-direction: row;

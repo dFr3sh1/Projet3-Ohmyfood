@@ -1,0 +1,11 @@
+/// Layout of restaurant page
+
+.l-restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+    padding-bottom: 59px;
+}

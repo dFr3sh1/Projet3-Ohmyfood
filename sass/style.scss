@@ -1,23 +1,17 @@
 
-@import url('libs/functions.scss');
-@import url('components/buttons.scss');
+
+
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
                     /*Base starts*/
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 
       /* - - - -  Composants starts - - - - */
 
-$purple-color: rgba(146, 87, 219, 1);
-$pink-color: rgba(255, 122, 217,1);
-$green-pastel-color: rgba(153, 227, 208, 1);
-$main-theme-color: $purple-color;
-$second-main-color:$pink-color;
-$tertiaire-color: $green-pastel-color;
-$gradient-theme-color: linear-gradient($second-main-color, $main-theme-color);
-$font-stack: ('Roboto', sans-serif);
-$font-logo: ('Shrikhand', serif);
-$base-font-size: 16px;
 
+
+@import './components/variables';
+@import './libs/functions.scss';
+@import './components/buttons.scss';
 
 :root {
         font-family: $font-stack;
@@ -46,23 +40,7 @@ $base-font-size: 16px;
     
     .btn {
         @extend %shadow;
-        width: 218px;
-        height: 50px;
-    
-        border: none;
-        border-radius: 25px;
-    
-        background: $gradient-theme-color;
-        color: rgba(255, 255, 255,1);
-    
-        size: 16px;
-        font-weight: 500;
-        text-align: center;
-    
-        &:hover {
-            background: lighten($main-theme-color, 0.01);
-            transition: all 2s;
-        }
+
     }
     
     a {
@@ -267,7 +245,6 @@ input[type=checkbox] {
     
         background-color: rgba(235, 235, 235, 1);
         box-shadow: inset 0px 2px 5px -5px;
-        
     }
     
     .main-title {
