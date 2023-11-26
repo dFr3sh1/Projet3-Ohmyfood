@@ -1,0 +1,80 @@
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1200px;
+
+
+@media (min-width: 376px) and  (max-width: $breakpoint-small) {
+    /* Ajustements généraux pour les tablettes */
+    body {
+        padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
+    }
+    
+    .l-header {
+        display: flex;
+        justify-content: center;
+        left: 0;
+    }
+    
+    .l-hero-div, .l-restaurant {
+        padding-bottom: 30px; /* Ajout d'un espace en bas pour améliorer la lisibilité */
+    }
+    
+    .l-footer {
+        width: auto; /* Ajustement de la largeur pour s'adapter à l'écran plus petit */
+    }
+    
+    /* Ajustements spécifiques pour les composants */
+    .btn {
+        width: 70%; /* Bouton prend toute la largeur de l'écran */
+    }
+    
+    .steps-area--title {
+        width: 90%;
+        left: 0; /* Centrer le titre des étapes */
+    }
+    
+    .steps-box {
+        width: 70%; /* Boîte d'étapes prend toute la largeur de l'écran */
+    }
+    
+    .restaurant {
+        width: 90%;
+        height: 100%;
+    }
+    
+    .restaurant-area-title {
+        width: 90%;
+        left: 0;    
+    }
+
+    .restaurant--a {
+        position: relative;
+        height: auto;
+
+        align-items: center;
+
+    }
+
+    .restaurant--figure {
+        height: 300px;
+
+    }
+
+    .restaurant--fig {
+        height: 100%;
+    }
+    
+    .restaurant--img {
+        height: auto;
+        object-position: 100% -324px;
+        overflow-y: hidden;
+    }
+    
+    .restaurant--tag-new {
+        display: none; /* Masquer la balise "nouveau" sur les écrans plus petits */
+    }
+    
+    .footer-links {
+        align-items: center; /* Centrer les liens du pied de page */
+    }
+    }

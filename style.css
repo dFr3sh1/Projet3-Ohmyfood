@@ -3,6 +3,15 @@
 /*Base starts*/
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - -  Composants starts - - - - */
+body {
+  box-sizing: border-box;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+}
+
 .btn {
   width: 218px;
   height: 50px;
@@ -19,11 +28,154 @@
   transition: all 2s;
 }
 
+.l-footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 375px;
+  padding: 22px 25px 22px 25px;
+  gap: 16px;
+  background-color: rgb(54, 54, 54);
+  color: rgb(255, 255, 255);
+}
+
+.l-header {
+  position: relative;
+  top: 14px;
+  height: 63px;
+  text-align: center;
+}
+
+.l-hero-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 56px;
+}
+
+.l-main {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.l-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 59px;
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  /* Ajustements généraux pour les tablettes */
+  body {
+    padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
+  }
+  .l-header {
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+  .l-hero-div, .l-restaurant {
+    padding-bottom: 30px; /* Ajout d'un espace en bas pour améliorer la lisibilité */
+  }
+  .l-footer {
+    width: auto; /* Ajustement de la largeur pour s'adapter à l'écran plus petit */
+  }
+  /* Ajustements spécifiques pour les composants */
+  .btn {
+    width: 70%; /* Bouton prend toute la largeur de l'écran */
+  }
+  .steps-area--title {
+    width: 90%;
+    left: 0; /* Centrer le titre des étapes */
+  }
+  .steps-box {
+    width: 70%; /* Boîte d'étapes prend toute la largeur de l'écran */
+  }
+  .restaurant {
+    width: 90%;
+    height: 100%;
+  }
+  .restaurant-area-title {
+    width: 90%;
+    left: 0;
+  }
+  .restaurant--a {
+    position: relative;
+    height: auto;
+    align-items: center;
+  }
+  .restaurant--figure {
+    height: 300px;
+  }
+  .restaurant--fig {
+    height: 100%;
+  }
+  .restaurant--img {
+    height: auto;
+    object-position: 100% -324px;
+    overflow-y: hidden;
+  }
+  .restaurant--tag-new {
+    display: none; /* Masquer la balise "nouveau" sur les écrans plus petits */
+  }
+  .footer-links {
+    align-items: center; /* Centrer les liens du pied de page */
+  }
+}
 :root {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
+.loader-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255); /* Fond semi-transparent pour le loader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 3s forwards; /* Animation de disparition après 3 secondes */
+  z-index: 100;
+}
+
+.loader {
+  border: 8px solid rgb(255, 122, 217); /* Couleur principale 1 */
+  border-top: 8px solid rgb(146, 87, 219); /* Couleur principale 2 */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    display: none;
+  }
+}
 body {
   box-sizing: border-box;
   max-width: 100%;
@@ -128,56 +280,6 @@ input[type=checkbox]:checked + * .like {
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* Base ends */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* Layout starts */
-/* - - - - - - - - - - - - - - - - - - - - - - - -  */
-.l-header {
-  position: relative;
-  top: 14px;
-  left: 89px;
-  height: 63px;
-}
-
-.l-main {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(245, 245, 245);
-}
-
-.l-hero-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 56px;
-}
-
-.l-restaurant {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  padding-bottom: 59px;
-}
-
-.l-footer {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  width: 375px;
-  padding: 22px 25px 22px 25px;
-  gap: 16px;
-  background-color: rgb(54, 54, 54);
-  color: rgb(255, 255, 255);
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* Layout ends */
-/* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* Modules starts */
@@ -232,9 +334,13 @@ input[type=checkbox]:checked + * .like {
 
 .steps-area--title {
   position: relative;
-  left: -78px;
+  width: 90%;
   padding: 28px 0 0 0;
   margin-bottom: 33px;
+}
+
+.wraper-steps-boxes {
+  width: 90%;
 }
 
 .steps-box {
@@ -242,8 +348,9 @@ input[type=checkbox]:checked + * .like {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 322.49px;
+  width: 97%;
   margin-bottom: 22px;
+  margin-left: 10px;
   height: 73px;
   border-radius: 20px;
   border: none;

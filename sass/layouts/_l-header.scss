@@ -3,6 +3,11 @@
 .l-header {
     position: relative;
     top: 14px;
-    left: 89px;
     height: 63px;
+
+    text-align: center;
+}
+
+@media screen and (min-width: 1029px) {
+    
 }

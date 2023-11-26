@@ -8,6 +8,8 @@ body {
 }
 
 h1 {
+    margin-bottom: 0;
+    width: 90%;
     font-family: 'Shrikhand';
     color: black;
 }
@@ -23,29 +25,27 @@ h2 {
 :root {
     --main-color: #9356DC;
     --secondary-color: #FF79DA;
-    --tertiaire-color: #99E2D0;
-
+    --tertiary-color: #99E2D0;
     font-family: 'Roboto', sans-serif;
 }
 
 .btn-purple {
     width: 218px;
     height: 50px;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient(var(--secondary-color), var(--main-color));
     color: white;
-    size: 16px;
+    font-size: 16px;
     font-weight: 500;
     text-align: center;
     border: none;
     border-radius: 25px;
     margin-bottom: 20px;
+    transition: filter 1s;
 }
 
 .btn-purple:hover {
-    filter:brightness(110%) drop-shadow( 0px 10px 15px -4px rgba(0, 0, 0, 0.25));
-    transition: 1s;
+    filter: brightness(110%);
 }
-
 
 .btn-shadow {
     box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
@@ -58,19 +58,20 @@ a {
 }
 
 .fa-circle-check {
-    color: var(--tertiaire-color);
+    color: var(--tertiary-color);
 }
 
 .fa-utensils .fa-handshake {
-    color: fafafa;
+    color: #fafafa;
 }
 
 .fa-arrow-left {
     color: black;
 }
-/* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
 
-main .heart-btn {
+/* Like button starts */
+
+.heart-btn {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -80,7 +81,7 @@ main .heart-btn {
     top: 9px;
 }
 
-main .heart-btn .like-btn {
+.heart-btn .like-btn {
     box-sizing: border-box;
     position: relative;
     fill: transparent;
@@ -97,7 +98,6 @@ input[type="checkbox"] {
     outline: none;
     cursor: pointer;
     opacity: 0;
-    cursor: pointer;
     z-index: 2;
     width: 32px;
     height: 27px;
@@ -108,7 +108,7 @@ input[type="checkbox"] {
     z-index: 1;
     display: none;
     color: transparent;
-    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-image: linear-gradient(var(--main-color), var(--secondary-color));
     background-clip: content-box;
     -webkit-background-clip: text;
     transition: all 1s ease-in-out;
@@ -120,42 +120,36 @@ input[type="checkbox"] {
 
 .like-size {
     position: absolute;
-    width: 32px;
+    width: 34px;
     height: 32px;
     font-size: 30px;
     top: 0px;
-    left: 0px;
+    left: 1px;
 }
 
-input[type="checkbox"]:checked + .like-btn::before {
-    animation: ease-in 0.4s forwards;
-}
-
+input[type="checkbox"]:checked + .like-btn::before,
 input[type="checkbox"]:checked + .like-btn::after {
     animation: ease-in 0.4s forwards;
 }
 
-input[type="checkbox"]:checked + .like-btn > .liked{
+input[type="checkbox"]:checked + .like-btn > .liked {
     display: block;
-    transition: all 1s;    
+    transition: all 1s;
 }
 
-input[type="checkbox"]:checked + .like-btn > .like{
+input[type="checkbox"]:checked + .like-btn > .like {
     display: none;
     transition: all 1s;
 }
 
-main .central-title {
+
+.central-title {
     box-sizing: border-box;
 }
 
-main .central-title h1 {
-    width: 90%;
-}
+/* Like button ends */
 
-/* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
-
-/* - - - - - - - - -  Header starts - - - - - - - - - - - - - - */
+/* Header starts */
 
 header {
     display: flex;
@@ -174,10 +168,9 @@ header img {
     left: -31px;
 }
 
+/* Header ends */
 
-/* - - - - - - - - -  Header starts - - - - - - - - - - - - - - */
-
-/* - - - - - - - - -  Main starts - - - - - - - - - - - - - - - */
+/* Main starts */
 
 main {
     box-sizing: border-box;
@@ -192,17 +185,16 @@ main {
     color: black;
 }
 
-main .central-photo {
+.central-photo {
     box-sizing: border-box;
     width: 375px;
     height: 275px;
 }
 
-main .central-photo img {
+.central-photo img {
     width: 100%;
     object-fit: cover;
     position: center;
-
 }
 
 .restaurant--la-note {
@@ -210,7 +202,7 @@ main .central-photo img {
     height: 275px;
 }
 
-main .central-title {
+.central-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -221,12 +213,7 @@ main .central-title {
     padding: 0 20px 0 13px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    background: #F6F6F6;    
-}
-
-main div h1 {
-    font-family: 'Shrikhand';
-    margin-bottom: 0;
+    background: #F6F6F6;
 }
 
 main section {
@@ -237,7 +224,7 @@ main section {
     justify-content: flex-start;
 }
 
-main .central-zone {
+.central-zone {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -248,7 +235,7 @@ main .central-zone {
     top: -20px;
 }
 
-main section .menu {
+section .menu {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -257,51 +244,73 @@ main section .menu {
     padding: 0 0 20px 0;
 }
 
-main section h2.titles-plats {
+h2.titles-plats {
     margin: 0;
 }
 
-main section .downline-title-plats {
+.downline-title-plats {
     width: 40px;
     border-bottom: #99E2D0 solid 4px;
 }
 
-main section .plat {
+.plat {
     box-sizing: border-box;
     width: 349px;
     height: 69px;
     background: white;
     border-radius: 15px;
-    box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.10)
+    box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.10);
 }
+
 
 input.checking-plat {
     width: 100%;
     height: 69px;
 }
 
-main .plat button {
+label {
+    display: flex;
+    flex-direction: row;
+    position: relative;
     width: 100%;
     height: 69px;
     border: none;
     background: white;
     border-radius: 15px;
+    overflow: hidden;
 }
 
-main section .plat h3 {
-    margin: 0;
-    padding: 10px 10px 12px 10px;
-}
-
-main section .checked-plat {
+.checked-plat {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    transition: transform 0.5s;
+    margin-right: 0;
 }
 
-main section .plat-description {
+.checked-plat:hover {
+    margin-right: 20%;
+    transition: margin-right 2s;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.plat h3 {
+    margin: 0;
+    padding: 10px 10px 12px 10px;
+}
+
+/*.text-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}*/
+
+
+.plat-description {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -314,15 +323,15 @@ main section .plat-description {
     font-weight: 300;
 }
 
-main .plat-description :nth-last-child(1) {
-    font-size: 1.2rem;
+.plat-description p:nth-last-child(1) {
+    font-size: 15px;
     font-weight: 700;
 }
 
-main section .choiced-plat {
+.choiced-plat {
     position: absolute;
-    top: 66.9px;
-    left: 280px;
+    top: 0;
+    left: 281px;
     background-color: #99E2D0;
     width: 69px;
     height: 69px;
@@ -330,15 +339,16 @@ main section .choiced-plat {
     border-bottom-right-radius: 15px;
     font-size: 20px;
     text-align: center;
-    z-index: -1;
+    /* Positionnement initial en dehors de la vue */
+    transform: translateX(100%);
 }
 
-main section .circled-choiced {
+
+.circled-choiced {
     position: absolute;
     color: #99e2d0;
-    z-index: 2;
-    top: 23px;
-    left: 24px;
+    top: 25px;
+    left: 25px;
     background: white;
     border-radius: 25px;
 }
@@ -347,43 +357,12 @@ main section .circled-choiced {
     margin-bottom: 30px;
 }
 
-/* - - - - - - - - - Animation selected plat starts - - - - - - - - - */
-
-input[type="checkbox"]:checked + .checked-plat-btn::before {
-    animation: ease-in 0.4s forwards;
-    transition: margin-right 2s;
-}
-
-input[type="checkbox"]:checked + .checked-plat-btn::after {
-    animation: ease-in 0.4s forwards;
-    transition: margin-right 2s;
-}
-
-input[type="checkbox"]:checked + .checked-plat-btn > .checked-plat{
-    transition: margin-right 2s;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;    
-}
-
-input[type="checkbox"]:checked + .checked-plat-btn > .unchecked-plat{
-    transition: margin-right 2s;
-}
-
-.text-ellipsis {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    }
-
-/* - - - - - - - - - Animation selected plat ends - - - - - - - - - - */
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-/* - - - - - - - - -  Main ends - - - - - - - - - - - - - - - */
+/* Animation selected plat starts */
 
 
-/*- - - - - - - - - - - - - - - Footer starts - - - - - - - - - - - - - - -*/
+/* Animation selected plat ends */
+
+/* Footer starts */
 
 footer {
     box-sizing: border-box;
@@ -415,5 +394,4 @@ footer div {
     gap: 7px;
 }
 
-
-/*- - - - - - - - - - - - - - - Footer ends - - - - - - - - - - - - - - -*/
+/* Footer ends */

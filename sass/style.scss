@@ -8,16 +8,59 @@
       /* - - - -  Composants starts - - - - */
 
 
-
+@import './base/base';
 @import './components/variables';
-@import './libs/functions.scss';
-@import './components/buttons.scss';
+@import './components/buttons';
+@import './libs/functions';
+@import './libs/mixins';
+@import './layouts/l-footer';
+@import './layouts/l-header';
+@import './layouts/l-hero-div';
+@import './layouts/l-main';
+@import './layouts/l-restaurant';
+@import 'responsive.scss';
+
+
 
 :root {
         font-family: $font-stack;
         font-size: $base-font-size;
     }
+    .loader-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 1); /* Fond semi-transparent pour le loader */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeOut 3s forwards; /* Animation de disparition après 3 secondes */
+        z-index: 100;
+    }
     
+    .loader {
+        border: 8px solid $pink-color; /* Couleur principale 1 */
+        border-top: 8px solid $purple-color; /* Couleur principale 2 */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1.5s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    @keyframes fadeOut {
+        0% { opacity: 1; }
+        100% { opacity: 1; display: none; }
+    }
+
     body {
         box-sizing: border-box;
         max-width: 100%;
@@ -152,67 +195,7 @@ input[type=checkbox] {
     /* - - - - - - - - - - - - - - - - - - - - - - - -  */
                         /* Base ends */
     /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-    
-    
-    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */   
-    
-    
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-                    /* Layout starts */
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-    
-    .l-header {
-        position: relative;
-        top: 14px;
-        left: 89px;
-        height: 63px;
-    }
-    
-    .l-main {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-        background-color: rgba(245, 245, 245, 1);
-    }
-    
-    .l-hero-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        padding-bottom: 56px;
-    }
-    
-    .l-restaurant {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
-        gap: 14px;
-        padding-bottom: 59px;
-    }
-    
-    .l-footer {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        width: 375px;
-    
-        padding: 22px 25px 22px 25px;
-        gap: 16px;
-    
-        background-color: rgba(54, 54, 54, 1);
-        color: rgba(255, 255, 255, 1);
-    }
-    
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-                    /* Layout ends */
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-    
+
     
     /*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
     
@@ -279,11 +262,14 @@ input[type=checkbox] {
     
         .steps-area--title {
             position: relative;
-            left: -78px;
+            width: 90%;
     
             padding: 28px 0 0 0;
             margin-bottom: 33px;
         }
+    .wraper-steps-boxes {
+        width: 90%
+    }
     
     .steps-box {
         @extend %shadow;
@@ -291,9 +277,10 @@ input[type=checkbox] {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        width: 322.49px;
+        width: 97%;
     
         margin-bottom: 22px;
+        margin-left: 10px;
         height: 73px;
     
         border-radius: 20px;
