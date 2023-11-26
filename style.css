@@ -71,64 +71,6 @@ body {
   padding-bottom: 59px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
-  /* Ajustements généraux pour les tablettes */
-  body {
-    padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
-  }
-  .l-header {
-    display: flex;
-    justify-content: center;
-    left: 0;
-  }
-  .l-hero-div, .l-restaurant {
-    padding-bottom: 30px; /* Ajout d'un espace en bas pour améliorer la lisibilité */
-  }
-  .l-footer {
-    width: auto; /* Ajustement de la largeur pour s'adapter à l'écran plus petit */
-  }
-  /* Ajustements spécifiques pour les composants */
-  .btn {
-    width: 70%; /* Bouton prend toute la largeur de l'écran */
-  }
-  .steps-area--title {
-    width: 90%;
-    left: 0; /* Centrer le titre des étapes */
-  }
-  .steps-box {
-    width: 70%; /* Boîte d'étapes prend toute la largeur de l'écran */
-  }
-  .restaurant {
-    width: 90%;
-    height: 100%;
-  }
-  .restaurant-area-title {
-    width: 90%;
-    left: 0;
-  }
-  .restaurant--a {
-    position: relative;
-    height: auto;
-    align-items: center;
-  }
-  .restaurant--figure {
-    height: 300px;
-  }
-  .restaurant--fig {
-    height: 100%;
-  }
-  .restaurant--img {
-    height: auto;
-    object-position: 100% -324px;
-    overflow-y: hidden;
-  }
-  .restaurant--tag-new {
-    display: none; /* Masquer la balise "nouveau" sur les écrans plus petits */
-  }
-  .footer-links {
-    align-items: center; /* Centrer les liens du pied de page */
-  }
-}
 :root {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -176,17 +118,8 @@ body {
     display: none;
   }
 }
-body {
-  box-sizing: border-box;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0;
-}
-
 * h1 h2 h3 {
-  font-family: "Shrikhand", serif;
+  font-family: "Shrikhand, serif";
   color: rgb(0, 0, 0);
 }
 
@@ -195,6 +128,7 @@ body {
 }
 
 a {
+  box-sizing: border-box;
   color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
@@ -211,7 +145,7 @@ a {
 
 /* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
 .like-area {
-  top: -50px;
+  top: -33px;
   left: 290px;
 }
 
@@ -384,14 +318,12 @@ input[type=checkbox]:checked + * .like {
 /*- - - - - - - - - - - Restaurants starts - - - - - - - - - - - - - - - */
 .restaurant-area-title {
   left: -100px;
-  margin: 30px 0 0 0;
+  margin: 30px 0 16px;
 }
 
 .restaurant {
   box-sizing: border-box;
   width: 340px;
-  height: 251px;
-  padding-bottom: 14px;
 }
 
 .restaurant--a {
@@ -400,8 +332,6 @@ input[type=checkbox]:checked + * .like {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 251px;
-  top: -3px;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -454,7 +384,8 @@ input[type=checkbox]:checked + * .like {
   flex-direction: row;
   align-items: center;
   width: 88%;
-  padding: 20px 20px 0px;
+  top: 10px;
+  padding: 15px 20px 0px;
   margin: 0;
 }
 
@@ -497,5 +428,88 @@ input[type=checkbox]:checked + * .like {
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* Modules ends */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 376px) and (max-width: 768px) {
+  /* Ajustements généraux pour les tablettes */
+  body {
+    padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
+  }
+  .l-header {
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+  .l-hero-div, .l-restaurant {
+    padding-bottom: 30px; /* Ajout d'un espace en bas pour améliorer la lisibilité */
+  }
+  .l-footer {
+    width: auto; /* Ajustement de la largeur pour s'adapter à l'écran plus petit */
+  }
+  .l-restaurant {
+    gap: 20px;
+  }
+  /* Ajustements spécifiques pour les composants */
+  .btn {
+    width: 60%; /* Bouton prend toute la largeur de l'écran */
+  }
+  .steps-area--title {
+    width: 90%;
+    left: 0; /* Centrer le titre des étapes */
+  }
+  .wraper-steps-boxes {
+    width: 90%;
+  }
+  .steps-box {
+    width: 70%; /* Boîte d'étapes prend toute la largeur de l'écran */
+    margin-left: 15%;
+    gap: 25px;
+  }
+  .restaurant {
+    width: 90%;
+    height: auto;
+  }
+  .restaurant-area-title {
+    width: 90%;
+    left: 0;
+    padding: 30px 0 0;
+  }
+  .restaurant--a {
+    position: relative;
+    height: auto;
+    align-items: center;
+  }
+  .restaurant--figure {
+    height: 339px;
+  }
+  .restaurant--fig {
+    height: 100%;
+  }
+  .restaurant--img {
+    height: auto;
+    object-position: 100% -110px;
+  }
+  .restaurant--la-note {
+    object-position: 100% -308px;
+    overflow-y: hidden;
+  }
+  .restaurant--label {
+    width: 90%;
+    padding: 20px 0;
+  }
+  .restaurant--label-info {
+    line-height: 10px;
+  }
+  .like-area {
+    top: -63px;
+  }
+  .restaurant--tag-new {
+    display: none; /* Masquer la balise "nouveau" sur les écrans plus petits */
+  }
+  .footer-a {
+    padding-left: 30px;
+  }
+  .footer-links {
+    align-items: left; /* Centrer les liens du pied de page */
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
