@@ -1,24 +1,19 @@
+@import 'base/_base.scss';
+@import 'components/_buttons.scss';
+@import 'components/_variables.scss';
+@import 'libs/_functions.scss';
+@import 'libs/_mixins.scss';
+@import 'layouts/_l-footer.scss';
+@import 'layouts/_l-header.scss';
+@import 'layouts/_l-hero-div.scss';
+@import 'layouts/_l-main.scss';
+@import 'layouts/_l-restaurant.scss';
+
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
                     /*Base starts*/
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 
       /* - - - -  Composants starts - - - - */
-
-
-@import './base/_base.scss';
-@import './components/_buttons.scss';
-@import './components/variables';
-@import './libs/_functions.scss';
-@import './libs/_mixins.scss';
-@import './layouts/_l-footer.scss';
-@import './layouts/_l-header.scss';
-@import './layouts/_l-hero-div.scss';
-@import './layouts/_l-main.scss';
-@import './layouts/_l-restaurant.scss';
-
-
-
-
 
 :root {
         font-family: $font-stack;
@@ -41,8 +36,8 @@
     }
     
     .loader {
-        border: 8px solid $pink-color; /* Couleur principale 1 */
-        border-top: 8px solid $purple-color; /* Couleur principale 2 */
+        border: 8px solid rgba(235, 235, 235, 1); 
+        border-top: 8px solid $pink-color; /* Couleur principale 2 */
         border-radius: 50%;
         width: 50px;
         height: 50px;
@@ -60,7 +55,7 @@
     }
     
     * h1 h2 h3 {
-        font-family: '#{$font-logo}';
+        font-family: $font-logo;
     
         color: rgba(0, 0, 0, 1)
     }
@@ -431,7 +426,7 @@ input[type=checkbox] {
         gap: 15px;
     }
     
-    .footer-title {
+    .footer--title {
         margin: 0;
         height: 17px;
         padding-bottom: 16px;
@@ -447,5 +442,4 @@ input[type=checkbox] {
     /* - - - - - - - - - - - - - - - - - - - - - - - -  */
                     /* Modules ends */
     /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-
-    @import 'responsive.scss';    
+    @import './responsive.scss';

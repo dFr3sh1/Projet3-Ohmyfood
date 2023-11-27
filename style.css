@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* - - - - - - - - - - - - - - - - - - - - - - - -  */
-/*Base starts*/
-/* - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - -  Composants starts - - - - */
 body {
   box-sizing: border-box;
   max-width: 100%;
@@ -71,6 +67,10 @@ body {
   padding-bottom: 59px;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
+/*Base starts*/
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - -  Composants starts - - - - */
 :root {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -93,8 +93,8 @@ body {
 }
 
 .loader {
-  border: 8px solid rgb(255, 122, 217); /* Couleur principale 1 */
-  border-top: 8px solid rgb(146, 87, 219); /* Couleur principale 2 */
+  border: 8px solid rgb(235, 235, 235);
+  border-top: 8px solid rgb(255, 122, 217); /* Couleur principale 2 */
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -119,7 +119,7 @@ body {
   }
 }
 * h1 h2 h3 {
-  font-family: "Shrikhand, serif";
+  font-family: "Shrikhand", sans-serif;
   color: rgb(0, 0, 0);
 }
 
@@ -416,11 +416,11 @@ input[type=checkbox]:checked + * .like {
   gap: 15px;
 }
 
-.footer-title {
+.footer--title {
   margin: 0;
   height: 17px;
   padding-bottom: 16px;
-  font-family: "Shrikhand", serif;
+  font-family: "Shrikhand", sans-serif;
 }
 
 /*- - - - - - - - - - - - - - - Footer ends - - - - - - - - - - - - - - -*/
@@ -477,8 +477,12 @@ input[type=checkbox]:checked + * .like {
     height: auto;
     align-items: center;
   }
+  .restaurant--a-la-note {
+    margin-top: 37px;
+    height: 370px;
+  }
   .restaurant--figure {
-    height: 339px;
+    height: 300px;
   }
   .restaurant--fig {
     height: 100%;
@@ -488,18 +492,25 @@ input[type=checkbox]:checked + * .like {
     object-position: 100% -110px;
   }
   .restaurant--la-note {
-    object-position: 100% -308px;
+    object-position: 100% -320px;
     overflow-y: hidden;
   }
   .restaurant--label {
+    top: 35px;
     width: 90%;
     padding: 20px 0;
+  }
+  .restaurant--label-la-note {
+    top: 0px;
   }
   .restaurant--label-info {
     line-height: 10px;
   }
   .like-area {
-    top: -63px;
+    top: -35px;
+  }
+  .like-area--la-note {
+    top: -70px;
   }
   .restaurant--tag-new {
     display: none; /* Masquer la balise "nouveau" sur les écrans plus petits */

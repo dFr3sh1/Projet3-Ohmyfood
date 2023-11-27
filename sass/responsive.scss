@@ -66,8 +66,14 @@ $breakpoint-large: 1200px;
 
     }
 
+    .restaurant--a-la-note {
+        margin-top: 37px;
+        height: 370px;
+    }
+
+
     .restaurant--figure {
-        height: 339px;
+        height: 300px;
 
     }
 
@@ -82,13 +88,25 @@ $breakpoint-large: 1200px;
     }
 
     .restaurant--la-note {
-        object-position: 100% -308px;
+        object-position: 100% -320px;
         overflow-y: hidden;
     }
 
+    
+    .restaurant--figure--la-note {
+
+    }
+
     .restaurant--label {
+        top: 35px;
         width: 90%;
         padding: 20px 0;
+
+    }
+
+    .restaurant--label-la-note {
+        top: 0px;
+
     }
 
         .restaurant--label-info {
@@ -96,7 +114,12 @@ $breakpoint-large: 1200px;
         }
     
     .like-area {
-        top: -63px;
+        top: -35px;
+    }
+
+    .like-area--la-note {
+        top: -70px;
+
     }
         
     .restaurant--tag-new {
