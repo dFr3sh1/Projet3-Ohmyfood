@@ -277,6 +277,11 @@ input[type=checkbox]:checked + * .like {
   width: 90%;
 }
 
+.container-steps-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .steps-box {
   display: flex;
   flex-direction: row;
@@ -321,6 +326,12 @@ input[type=checkbox]:checked + * .like {
   margin: 30px 0 16px;
 }
 
+.container-restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
 .restaurant {
   box-sizing: border-box;
   width: 340px;
@@ -332,6 +343,7 @@ input[type=checkbox]:checked + * .like {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  height: 251px;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -520,6 +532,58 @@ input[type=checkbox]:checked + * .like {
   }
   .footer-links {
     align-items: left; /* Centrer les liens du pied de page */
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .main-title {
+    width: 70%;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .big-screen-width {
+    width: 1080px;
+  }
+  .container-steps-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .steps-box {
+    width: 30%;
+    margin-left: 0;
+  }
+  .steps-box--instructions {
+    width: 90%;
+  }
+  .restaurant-area-title {
+    left: 0;
+    margin: 30px 0;
+  }
+  .container-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurant {
+    width: 490px;
+    margin-bottom: 30px;
+  }
+  .restaurant--img {
+    height: 171px;
+    object-position: 100% -110px;
+  }
+  .restaurant--la-note {
+    object-position: 100% -251px;
+    overflow-y: hidden;
+  }
+  .restaurant--label {
+    top: 0;
+    width: 90%;
+  }
+  .like-area {
+    top: -45px;
+    left: 85%;
   }
 }
 

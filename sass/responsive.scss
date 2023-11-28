@@ -1,9 +1,9 @@
 $breakpoint-small: 768px;
 $breakpoint-medium: 992px;
-$breakpoint-large: 1200px;
+$breakpoint-large: 1440px;
 
 
-@media (min-width: 376px) and  (max-width: $breakpoint-small) {
+@media (min-width: 376px) and (max-width: $breakpoint-small) {
     /* Ajustements généraux pour les tablettes */
     body {
         padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
@@ -71,7 +71,6 @@ $breakpoint-large: 1200px;
         height: 370px;
     }
 
-
     .restaurant--figure {
         height: 300px;
 
@@ -90,11 +89,6 @@ $breakpoint-large: 1200px;
     .restaurant--la-note {
         object-position: 100% -320px;
         overflow-y: hidden;
-    }
-
-    
-    .restaurant--figure--la-note {
-
     }
 
     .restaurant--label {
@@ -133,4 +127,75 @@ $breakpoint-large: 1200px;
     .footer-links {
         align-items: left; /* Centrer les liens du pied de page */
     }
+    }
+
+    @media (min-width: 769px) and (max-width: $breakpoint-large) {
+        .main-title {
+            width: 70%;
+            margin-bottom: 20px;
+
+            font-size: 40px;
+        }
+
+        .big-screen-width {
+            width: 1080px;
+        }
+
+        .container-steps-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .steps-box {
+            width: 30%;
+            margin-left: 0;
+        }
+
+        .steps-box--instructions {
+            width: 90%;
+        }
+
+        .l-restaurant {
+        
+        }
+
+        .restaurant-area-title {
+            left: 0;
+            margin: 30px 0 ;
+        
+        }
+
+        .container-restaurants {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .restaurant {
+            width: 490px;
+            margin-bottom: 30px;
+        }
+
+        .restaurant--img {
+            height: 171px;
+            object-position: 100% -110px;  
+        }
+
+        .restaurant--la-note {
+            object-position: 100% -251px;
+            overflow-y: hidden;
+        }
+
+        .restaurant--label {
+            top: 0;
+            width: 90%;
+        }
+
+        .like-area {
+            top: -45px;
+            left: 85%;
+        }
+
     }
