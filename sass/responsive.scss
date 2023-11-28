@@ -129,7 +129,7 @@ $breakpoint-large: 1440px;
     }
     }
 
-    @media (min-width: 769px) and (max-width: $breakpoint-large) {
+    @media (min-width: 769px) {
         .main-title {
             width: 70%;
             margin-bottom: 20px;
@@ -198,4 +198,14 @@ $breakpoint-large: 1440px;
             left: 85%;
         }
 
+        .l-footer {
+            width: 100%;
+            gap: 120px;
+            flex-direction: row-reverse;
+        }
+
+        .footer-links {
+            flex-direction: row;
+            gap: 16px;
+        }
     }

@@ -534,7 +534,7 @@ input[type=checkbox]:checked + * .like {
     align-items: left; /* Centrer les liens du pied de page */
   }
 }
-@media (min-width: 769px) and (max-width: 1440px) {
+@media (min-width: 769px) {
   .main-title {
     width: 70%;
     margin-bottom: 20px;
@@ -584,6 +584,15 @@ input[type=checkbox]:checked + * .like {
   .like-area {
     top: -45px;
     left: 85%;
+  }
+  .l-footer {
+    width: 100%;
+    gap: 120px;
+    flex-direction: row-reverse;
+  }
+  .footer-links {
+    flex-direction: row;
+    gap: 16px;
   }
 }
 
