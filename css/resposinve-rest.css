@@ -1,0 +1,70 @@
+@media (min-width: 376px) and (max-width:768px) {
+    header {
+        justify-content: center;
+        width: 100%;
+        left: 0;
+    }
+    
+    .header-arrow {
+        position: relative;
+        left: -36%;
+    }
+    
+    .central-photo {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .central-photo img {
+        display: flex;
+        object-position: 100% -150px;
+        flex: 1;
+    }
+    
+    .central-title {
+        width: 80%;
+        border-top-right-radius: 65px;
+        border-top-left-radius: 65px;
+    }
+    
+    .restaurant-title {
+        position: relative;
+        left: 15%;
+    }
+    
+    .heart-btn {
+        right: 20%;
+    }
+    
+    main section {
+        width: 90%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    
+    .central-zone {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+    
+    .menu {
+        width: 100%;
+        padding-left: 25%;
+    }
+    
+    .plat {
+        width: 100%;
+    }
+    
+    .checked-plat {
+        width: 100%;
+    }
+    
+    footer {
+        width: 100%;
+    }
+}
+
