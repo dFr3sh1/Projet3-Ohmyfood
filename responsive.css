@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@media (min-width: 376px) and (max-width: 768px) {
+  /* Ajustements généraux pour les tablettes */
+  body {
+    padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
+  }
+  .l-header {
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+  .l-hero-div, .l-restaurant {
+    padding-bottom: 30px; /* Ajout d'un espace en bas pour améliorer la lisibilité */
+  }
+  .l-footer {
+    width: auto; /* Ajustement de la largeur pour s'adapter à l'écran plus petit */
+  }
+  .l-restaurant {
+    gap: 20px;
+  }
+  /* Ajustements spécifiques pour les composants */
+  .btn {
+    width: 60%; /* Bouton prend toute la largeur de l'écran */
+  }
+  .steps-area--title {
+    width: 90%;
+    left: 0; /* Centrer le titre des étapes */
+  }
+  .wraper-steps-boxes {
+    width: 90%;
+  }
+  .steps-box {
+    width: 70%; /* Boîte d'étapes prend toute la largeur de l'écran */
+    margin-left: 15%;
+    gap: 25px;
+  }
+  .restaurant {
+    width: 90%;
+    height: auto;
+  }
+  .restaurant-area-title {
+    width: 90%;
+    left: 0;
+    padding: 30px 0 0;
+  }
+  .restaurant--a {
+    position: relative;
+    height: auto;
+    align-items: center;
+  }
+  .restaurant--a-la-note {
+    margin-top: 37px;
+    height: 370px;
+  }
+  .restaurant--figure {
+    height: 300px;
+  }
+  .restaurant--fig {
+    height: 100%;
+  }
+  .restaurant--img {
+    height: auto;
+    object-position: 100% -110px;
+  }
+  .restaurant--la-note {
+    object-position: 100% -320px;
+    overflow-y: hidden;
+  }
+  .restaurant--label {
+    top: 35px;
+    width: 90%;
+    padding: 20px 0;
+  }
+  .restaurant--label-la-note {
+    top: 0px;
+  }
+  .restaurant--label-info {
+    line-height: 10px;
+  }
+  .like-area {
+    top: -35px;
+  }
+  .like-area--la-note {
+    top: -70px;
+  }
+  .restaurant--tag-new {
+    display: none; /* Masquer la balise "nouveau" sur les écrans plus petits */
+  }
+  .footer-a {
+    padding-left: 30px;
+  }
+  .footer-links {
+    align-items: left; /* Centrer les liens du pied de page */
+  }
+}
+@media (min-width: 769px) {
+  .main-title {
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .big-screen-width {
+    width: auto;
+  }
+  .container-steps-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .steps-box {
+    width: auto;
+    margin-left: 0;
+  }
+  .steps-box--instructions {
+    width: 90%;
+  }
+  .restaurant-area-title {
+    left: 0;
+    margin: 30px 0;
+  }
+  .container-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurant {
+    width: 490px;
+    margin-bottom: 30px;
+  }
+  .restaurant--img {
+    height: 171px;
+    object-position: 100% -110px;
+  }
+  .restaurant--la-note {
+    object-position: 100% -251px;
+    overflow-y: hidden;
+  }
+  .restaurant--label {
+    top: 0;
+    width: 90%;
+  }
+  .like-area {
+    top: -45px;
+    left: 85%;
+  }
+  .l-footer {
+    width: 100%;
+    gap: 120px;
+    flex-direction: row-reverse;
+  }
+  .footer-links {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

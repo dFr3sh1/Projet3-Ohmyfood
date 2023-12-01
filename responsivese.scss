@@ -330,7 +330,6 @@ input[type=checkbox]:checked + * .like {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  align-items: center;
 }
 
 .restaurant {
@@ -354,8 +353,8 @@ input[type=checkbox]:checked + * .like {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 171px;
   margin: 0;
-  overflow: hidden;
 }
 
 .restaurant--img {
@@ -398,7 +397,7 @@ input[type=checkbox]:checked + * .like {
   align-items: center;
   width: 88%;
   top: 10px;
-  padding: 0 20px 0;
+  padding: 15px 20px 0px;
   margin: 0;
 }
 
@@ -441,7 +440,7 @@ input[type=checkbox]:checked + * .like {
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* Modules ends */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-@media (min-width: 376px) and (max-width: 992px) {
+@media (min-width: 376px) and (max-width: 768px) {
   /* Ajustements généraux pour les tablettes */
   body {
     padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
@@ -464,22 +463,21 @@ input[type=checkbox]:checked + * .like {
   .btn {
     width: 60%; /* Bouton prend toute la largeur de l'écran */
   }
-  .wraper-steps-boxes {
-    width: 90%;
-  }
   .steps-area--title {
     width: 90%;
     left: 0; /* Centrer le titre des étapes */
   }
-  .container-steps-box {
-    width: 100%;
+  .wraper-steps-boxes {
+    width: 90%;
   }
   .steps-box {
-    width: unset; /* Boîte d'étapes prend toute la largeur de l'écran */
+    width: 70%; /* Boîte d'étapes prend toute la largeur de l'écran */
+    margin-left: 15%;
     gap: 25px;
   }
   .restaurant {
     width: 90%;
+    height: auto;
   }
   .restaurant-area-title {
     width: 90%;
@@ -488,6 +486,7 @@ input[type=checkbox]:checked + * .like {
   }
   .restaurant--a {
     position: relative;
+    height: auto;
     align-items: center;
   }
   .restaurant--a-la-note {
@@ -495,12 +494,13 @@ input[type=checkbox]:checked + * .like {
     height: 370px;
   }
   .restaurant--figure {
-    top: 36px;
+    height: 300px;
   }
   .restaurant--fig {
     height: 100%;
   }
   .restaurant--img {
+    height: auto;
     object-position: 100% -110px;
   }
   .restaurant--la-note {
@@ -534,5 +534,66 @@ input[type=checkbox]:checked + * .like {
     align-items: left; /* Centrer les liens du pied de page */
   }
 }
+@media (min-width: 769px) {
+  .main-title {
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .big-screen-width {
+    width: auto;
+  }
+  .container-steps-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .steps-box {
+    width: auto;
+    margin-left: 0;
+  }
+  .steps-box--instructions {
+    width: 90%;
+  }
+  .restaurant-area-title {
+    left: 0;
+    margin: 30px 0;
+  }
+  .container-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurant {
+    width: 490px;
+    margin-bottom: 30px;
+  }
+  .restaurant--img {
+    height: 171px;
+    object-position: 100% -110px;
+  }
+  .restaurant--la-note {
+    object-position: 100% -251px;
+    overflow-y: hidden;
+  }
+  .restaurant--label {
+    top: 0;
+    width: 90%;
+  }
+  .like-area {
+    top: -45px;
+    left: 85%;
+  }
+  .l-footer {
+    width: 100%;
+    gap: 120px;
+    flex-direction: row-reverse;
+  }
+  .footer-links {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=responsive.scss.map */
