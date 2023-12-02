@@ -1,5 +1,5 @@
 $breakpoint-small: 768px;
-$breakpoint-medium: 992px;
+$breakpoint-medium: 1024px;
 $breakpoint-large: 1440px;
 
 
@@ -62,18 +62,9 @@ $breakpoint-large: 1440px;
 
     .restaurant--a {
         position: relative;
+        height: unset;
 
         align-items: center;
-
-    }
-
-    .restaurant--a-la-note {
-        margin-top: 37px;
-        height: 370px;
-    }
-
-    .restaurant--figure {
-        top: 36px;
 
     }
 
@@ -82,38 +73,27 @@ $breakpoint-large: 1440px;
     }
     
     .restaurant--img {
-        object-position: 100% -110px;
+        object-position: 100% -40px;
         
     }
 
-    .restaurant--la-note {
-        object-position: 100% -320px;
-        overflow-y: hidden;
-    }
-
     .restaurant--label {
-        top: 35px;
+        top: -6vh;
         width: 90%;
-        padding: 20px 0;
-
-    }
-
-    .restaurant--label-la-note {
-        top: 0px;
 
     }
 
         .restaurant--label-info {
             line-height: 10px;
         }
+
+        .restuarant--label-info-p {
+            margin-bottom: 0;
+        }
     
     .like-area {
-        top: -35px;
-    }
-
-    .like-area--la-note {
-        top: -70px;
-
+        top: -10vh;
+        left: 85%;
     }
         
     .restaurant--tag-new {

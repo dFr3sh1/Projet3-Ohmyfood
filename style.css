@@ -63,7 +63,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 14px;
   padding-bottom: 59px;
 }
 
@@ -144,11 +143,6 @@ a {
 }
 
 /* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
-.like-area {
-  top: -33px;
-  left: 290px;
-}
-
 .btn-like {
   box-sizing: border-box;
   position: relative;
@@ -186,6 +180,11 @@ input[type=checkbox] {
 .like {
   display: block;
   left: -6px;
+}
+
+.like-area {
+  top: -40px;
+  left: 291px;
 }
 
 .like-size {
@@ -329,13 +328,13 @@ input[type=checkbox]:checked + * .like {
 .container-restaurants {
   display: flex;
   flex-direction: column;
-  gap: 28px;
   align-items: center;
+  gap: 14px;
 }
 
 .restaurant {
   box-sizing: border-box;
-  width: 340px;
+  width: 90vw;
 }
 
 .restaurant--a {
@@ -343,8 +342,8 @@ input[type=checkbox]:checked + * .like {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
   height: 251px;
+  top: 25px;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -355,7 +354,6 @@ input[type=checkbox]:checked + * .like {
   flex-direction: column;
   width: 100%;
   margin: 0;
-  overflow: hidden;
 }
 
 .restaurant--img {
@@ -363,14 +361,9 @@ input[type=checkbox]:checked + * .like {
   /*height: 231px;*/
   vertical-align: middle;
   object-fit: cover;
-  object-position: 100% -44px;
+  object-position: 100% -40px;
   flex: 1;
   border-radius: 15px 15px 0 0;
-}
-
-.restaurant--la-note {
-  object-position: 100% -150px;
-  height: 183px;
 }
 
 .hide-new-restaurant-tag {
@@ -397,7 +390,7 @@ input[type=checkbox]:checked + * .like {
   flex-direction: row;
   align-items: center;
   width: 88%;
-  top: 10px;
+  top: -35px;
   padding: 0 20px 0;
   margin: 0;
 }
@@ -405,11 +398,10 @@ input[type=checkbox]:checked + * .like {
 .restaurant--label-info {
   align-items: flex-start;
   padding-bottom: 0;
-  line-height: 0px;
+  line-height: 10px;
 }
 
 .restuarant--label-info-p {
-  padding-top: 5px;
   font-weight: 300;
   font-size: 17px;
 }
@@ -441,7 +433,7 @@ input[type=checkbox]:checked + * .like {
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* Modules ends */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-@media (min-width: 376px) and (max-width: 992px) {
+@media (min-width: 376px) and (max-width: 1024px) {
   /* Ajustements généraux pour les tablettes */
   body {
     padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
@@ -488,41 +480,28 @@ input[type=checkbox]:checked + * .like {
   }
   .restaurant--a {
     position: relative;
+    height: unset;
     align-items: center;
-  }
-  .restaurant--a-la-note {
-    margin-top: 37px;
-    height: 370px;
-  }
-  .restaurant--figure {
-    top: 36px;
   }
   .restaurant--fig {
     height: 100%;
   }
   .restaurant--img {
-    object-position: 100% -110px;
-  }
-  .restaurant--la-note {
-    object-position: 100% -320px;
-    overflow-y: hidden;
+    object-position: 100% -40px;
   }
   .restaurant--label {
-    top: 35px;
+    top: -6vh;
     width: 90%;
-    padding: 20px 0;
-  }
-  .restaurant--label-la-note {
-    top: 0px;
   }
   .restaurant--label-info {
     line-height: 10px;
   }
-  .like-area {
-    top: -35px;
+  .restuarant--label-info-p {
+    margin-bottom: 0;
   }
-  .like-area--la-note {
-    top: -70px;
+  .like-area {
+    top: -10vh;
+    left: 85%;
   }
   .restaurant--tag-new {
     display: none; /* Masquer la balise "nouveau" sur les écrans plus petits */
