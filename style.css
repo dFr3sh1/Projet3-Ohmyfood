@@ -183,8 +183,8 @@ input[type=checkbox] {
 }
 
 .like-area {
-  top: -40px;
-  left: 291px;
+  top: -56px;
+  left: 77vw;
 }
 
 .like-size {
@@ -335,6 +335,7 @@ input[type=checkbox]:checked + * .like {
 .restaurant {
   box-sizing: border-box;
   width: 90vw;
+  margin-bottom: -3vh;
 }
 
 .restaurant--a {
@@ -343,7 +344,6 @@ input[type=checkbox]:checked + * .like {
   justify-content: center;
   align-items: flex-start;
   height: 251px;
-  top: 25px;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -356,12 +356,15 @@ input[type=checkbox]:checked + * .like {
   margin: 0;
 }
 
+picture {
+  top: -3px;
+}
+
 .restaurant--img {
   width: 100%;
   /*height: 231px;*/
   vertical-align: middle;
   object-fit: cover;
-  object-position: 100% -40px;
   flex: 1;
   border-radius: 15px 15px 0 0;
 }
@@ -390,7 +393,6 @@ input[type=checkbox]:checked + * .like {
   flex-direction: row;
   align-items: center;
   width: 88%;
-  top: -35px;
   padding: 0 20px 0;
   margin: 0;
 }
@@ -472,14 +474,12 @@ input[type=checkbox]:checked + * .like {
   }
   .restaurant {
     width: 90%;
+    margin-bottom: 0;
   }
   .restaurant-area-title {
     width: 90%;
     left: 0;
     padding: 30px 0 0;
-  }
-  .container-restaurants {
-    top: -25px;
   }
   .restaurant--a {
     position: relative;
@@ -494,7 +494,7 @@ input[type=checkbox]:checked + * .like {
     object-position: 100% -40px;
   }
   .restaurant--label {
-    top: -2vh;
+    top: -3vh;
     width: 90%;
   }
   .restaurant--label-info {
@@ -515,6 +515,37 @@ input[type=checkbox]:checked + * .like {
   }
   .footer-links {
     align-items: left; /* Centrer les liens du pied de page */
+  }
+}
+@media (min-width: 1025px) {
+  .body {
+    overflow-x: hidden;
+    background-color: white;
+  }
+  .main-title {
+    width: 80%;
+    font-size: 40px;
+    padding: 40px;
+  }
+  .container-steps-box {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .steps-box {
+    width: -webkit-fill-available;
+  }
+  .l-restaurant {
+    align-items: center;
+  }
+  .restaurant-area-title {
+    left: -39%;
+  }
+  .restaurant--a {
+    top: 0;
+  }
+  .restaurant--figure {
+    top: 18.5vh;
   }
 }
 

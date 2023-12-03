@@ -52,17 +52,13 @@ $breakpoint-large: 1440px;
     
     .restaurant {
         width: 90%;
+        margin-bottom: 0;
     }
     
     .restaurant-area-title {
         width: 90%;
         left: 0;
         padding: 30px 0 0;    
-    }
-
-    .container-restaurants {
-        top: -25px;
-
     }
 
     .restaurant--a {
@@ -84,7 +80,7 @@ $breakpoint-large: 1440px;
     }
 
     .restaurant--label {
-        top: -2vh;
+        top: -3vh;
         width: 90%;
 
     }
@@ -113,4 +109,49 @@ $breakpoint-large: 1440px;
     .footer-links {
         align-items: left; /* Centrer les liens du pied de page */
     }
+    }
+
+    @media (min-width: 1025px) {
+
+        .body {
+            overflow-x: hidden;
+            background-color: white;
+        }
+        .main-title {
+            width: 80%;
+            font-size: 40px;
+            padding: 40px;
+        }
+
+        .container-steps-box {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .steps-box {
+            width: -webkit-fill-available;
+        }
+
+        .l-restaurant {
+            align-items: center;
+        }
+
+        .container-restaurants {
+
+        }
+
+        .restaurant-area-title {
+            left: -39%;
+        }
+
+        .restaurant--a {
+            top: 0;
+        }
+
+        .restaurant--figure {
+            top: 18.5vh;
+        }
+
+
     }
