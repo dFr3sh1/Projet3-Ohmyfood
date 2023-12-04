@@ -8,6 +8,8 @@
 @import 'layouts/_l-hero-div.scss';
 @import 'layouts/_l-main.scss';
 @import 'layouts/_l-restaurant.scss';
+@import '../css/restaurants.css';
+@import '../css/resposinve-rest.css';
 
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
                     /*Base starts*/
@@ -88,9 +90,9 @@
     }
     
     .fa-regular {
-        font-size: 25px;
+        font-size: px;
     
-        color: rgba(0, 0, 0, 1)
+        /*color: rgba(0, 0, 0, 1)*/
     }
     
     .posrel {
@@ -102,7 +104,8 @@
 .btn-like {
     box-sizing: border-box;
     position: relative;
-    top: -42px;
+    top: -40px;
+    left: 0px;
 
     outline: none;
     border: none;
@@ -129,7 +132,7 @@ input[type="checkbox"] {
     display: none;
     position: absolute;
     z-index: 1;
-    top: -11px;
+    top: 0;
     left: 0px;
 
     background-clip: content-box;
@@ -142,13 +145,17 @@ input[type="checkbox"] {
     transition: all 1s ease-in-out;
 }
 
+.is-liked-pos {
+    top: -11px;
+}
+
 .like {
     display: block;
-    left: -6px;
+    left: -5px;
 }
 
 .like-area {
-    top: -56px;
+    top: -67px;
     left: 77vw;
 }
 
@@ -362,12 +369,12 @@ input[type=checkbox] {
         }
 
         picture {
+            display: flex;
             top: 0;
         }
     
         .restaurant--img {
             width: 100%;
-            /*height: 231px;*/
             vertical-align: middle;
             object-fit: cover;
             flex: 1;
@@ -402,6 +409,7 @@ input[type=checkbox] {
             flex-direction: row;
             align-items: center;
             width: 88%;
+            top: -5px;
     
             padding: 0 20px 0;
             margin: 0;

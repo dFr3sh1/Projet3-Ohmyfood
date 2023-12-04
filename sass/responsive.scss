@@ -148,7 +148,7 @@ $breakpoint-large: 1440px;
         }
 
         .restaurant-area-title {
-            left: -33%;
+            left: -32%;
         }
 
         .restaurant {
@@ -165,10 +165,19 @@ $breakpoint-large: 1440px;
 
         .restaurant--figure {
             height: inherit;
-            top: -20px;
+
+        }
+
+        .restaurant--img {
+            height: 200px;
+        }
+
+        .restaurant--label {
+            top: -10px;
         }
 
         .like-area {
+            top: -52px;
             left: 87%;
         }
 

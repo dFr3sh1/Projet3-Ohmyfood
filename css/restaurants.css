@@ -1,12 +1,12 @@
 @charset "UTF-8";
-body {
+/*body {
   box-sizing: border-box;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 0;
-}
+}*/
 
 h1 {
   margin-bottom: 0;
@@ -15,38 +15,21 @@ h1 {
   color: black;
 }
 
-h2, h3 {
+/*h2, h3 {
   font-family: 'Roboto', sans-serif;
-}
+}*/
 
-h2 {
+/*h2 {
   font-weight: 300;
-}
+}*/
 
-:root {
+/*:root {
   --main-color: #9356DC;
   --secondary-color: #FF79DA;
   --tertiary-color: #99E2D0;
   font-family: 'Roboto', sans-serif;
-}
+}*/
 
-.btn-purple {
-  width: 218px;
-  height: 50px;
-  background: linear-gradient(var(--secondary-color), var(--main-color));
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  border: none;
-  border-radius: 25px;
-  margin-bottom: 20px;
-  transition: filter 1s;
-}
-
-.btn-purple:hover {
-  filter: brightness(110%);
-}
 
 .btn-shadow {
   box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
@@ -72,7 +55,7 @@ a {
 
 /* Like button starts */
 
-.heart-btn {
+.heart-btn--rest {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -82,18 +65,18 @@ a {
   top: 9px;
 }
 
-.heart-btn .like-btn {
+.heart-btn--rest .like-btn--rest {
   box-sizing: border-box;
   position: relative;
   fill: transparent;
   background: transparent;
   outline: none;
   border: none;
-  width: 32px;
+  width: 33px;
   height: 32px;
 }
 
-input[type="checkbox"] {
+* .input-rest {
   position: absolute;
   border: none;
   outline: none;
@@ -104,41 +87,24 @@ input[type="checkbox"] {
   height: 27px;
 }
 
-.liked {
-  position: absolute;
-  z-index: 1;
-  display: none;
-  color: transparent;
-  background-image: linear-gradient(var(--main-color), var(--secondary-color));
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  transition: all 1s ease-in-out;
-}
-
-.like {
-  display: block;
-}
-
-.like-size {
-  position: absolute;
+.like-size--rest {
   width: 34px;
   height: 32px;
   font-size: 30px;
-  top: 0px;
-  left: 1px;
+
 }
 
-input[type="checkbox"]:checked + .like-btn::before,
-input[type="checkbox"]:checked + .like-btn::after {
+input[type="checkbox"]:checked + .like-btn--rest::before,
+input[type="checkbox"]:checked + .like-btn--rest::after {
   animation: ease-in 0.4s forwards;
 }
 
-input[type="checkbox"]:checked + .like-btn > .liked {
+input[type="checkbox"]:checked + .like-btn--rest > .liked {
   display: block;
   transition: all 1s;
 }
 
-input[type="checkbox"]:checked + .like-btn > .like {
+input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
   display: none;
   transition: all 1s;
 }
@@ -152,7 +118,7 @@ input[type="checkbox"]:checked + .like-btn > .like {
 
 /* Header starts */
 
-header {
+.header-rest {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -173,14 +139,14 @@ header img {
 
 /* Main starts */
 
-main {
+.main-rest {
   box-sizing: border-box;
   background: #F6F6F6;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  align-content: flex-start;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   color: black;
@@ -217,13 +183,7 @@ main {
   background: #F6F6F6;
 }
 
-main section {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: flex-start;
-}
+
 
 .central-zone {
   position: relative;
@@ -247,6 +207,7 @@ section .menu {
 
 h2.titles-plats {
   margin: 0;
+  font-weight: 300;
 }
 
 .downline-title-plats {
@@ -269,7 +230,7 @@ input.checking-plat {
   height: 69px;
 }*/
 
-label {
+.label-rest {
   display: flex;
   flex-direction: row;
   position: relative;
