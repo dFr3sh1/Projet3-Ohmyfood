@@ -357,7 +357,7 @@ input[type=checkbox]:checked + * .like {
 }
 
 picture {
-  top: -3px;
+  top: 0;
 }
 
 .restaurant--img {
