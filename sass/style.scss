@@ -19,6 +19,13 @@
         font-family: $font-stack;
         font-size: $base-font-size;
     }
+
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+        overflow-x: initial;
+    }
+
     .loader-container {
         position: absolute;
         top: 0;
@@ -89,6 +96,7 @@
     .posrel {
         position: relative;
     }
+
 /* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
 
 .btn-like {
@@ -253,7 +261,7 @@ input[type=checkbox] {
             margin-bottom: 33px;
         }
     .wraper-steps-boxes {
-        width: 90%
+        width: 75%
     }
 
     .container-steps-box {
@@ -348,6 +356,7 @@ input[type=checkbox] {
             display: flex;
             flex-direction: column;
             width: 100%;
+            top: -10px;
             
             margin: 0;
         }

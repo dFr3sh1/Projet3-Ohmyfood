@@ -75,6 +75,12 @@ body {
   font-size: 16px;
 }
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: initial;
+}
+
 .loader-container {
   position: absolute;
   top: 0;
@@ -273,7 +279,7 @@ input[type=checkbox]:checked + * .like {
 }
 
 .wraper-steps-boxes {
-  width: 90%;
+  width: 75%;
 }
 
 .container-steps-box {
@@ -353,6 +359,7 @@ input[type=checkbox]:checked + * .like {
   display: flex;
   flex-direction: column;
   width: 100%;
+  top: -10px;
   margin: 0;
 }
 
@@ -435,7 +442,7 @@ picture {
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* Modules ends */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-@media (min-width: 376px) and (max-width: 1024px) {
+@media (min-width: 376px) and (max-width: 1079px) {
   /* Ajustements généraux pour les tablettes */
   body {
     padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
@@ -470,7 +477,7 @@ picture {
   }
   .steps-box {
     width: unset; /* Boîte d'étapes prend toute la largeur de l'écran */
-    gap: 25px;
+    gap: 10px;
   }
   .restaurant {
     width: 90%;
@@ -517,7 +524,7 @@ picture {
     align-items: left; /* Centrer les liens du pied de page */
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1080px) {
   .body {
     overflow-x: hidden;
     background-color: white;
@@ -540,24 +547,26 @@ picture {
   }
   .container-restaurants {
     flex-flow: row wrap;
-    justify-content: space-around;
-    max-width: 90vw;
+    justify-content: space-between;
+    top: 17px;
+    max-width: 75%;
     gap: 5%;
   }
   .restaurant-area-title {
-    left: -39%;
+    left: -33%;
   }
   .restaurant {
-    max-width: 49vw;
+    max-width: 490px;
     max-height: 251px;
     margin-bottom: 7%;
-    flex: 1 1 420px;
+    flex: 1 1 380px;
   }
   .restaurant--a {
     max-width: 100%;
   }
   .restaurant--figure {
-    top: -7px;
+    height: inherit;
+    top: -20px;
   }
   .like-area {
     left: 87%;

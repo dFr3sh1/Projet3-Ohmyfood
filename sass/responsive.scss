@@ -1,5 +1,5 @@
 $breakpoint-small: 768px;
-$breakpoint-medium: 1024px;
+$breakpoint-medium: 1079px;
 $breakpoint-large: 1440px;
 
 
@@ -8,7 +8,7 @@ $breakpoint-large: 1440px;
     body {
         padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
     }
-    
+
     .l-header {
         display: flex;
         justify-content: center;
@@ -47,7 +47,7 @@ $breakpoint-large: 1440px;
     
     .steps-box {
         width: unset; /* Boîte d'étapes prend toute la largeur de l'écran */
-        gap: 25px;
+        gap: 10px;
     }
     
     .restaurant {
@@ -111,7 +111,7 @@ $breakpoint-large: 1440px;
     }
     }
 
-    @media (min-width: 1025px) {
+    @media (min-width: 1080px) {
 
         .body {
             overflow-x: hidden;
@@ -139,23 +139,24 @@ $breakpoint-large: 1440px;
 
         .container-restaurants {
             flex-flow: row wrap;
-            justify-content: space-around;
-            max-width: 90vw;
+            justify-content: space-between;
+            top: 17px;
+            max-width: 75%;
             gap: 5%;
             
 
         }
 
         .restaurant-area-title {
-            left: -39%;
+            left: -33%;
         }
+
         .restaurant {
-            max-width: 49vw;
+            max-width: 490px;
             max-height: 251px;
 
             margin-bottom: 7%;
-            flex: 1 1 420px;
-
+            flex: 1 1 380px;
         }
 
         .restaurant--a {
@@ -163,7 +164,8 @@ $breakpoint-large: 1440px;
         }
 
         .restaurant--figure {
-            top: -7px;
+            height: inherit;
+            top: -20px;
         }
 
         .like-area {
