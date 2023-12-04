@@ -172,4 +172,19 @@ $breakpoint-large: 1440px;
             left: 87%;
         }
 
+        .l-footer {
+            max-width: 1440px;
+        }
+
+        .footer-links {
+            flex-direction: row-reverse;
+        }
+
+        .footer-wraper {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            gap: 50px;
+        }
+
     }
