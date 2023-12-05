@@ -79,7 +79,7 @@ a {
   height: 32px;
 }
 
-* .input-rest {
+.input-rest {
   position: absolute;
   border: none;
   outline: none;
@@ -88,6 +88,7 @@ a {
   z-index: 2;
   width: 32px;
   height: 27px;
+  margin-left: 22px;
 }
 
 .like-size--rest {
@@ -121,7 +122,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 47%;
+  max-width: 50%;
   height: 63px;
   margin-left: 3%;
   align-items: center;
@@ -151,7 +152,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 
 .central-photo {
   box-sizing: border-box;
-  width: 375px;
+  width: auto;
   height: 275px;
 }
 
@@ -186,7 +187,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   top: -20px;
 }
 
-section .menu {
+.menu {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -364,7 +365,7 @@ footer div {
   }
   .central-title {
     justify-content: space-around;
-    top: -100px;
+    top: -70px;
     width: -webkit-fill-available;
     border-top-right-radius: 65px;
     border-top-left-radius: 65px;
@@ -372,7 +373,10 @@ footer div {
   .restaurant-title {
     width: auto;
   }
-  main section {
+  .input-rest {
+    margin-left: 35px;
+  }
+  section {
     width: 90%;
     margin-top: -4vh;
     flex-direction: column;
@@ -385,13 +389,50 @@ footer div {
   }
   .menu {
     width: 100%;
-    padding-left: 25%;
+    padding-left: 20%;
   }
   .plat {
-    width: 100%;
+    width: 80%;
   }
   .checked-plat {
     width: 100%;
+  }
+}
+@media (min-width: 1080px) {
+  .main-rest {
+    background-color: white;
+  }
+  .central-title {
+    top: -40px;
+    width: 1055px;
+  }
+  .restaurant-title {
+    width: auto;
+    text-align: center;
+    padding-left: 34%;
+  }
+  .heart-btn--rest {
+    padding-right: 25%;
+  }
+  .section-rest {
+    width: 1055px;
+    background-color: #F6F6F6;
+  }
+  .central-photo {
+    height: auto;
+  }
+  .la-note {
+    height: auto;
+  }
+  .central-zone {
+    width: 634px;
+    padding-left: 210.5px;
+  }
+  .menu, .plat {
+    width: 100%;
+  }
+  .checked-plat-btn:hover .checked-plat {
+    min-width: 90%;
   }
 }
 .btn {
@@ -964,9 +1005,9 @@ picture {
   .restaurant--figure {
     height: inherit;
   }
-  .restaurant--img {
-    height: 200px;
-  }
+  /*.restaurant--img {
+      height: 200px;
+  }*/
   .restaurant--label {
     top: -10px;
   }
