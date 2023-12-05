@@ -19,7 +19,10 @@
     </header>
     <main class="main-rest">
         <div class="central-photo">
-            <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.webp" alt="Assiette gourmet de La palette du goût at Ménilmontant">
+            <picture>
+                <source media="(min-width: 1025px)" srcset="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash-bigscreen-menu.webp">
+                <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.webp" alt="Assiette gourmet de La palette du goût at Ménilmontant">
+            </picture>
         </div>
         <div class="central-title">
             <h1 class="restaurant-title">À la française</h1>
@@ -39,7 +42,7 @@
                         <div class="plat">
                             <label class="label-rest checked-plat-btn">
                                 <div class="checked-plat unchecked-plat">
-                                    <h3>Tartare de poulpe acidulé</h3>
+                                    <h3 class="plat-name">Tartare de poulpe acidulé</h3>
                                     <div class="plat-description">
                                         <p class="text-ellipsis">Aux zestes d'orange</p>
                                         <p>25€</p>
@@ -53,7 +56,7 @@
                         <div class="plat">
                             <input type="checkbox" class="checking-plat">
                                 <div class="checked-plat unchecked-plat">
-                                    <h3>Vélouté de légumes d'antan</h3>
+                                    <h3 class="plat-name">Vélouté de légumes d'antan</h3>
                                     <div class="plat-description">
                                         <p class="text-ellipsis">Carotte, panais, topinambour</p>
                                         <p>35€</p>
@@ -67,7 +70,7 @@
                         <div class="plat last-item-of-group">
                             <label class="label-rest checked-plat-btn">
                                 <div class="checked-plat unchecked-plat">
-                                    <h3>Soupe à l'oignon</h3>
+                                    <h3 class="plat-name">Soupe à l'oignon</h3>
                                     <div class="plat-description">
                                         <p class="text-ellipsis">Revisitée</p>
                                         <p>20€</p>
@@ -83,7 +86,7 @@
                         <div class="plat">
                             <label class="label-rest checked-plat-btn">
                                 <div class="checked-plat unchecked-plat">
-                                    <h3>Coquilles Saint-Jacques</h3>
+                                    <h3 class="plat-name">Coquilles Saint-Jacques</h3>
                                     <div class="plat-description">
                                         <p class="text-ellipsis">Accompagnés d'une purée de panais</p>
                                         <p>40€</p>
@@ -97,7 +100,7 @@
                         <div class="plat">
                             <label class="label-rest checked-plat-btn">
                                 <div class="checked-plat unchecked-plat">
-                                    <h3>Magré de canard</h3>
+                                    <h3 class="plat-name">Magré de canard</h3>
                                     <div class="plat-description">
                                         <p class="text-ellipsis">Et parmentier de pommes de terre</p>
                                         <p>35€</p>
@@ -111,7 +114,7 @@
                         <div class="plat last-item-of-group">
                             <label class="label-rest checked-plat-btn">
                                 <div class="checked-plat unchecked-plat">
-                                    <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                                    <h3 class="plat-name">Pigeonneau d'Ille-et-Vilaine</h3>
                                     <div class="plat-description">
                                         <p class="text-ellipsis">Sur son lit gnocchis aux légumes</p>
                                         <p>44€</p>
@@ -127,7 +130,7 @@
                         <div class="plat">
                             <label class="label-rest checked-plat-btn">
                                 <div class="checked-plat unchecked-plat">
-                                    <h3>Pétales de violette glacés</h3>
+                                    <h3 class="plat-name">Pétales de violette glacés</h3>
                                     <div class="plat-description">
                                         <p class="text-ellipsis">Et purée de noisette</p>
                                         <p>18€</p>
@@ -141,7 +144,7 @@
                         <div class="plat">
                             <label class="label-rest checked-plat-btn">
                                 <div class="checked-plat unchecked-plat">
-                                    <h3>Fondant au chocolat</h3>
+                                    <h3 class="plat-name">Fondant au chocolat</h3>
                                     <div class="plat-description">
                                         <p class="text-ellipsis">Revisité</p>
                                         <p>22€</p>
@@ -155,7 +158,7 @@
                         <div class="plat last-item-of-group">
                             <label class="label-rest checked-plat-btn">
                                 <div class="checked-plat unchecked-plat">
-                                    <h3>Millefeuille croustillant</h3>
+                                    <h3 class="plat-name">Millefeuille croustillant</h3>
                                     <div class="plat-description">
                                         <p class="text-ellipsis">Myrtille et pâte d'amende</p>
                                         <p>23€</p>
@@ -172,12 +175,16 @@
             </section>         
         </div>
     </main>
-    <footer>
-        <a href="#"><h3>ohmyfood</h3></a>
-        <a href="#"><i class="fa-solid fa-utensils"></i>Proposeer un restaurant</a>
-        <a href="#"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+    <footer class="l-footer">
+        <div class="footer-wraper">
+            <a class="footer-a" href="#"><h3 class="footer--title">ohmyfood</h3></a>
+            <div class="footer-links">
+                <a class="footer-a" href="#"><i class="fa-solid fa-utensils" style="color: #fafafa;"></i>Proposeer un restaurant</a>
+                <a class="footer-a" href="#"><i class="fa-solid fa-handshake" style="color: #f9fafa;"></i>Devenir partenaire</a>
+                <a class="footer-a" href="#">Mentions légales</a>
+                <a class="footer-a" href="#">Contact</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

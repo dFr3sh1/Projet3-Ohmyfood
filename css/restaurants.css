@@ -113,6 +113,9 @@ input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
 .central-title {
   box-sizing: border-box;
 }
+.restaurant-title {
+  font-size: 28px;
+}
 
 /* Like button ends */
 
@@ -164,11 +167,6 @@ header img {
   position: center;
 }
 
-.restaurant--la-note {
-  object-position: 100% -100px;
-  height: 275px;
-}
-
 .central-title {
   display: flex;
   flex-direction: row;
@@ -182,8 +180,6 @@ header img {
   border-top-left-radius: 15px;
   background: #F6F6F6;
 }
-
-
 
 .central-zone {
   position: relative;
@@ -205,8 +201,10 @@ section .menu {
   padding: 0 0 20px 0;
 }
 
-h2.titles-plats {
+.titles-plats {
   margin: 0;
+
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -242,6 +240,14 @@ input.checking-plat {
   overflow: hidden;
 }
 
+.plat-name {
+  margin: 0;
+  padding: 10px 10px 12px 10px;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .checked-plat {
   position: relative;
   display: flex;
@@ -258,11 +264,6 @@ input.checking-plat {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-
-.plat h3 {
-  margin: 0;
-  padding: 10px 10px 12px 10px;
 }
 
 .text-ellipsis {
@@ -282,6 +283,8 @@ input.checking-plat {
   padding: 0px 10px 10px 10px;
   margin-bottom: 0;
   height: 19px;
+
+  font-size: 15.04px;
   font-weight: 300;
 }
 

@@ -19,7 +19,11 @@
     </header>
     <main class="main-rest">
         <div class="central-photo">
-            <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp" alt="Assiette gourmet de Les délices de sens à Ménilmontant">
+            <div class="central-photo">
+                <picture>
+                    <source media="(min-width: 1025px)" srcset="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-bigscreen-menu.webp">
+                    <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp" alt="Assiette gourmet de Les délices de sens à Ménilmontant">
+                </picture>
         </div>
         <div class="central-title">
             <h1 class="restaurant-title">Les délices de sens</h1>
@@ -39,7 +43,7 @@
                     <div class="plat">
                         <label class="label-rest checked-plat-btn">
                             <div class="checked-plat unchecked-plat">
-                                <h3>Tartare de thon</h3>
+                                <h3 class="plat-name">Tartare de thon</h3>
                                 <div class="plat-description">
                                     <p class="text-ellipsis">Assaisonné au yuzu</p>
                                     <p>25€</p>
@@ -53,7 +57,7 @@
                     <div class="plat">
                         <label class="label-rest checked-plat-btn">
                             <div class="checked-plat unchecked-plat">
-                                <h3>Bouchée de homard croustillant </h3>
+                                <h3 class="plat-name">Bouchée de homard croustillant </h3>
                                 <div class="plat-description">
                                     <p class="text-ellipsis">Et sa farandole de petits légumes</p>
                                     <p>35€</p>
@@ -67,7 +71,7 @@
                     <div class="plat last-item-of-group">
                         <label class="label-rest checked-plat-btn">
                             <div class="checked-plat unchecked-plat">
-                                <h3>Poulet rôti aux herbes de Provence </h3>
+                                <h3 class="plat-name">Poulet rôti aux herbes de Provence </h3>
                                 <div class="plat-description">
                                     <p class="text-ellipsis">Et sa crème de truffe</p>
                                     <p>40€</p>
@@ -83,7 +87,7 @@
                     <div class="plat">
                         <label class="label-rest checked-plat-btn">
                             <div class="checked-plat unchecked-plat">
-                                <h3>Poulet rôti aux herbes de Provence </h3>
+                                <h3 class="plat-name">Poulet rôti aux herbes de Provence </h3>
                                 <div class="plat-description">
                                     <p class="text-ellipsis">Et sa crème de truffe</p>
                                     <p>40€</p>
@@ -97,7 +101,7 @@
                     <div class="plat">
                         <label class="label-rest checked-plat-btn">
                             <div class="checked-plat unchecked-plat">
-                                <h3>Langouste rôtie </h3>
+                                <h3 class="plat-name">Langouste rôtie </h3>
                                 <div class="plat-description">
                                     <p class="text-ellipsis">Et ses légumes de saison</p>
                                     <p>35€</p>
@@ -111,7 +115,7 @@
                     <div class="plat last-item-of-group">
                         <label class="label-rest checked-plat-btn">
                             <div class="checked-plat unchecked-plat">
-                                <h3>Côte de bœuf Angus </h3>
+                                <h3 class="plat-name">Côte de bœuf Angus </h3>
                                 <div class="plat-description">
                                     <p class="text-ellipsis">Et sa purée de panais</p>
                                     <p>44€</p>
@@ -127,7 +131,7 @@
                     <div class="plat">
                         <label class="label-rest checked-plat-btn">
                             <div class="checked-plat unchecked-plat">
-                                <h3>Farandole de desserts</h3>
+                                <h3 class="plat-name">Farandole de desserts</h3>
                                 <div class="plat-description">
                                     <p class="text-ellipsis">Du chef</p>
                                     <p>18€</p>
@@ -141,7 +145,7 @@
                     <div class="plat">
                         <label class="label-rest checked-plat-btn">
                             <div class="checked-plat unchecked-plat">
-                                <h3>Crème brulée </h3>
+                                <h3 class="plat-name">Crème brulée </h3>
                                 <div class="plat-description">
                                     <p class="text-ellipsis">Revisitée</p>
                                     <p>22€</p>
@@ -155,7 +159,7 @@
                     <div class="plat last-item-of-group">
                         <label class="label-rest checked-plat-btn">
                             <div class="checked-plat unchecked-plat">
-                                <h3>Tiramisu</h3>
+                                <h3 class="plat-name">Tiramisu</h3>
                                 <div class="plat-description">
                                     <p class="text-ellipsis">À la noisette</p>
                                     <p>23€</p>
@@ -171,12 +175,16 @@
             </div>
         </section>         
     </main>
-    <footer>
-        <a href="#"><h3>ohmyfood</h3></a>
-        <a href="#"><i class="fa-solid fa-utensils"></i>Proposeer un restaurant</a>
-        <a href="#"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+    <footer class="l-footer">
+        <div class="footer-wraper">
+            <a class="footer-a" href="#"><h3 class="footer--title">ohmyfood</h3></a>
+            <div class="footer-links">
+                <a class="footer-a" href="#"><i class="fa-solid fa-utensils" style="color: #fafafa;"></i>Proposeer un restaurant</a>
+                <a class="footer-a" href="#"><i class="fa-solid fa-handshake" style="color: #f9fafa;"></i>Devenir partenaire</a>
+                <a class="footer-a" href="#">Mentions légales</a>
+                <a class="footer-a" href="#">Contact</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
