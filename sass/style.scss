@@ -1,4 +1,6 @@
 @import 'base/_base.scss';
+@import 'base/restaurants';
+@import 'base/responsive-rest';
 @import 'components/_buttons.scss';
 @import 'components/_variables.scss';
 @import 'libs/_functions.scss';
@@ -8,8 +10,7 @@
 @import 'layouts/_l-hero-div.scss';
 @import 'layouts/_l-main.scss';
 @import 'layouts/_l-restaurant.scss';
-@import '../css/restaurants.css';
-@import '../css/resposinve-rest.css';
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
                     /*Base starts*/
