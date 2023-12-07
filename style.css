@@ -88,7 +88,7 @@ a {
   z-index: 2;
   width: 32px;
   height: 27px;
-  margin-left: 22px;
+  margin-left: 2px;
 }
 
 .like-size--rest {
@@ -345,11 +345,6 @@ footer div {
 
 /* Footer ends */
 @media (min-width: 376px) and (max-width: 1079px) {
-  header {
-    justify-content: center;
-    width: 100%;
-    left: 0;
-  }
   .header-arrow {
     position: relative;
   }
@@ -376,7 +371,7 @@ footer div {
   .input-rest {
     margin-left: 35px;
   }
-  section {
+  .section-rest {
     width: 90%;
     margin-top: -4vh;
     flex-direction: column;
@@ -447,7 +442,7 @@ footer div {
   text-align: center;
 }
 .btn:hover {
-  background: #9257db, #ff7ad9;
+  background: linear-gradient(#9257db, #ff7ad9);
   box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.25);
   transition: all 2ms;
 }
@@ -506,7 +501,7 @@ footer div {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  overflow-x: initial;
+  overflow-x: hidden;
 }
 
 .loader-container {
@@ -885,11 +880,6 @@ picture {
   body {
     padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
   }
-  .l-header {
-    display: flex;
-    justify-content: center;
-    left: 0;
-  }
   .l-hero-div, .l-restaurant {
     padding-bottom: 30px; /* Ajout d'un espace en bas pour améliorer la lisibilité */
   }
@@ -1012,7 +1002,7 @@ picture {
     top: -10px;
   }
   .like-area {
-    top: -52px;
+    top: -66px;
     left: 87%;
   }
   .l-footer {

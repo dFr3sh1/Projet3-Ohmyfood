@@ -9,11 +9,6 @@ $breakpoint-large: 1440px;
         padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
     }
 
-    .l-header {
-        display: flex;
-        justify-content: center;
-        left: 0;
-    }
     
     .l-hero-div, .l-restaurant {
         padding-bottom: 30px; /* Ajout d'un espace en bas pour améliorer la lisibilité */
@@ -177,7 +172,7 @@ $breakpoint-large: 1440px;
         }
 
         .like-area {
-            top: -52px;
+            top: -66px;
             left: 87%;
         }
 
