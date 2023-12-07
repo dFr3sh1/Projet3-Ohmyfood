@@ -990,8 +990,9 @@ picture {
     top: 0;
     align-items: center;
   }
-  .restaurant--fig {
+  .restaurant--figure {
     height: 100%;
+    top: 0;
   }
   .restaurant--img {
     object-position: 100% -40px;
@@ -1000,14 +1001,15 @@ picture {
     top: -3vh;
     width: 90%;
   }
-  .restaurant--label-info {
-    line-height: 10px;
+  .title-h3-homepage {
+    margin-bottom: auto;
   }
   .restuarant--label-info-p {
     margin-bottom: 0;
+    padding-bottom: 0;
   }
   .like-area {
-    top: -6vh;
+    top: -6.5vh;
     left: 85%;
   }
   .restaurant--tag-new {

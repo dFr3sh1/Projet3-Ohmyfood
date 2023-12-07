@@ -62,11 +62,11 @@ $breakpoint-large: 1440px;
         top: 0;
 
         align-items: center;
-
     }
 
-    .restaurant--fig {
+    .restaurant--figure {
         height: 100%;
+        top: 0;
     }
     
     .restaurant--img {
@@ -80,16 +80,17 @@ $breakpoint-large: 1440px;
 
     }
 
-        .restaurant--label-info {
-            line-height: 10px;
-        }
+    .title-h3-homepage {
+        margin-bottom: auto;
+    }
 
         .restuarant--label-info-p {
             margin-bottom: 0;
+            padding-bottom: 0;
         }
     
     .like-area {
-        top: -6vh;
+        top: -6.5vh;
         left: 85%;
     }
         
