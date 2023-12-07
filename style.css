@@ -30,6 +30,9 @@ body h1, body h2 {
   font-weight: 700;
   line-height: 28.13px;
 }
+body .restaurant-title {
+  font-family: "Shrikhand", sans-serif;
+}
 body h3 {
   font-size: 18px;
   line-height: 21.09px;
@@ -51,22 +54,8 @@ body p {
 h1 {
   margin-bottom: 0;
   width: 90%;
-  font-family: "Shrikhand";
-  color: black;
 }
 
-/*h2, h3 {
-    font-family: 'Roboto', sans-serif;
-}*/
-/*h2 {
-    font-weight: 300;
-}*/
-/*:root {
-    --main-color: #9356DC;
-    --secondary-color: #FF79DA;
-    --tertiary-color: #99E2D0;
-    font-family: 'Roboto', sans-serif;
-}*/
 .btn-shadow {
   box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
 }
@@ -425,7 +414,7 @@ footer div {
     object-position: 100% -66px;
   }
   .central-title {
-    justify-content: space-around;
+    justify-content: space-evenly;
     top: -70px;
     width: -webkit-fill-available;
     border-top-right-radius: 65px;
@@ -435,7 +424,7 @@ footer div {
     width: auto;
   }
   .input-rest {
-    margin-left: 35px;
+    margin-left: 16px;
   }
   .section-rest {
     width: 90%;
@@ -471,6 +460,9 @@ footer div {
     width: auto;
     text-align: center;
     padding-left: 34%;
+  }
+  .input-rest {
+    margin-left: 33px;
   }
   .heart-btn--rest {
     padding-right: 25%;
