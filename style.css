@@ -575,7 +575,7 @@ a {
 .btn-like {
   box-sizing: border-box;
   position: relative;
-  top: -40px;
+  top: -43px;
   left: 0px;
   outline: none;
   border: none;
@@ -584,8 +584,8 @@ a {
 }
 
 input[type=checkbox] {
-  top: -3px;
-  left: -3px;
+  top: -5px;
+  left: -1px;
   z-index: 2;
   border: none;
   outline: none;
@@ -598,8 +598,8 @@ input[type=checkbox] {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0px;
+  top: -14px;
+  left: 1px;
   background-clip: content-box;
   color: transparent;
   background-image: linear-gradient(rgb(146, 87, 219), rgb(255, 122, 217));
@@ -607,12 +607,9 @@ input[type=checkbox] {
   transition: all 1s ease-in-out;
 }
 
-.is-liked-pos {
-  top: -11px;
-}
-
 .like {
   display: block;
+  top: -3px;
   left: -5px;
 }
 
