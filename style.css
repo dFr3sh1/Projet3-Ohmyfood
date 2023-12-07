@@ -81,14 +81,15 @@ a {
 
 .input-rest {
   position: absolute;
+  top: 0px;
+  margin-left: 3px;
+  width: 32px;
+  height: 27px;
   border: none;
   outline: none;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
-  width: 32px;
-  height: 27px;
-  margin-left: 2px;
 }
 
 .like-size--rest {
@@ -97,12 +98,25 @@ a {
   font-size: 30px;
 }
 
+.is-liked-rest-mob {
+  top: 0;
+  left: 0;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-clip: content-box;
+  color: transparent;
+  background-image: linear-gradient(rgb(146, 87, 219), rgb(255, 122, 217));
+  -webkit-background-clip: text;
+  transition: all 1s ease-in-out;
+}
+
 input[type=checkbox]:checked + .like-btn--rest::before,
 input[type=checkbox]:checked + .like-btn--rest::after {
   animation: ease-in 0.4s forwards;
 }
 
-input[type=checkbox]:checked + .like-btn--rest > .liked {
+input[type=checkbox]:checked + .like-btn--rest > .is-liked-rest-mob {
   display: block;
   transition: all 1s;
 }
@@ -214,6 +228,26 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   background: white;
   border-radius: 15px;
   box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.1);
+}
+
+.animation-appearing {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Defined the animation fto make appears the class .plat*/
+@keyframes fadeInFromBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Applying animation for .plat class*/
+.animation-appearing {
+  animation: fadeInFromBottom 2s ease-in-out forwards;
+  /* You can adjust the delay if needed */
+  animation-delay: 0.2s;
 }
 
 /*
@@ -572,17 +606,6 @@ a {
 }
 
 /* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
-.btn-like {
-  box-sizing: border-box;
-  position: relative;
-  top: -43px;
-  left: 0px;
-  outline: none;
-  border: none;
-  fill: transparent;
-  background: transparent;
-}
-
 input[type=checkbox] {
   top: -5px;
   left: -1px;
@@ -598,7 +621,7 @@ input[type=checkbox] {
   display: none;
   position: absolute;
   z-index: 1;
-  top: -14px;
+  top: -15px;
   left: 1px;
   background-clip: content-box;
   color: transparent;
@@ -607,15 +630,26 @@ input[type=checkbox] {
   transition: all 1s ease-in-out;
 }
 
+.like-area {
+  top: -58px;
+  left: 77vw;
+}
+
+.btn-like {
+  box-sizing: border-box;
+  position: relative;
+  top: -40px;
+  left: 0px;
+  outline: none;
+  border: none;
+  fill: transparent;
+  background: transparent;
+}
+
 .like {
   display: block;
   top: -3px;
   left: -5px;
-}
-
-.like-area {
-  top: -67px;
-  left: 77vw;
 }
 
 .like-size {
@@ -795,6 +829,7 @@ picture {
 
 .restaurant--img {
   width: 100%;
+  min-height: 183px;
   vertical-align: middle;
   object-fit: cover;
   flex: 1;
@@ -999,7 +1034,7 @@ picture {
     top: -10px;
   }
   .like-area {
-    top: -66px;
+    top: -61px;
     left: 87%;
   }
   .l-footer {

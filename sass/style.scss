@@ -102,19 +102,6 @@
 
 /* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
 
-.btn-like {
-    box-sizing: border-box;
-    position: relative;
-    top: -43px;
-    left: 0px;
-
-    outline: none;
-    border: none;
-
-    fill: transparent;
-    background: transparent;
-}
-
 input[type="checkbox"] {
     top: -5px;
     left: -1px;
@@ -133,7 +120,7 @@ input[type="checkbox"] {
     display: none;
     position: absolute;
     z-index: 1;
-    top: -14px;
+    top: -15px;
     left: 1px;
 
     background-clip: content-box;
@@ -146,15 +133,28 @@ input[type="checkbox"] {
     transition: all 1s ease-in-out;
 }
 
+.like-area {
+    top: -58px;
+    left: 77vw;
+}
+
+.btn-like {
+    box-sizing: border-box;
+    position: relative;
+    top: -40px;
+    left: 0px;
+
+    outline: none;
+    border: none;
+
+    fill: transparent;
+    background: transparent;
+}
+
 .like {
     display: block;
     top: -3px;
     left: -5px;
-}
-
-.like-area {
-    top: -67px;
-    left: 77vw;
 }
 
 .like-size {
@@ -373,6 +373,7 @@ input[type=checkbox] {
     
         .restaurant--img {
             width: 100%;
+            min-height: 183px;
             vertical-align: middle;
             object-fit: cover;
             flex: 1;
