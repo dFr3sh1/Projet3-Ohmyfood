@@ -1,4 +1,6 @@
 @import 'base/_base.scss';
+@import 'base/fonts';
+@import 'base/typographie';
 @import 'base/restaurants';
 @import 'base/responsive-rest';
 @import 'components/_buttons.scss';
@@ -134,7 +136,7 @@ input[type="checkbox"] {
 }
 
 .like-area {
-    top: -58px;
+    top: -52px;
     left: 77vw;
 }
 
@@ -361,7 +363,7 @@ input[type=checkbox] {
             display: flex;
             flex-direction: column;
             width: 100%;
-            top: -10px;
+            top: 13px;
             
             margin: 0;
         }
@@ -408,7 +410,7 @@ input[type=checkbox] {
             flex-direction: row;
             align-items: center;
             width: 88%;
-            top: -5px;
+            top: 5px;
     
             padding: 0 20px 0;
             margin: 0;
@@ -419,12 +421,15 @@ input[type=checkbox] {
             align-items: flex-start;
     
             padding-bottom: 0;
-    
-            line-height: 10px;
+        }
+
+        .title-h3-hp {
+            margin-bottom: -12px;
         }
     
         .restuarant--label-info-p {
-    
+            padding-bottom: 10px;
+
             font-weight: 300;
             font-size: 17px;
         }

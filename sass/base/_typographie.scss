@@ -1,0 +1,25 @@
+@import '../components/variables';
+
+body {
+
+    h1, h2, h3, p {
+        font-family: $font-stack; /* For headings */
+    }
+
+    h1, h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.13px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 19.92px;
+    }
+    }
