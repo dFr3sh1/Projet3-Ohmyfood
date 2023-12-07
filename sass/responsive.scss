@@ -161,19 +161,23 @@ $breakpoint-large: 1440px;
 
         .restaurant--figure {
             height: inherit;
-
+            top: 6px;
         }
 
-        /*.restaurant--img {
-            height: 200px;
-        }*/
+        .restaurant--img-a-l-f {
+            object-position: 24%;
+        }
 
         .restaurant--label {
-            top: -10px;
+            top: 0px;
+        }
+
+        .restuarant--label-info-p {
+            padding-bottom: 0;
         }
 
         .like-area {
-            top: -61px;
+            top: -52px;
             left: 87%;
         }
 
