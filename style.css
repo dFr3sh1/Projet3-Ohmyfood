@@ -47,12 +47,6 @@ body p {
   box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-}
-
 .fa-circle-check {
   color: rgb(153, 227, 208);
 }
@@ -78,12 +72,12 @@ a {
 .heart-btn--rest .like-btn--rest {
   box-sizing: border-box;
   position: relative;
-  fill: transparent;
-  background: transparent;
-  outline: none;
-  border: none;
   width: 33px;
   height: 32px;
+  background: transparent;
+  fill: transparent;
+  outline: none;
+  border: none;
 }
 
 .input-rest {
@@ -136,14 +130,14 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 /* Like button ends */
 /* Header starts */
 .header-rest {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   max-width: 50%;
   height: 63px;
   margin-left: 3%;
-  align-items: center;
-  position: relative;
 }
 
 .header-img-rest {
@@ -156,7 +150,6 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 /* Main starts */
 .main-rest {
   box-sizing: border-box;
-  background: #F6F6F6;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -164,6 +157,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  background: #F6F6F6;
   color: black;
 }
 
@@ -174,9 +168,9 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 }
 
 .central-photo img {
+  position: center;
   width: 100%;
   object-fit: cover;
-  position: center;
 }
 
 .section-rest {
@@ -185,11 +179,11 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 
 .central-title {
   box-sizing: border-box;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   width: 100%;
   top: -69px;
   padding: 20px;
@@ -252,18 +246,12 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
     transform: translateY(0);
   }
 }
-/* Applying animation for .plat class*/
+/* Animation for .plat class*/
 .animation-appearing {
   animation: fadeInFromBottom 2s ease-in-out forwards;
-  /* You can adjust the delay if needed */
   animation-delay: 0.2s;
 }
 
-/*
-input.checking-plat {
-    width: 100%;
-    height: 69px;
-}*/
 .label-rest {
   display: flex;
   flex-direction: row;
@@ -286,11 +274,11 @@ input.checking-plat {
 .checked-plat {
   position: relative;
   display: flex;
-  min-width: 100%;
   flex-direction: column;
   align-items: flex-start;
-  transition: transform 0.5s;
+  min-width: 100%;
   margin-right: 0;
+  transition: transform 0.5s;
 }
 
 .checked-plat-btn:hover .checked-plat {
@@ -314,9 +302,9 @@ input.checking-plat {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 19px;
   padding: 0px 10px 10px 10px;
   margin-bottom: 0;
-  height: 19px;
   font-size: 15.04px;
   font-weight: 300;
 }
@@ -329,22 +317,22 @@ input.checking-plat {
 .choiced-plat {
   position: relative;
   left: 1px;
-  background-color: rgb(153, 227, 208);
   width: 69px;
   height: 69px;
+  background-color: rgb(153, 227, 208);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 20px;
   text-align: center;
-  /* Positionnement initial en dehors de la vue */
+  /* Initial position out of sight */
   /*transform: translateX(100%);*/
 }
 
 .circled-choiced {
   position: relative;
-  color: rgb(153, 227, 208);
   top: 25px;
   left: 0px;
+  color: rgb(153, 227, 208);
   background: white;
   border-radius: 25px;
 }
@@ -377,7 +365,7 @@ footer a h3 {
   margin: 0;
   height: 17px;
   padding-bottom: 16px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans-serif;
 }
 
 footer div {
@@ -679,6 +667,9 @@ body {
 
 .loader-container {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   right: 0;
   bottom: 0;
@@ -686,19 +677,16 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgb(255, 255, 255); /* Fond semi-transparent pour le loader */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   animation: fadeOut 3s forwards; /* Animation de disparition après 3 secondes */
   z-index: 100;
 }
 
 .loader {
+  width: 50px;
+  height: 50px;
   border: 8px solid rgb(235, 235, 235);
   border-top: 8px solid rgb(255, 122, 217); /* Couleur principale 2 */
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
   animation: spin 1.5s linear infinite;
 }
 
@@ -733,11 +721,6 @@ a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
-}
-
-.fa-regular {
-  font-size: px;
-  /*color: rgba(0, 0, 0, 1)*/
 }
 
 .posrel {
@@ -891,9 +874,9 @@ input[type=checkbox]:checked + * .like {
   justify-content: flex-start;
   align-items: center;
   width: 97%;
+  height: 73px;
   margin-bottom: 22px;
   margin-left: 10px;
-  height: 73px;
   border-radius: 20px;
   border: none;
   background: rgb(245, 245, 245);
