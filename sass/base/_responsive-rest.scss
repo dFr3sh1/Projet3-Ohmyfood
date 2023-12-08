@@ -10,7 +10,8 @@
 
 .central-title {
     justify-content: center;
-    margin-top: 0;
+    margin-top: -30px;
+    
 }
 
 .central-photo {
@@ -51,10 +52,12 @@
 .central-title {
     width: 1055px;
     top: 0;
+    margin-top: -30px;
+    
 }
 
 .central-photo {
-    height: 275px;
+    height: auto;
 }
 
 .restaurant-title {
@@ -86,11 +89,4 @@
     min-width: 90%;
 }
 
-}
-
-@media (min-width: 1380px) {
-    .central-photo {
-        height: 324px;
-    }
-    
 }
