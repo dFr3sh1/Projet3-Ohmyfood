@@ -1,18 +1,6 @@
 @charset "UTF-8";
 @import'../components/variables';
-/*body {
-    box-sizing: border-box;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0;
-}*/
 
-h1 {
-    margin-bottom: 0;
-    width: 90%;
-}
 
 .btn-shadow {
     box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
@@ -25,7 +13,7 @@ a {
 }
 
 .fa-circle-check {
-    color: var(--tertiary-color);
+    color: $green-pastel-color;
 }
 
 .fa-utensils .fa-handshake {
@@ -45,7 +33,6 @@ a {
     justify-content: center;
     align-items: center;
     width: 10%;
-    top: 9px;
 }
 
 .heart-btn--rest .like-btn--rest {
@@ -81,11 +68,10 @@ a {
 }
 
 .is-liked-rest-mob {
-    top: 0;
-    left: 0;
     display: none;
     position: absolute;
-    z-index: 1;
+    top: 0;
+    left: 0;
 
     background-clip: content-box;
     
@@ -95,6 +81,8 @@ a {
     -webkit-background-clip: text;
 
     transition: all 1s ease-in-out;
+
+    z-index: 1;
 }
 
 input[type="checkbox"]:checked + .like-btn--rest::before,
@@ -110,14 +98,6 @@ input[type="checkbox"]:checked + .like-btn--rest > .is-liked-rest-mob {
 input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
     display: none;
     transition: all 1s;
-}
-
-
-.central-title {
-    box-sizing: border-box;
-}
-.restaurant-title {
-    
 }
 
 /* Like button ends */
@@ -171,14 +151,19 @@ input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
     position: center;
 }
 
+.section-rest {
+    width: 90%;
+}
+
 .central-title {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: relative;
     width: 100%;
-    top: -60px;
+    top: -69px;
     padding: 20px;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
@@ -193,7 +178,7 @@ input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
     align-content: center;
     justify-content: center;
     align-items: center;
-    top: -20px;
+    top: -70px;
 }
 
 .menu {
@@ -201,7 +186,9 @@ input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    width: 100%;
     gap: 17px;
+
     padding: 0 0 20px 0;
 }
 
@@ -214,12 +201,12 @@ input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
 
 .downline-title-plats {
     width: 40px;
-    border-bottom: #99E2D0 solid 4px;
+    border-bottom: $green-pastel-color solid 4px;
 }
 
 .plat {
     box-sizing: border-box;
-    width: 349px;
+    width: 100%;
     height: 69px;
     background: white;
     border-radius: 15px;
@@ -321,7 +308,7 @@ input.checking-plat {
 .choiced-plat {
     position: relative;
     left: 1px;
-    background-color: #99E2D0;
+    background-color: $green-pastel-color;
     width: 69px;
     height: 69px;
     border-top-right-radius: 15px;
@@ -335,7 +322,7 @@ input.checking-plat {
 
 .circled-choiced {
     position: relative;
-    color: #99e2d0;
+    color: $green-pastel-color;
     top: 25px;
     left: 0px;
     background: white;

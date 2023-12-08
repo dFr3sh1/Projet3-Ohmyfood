@@ -1,114 +1,96 @@
+@import '../components/variables';
+@import '../responsive.scss';
 
-@media (min-width: 376px) and (max-width: 1079px) {
-    
-    .header-arrow {
-        position: relative;
-    }
-    
-    .central-photo {
-        display: flex;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .central-photo img {
-        display: flex;
-        object-position: 100% -66px;
-    }
-    
-    .central-title {
-        justify-content: space-evenly;
-        top: -70px;
-        width: -webkit-fill-available;
-        border-top-right-radius: 65px;
-        border-top-left-radius: 65px;
-    }
-    
-    .restaurant-title {
-        width: auto;
-    }
-    
-    .input-rest {
-        margin-left: 16px;
-    }
+/* Layout */
+@media (min-width: 376px) and (max-width: $breakpoint-medium) {
 
-    .section-rest {
-        width: 90%;
-        margin-top: -4vh;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-    }
+.header-arrow {
+    position: relative;
+    }    
 
-    .central-zone {
-        position: relative;
-        width: 100%;
+.central-title {
+    justify-content: center;
+    margin-top: 0;
+}
+
+.central-photo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.central-photo img {
+    max-height: 360px;
+}
+
+.la-note {
+    height: auto;
+}
+
+.input-rest {
+    margin-left: 22px;
     }
     
-    .menu {
-        width: 100%;
-        padding-left: 20%;
-    }
-    
-    .plat {
-        width: 80%;
-    }
-    
-    .checked-plat {
-        width: 100%;
-    }
+
+.menu, .plat {
+    width: 100%;
+}
+
+.checked-plat-btn:hover .checked-plat {
+    min-width: 90%;
+}
 }
 
 @media (min-width: 1080px) {
+/* Module */
+.main-rest {
+    background-color: white;
+}
 
-    .main-rest {
-        background-color: white;
-    }
+.central-title {
+    width: 1055px;
+    top: 0;
+}
 
-    .central-title {
-        top: -40px;
-        width: 1055px;
-    }
+.central-photo {
+    height: 275px;
+}
 
-    .restaurant-title {
-        width: auto;
-        text-align: center;
-        padding-left: 34%;
-    }
+.restaurant-title {
+    text-align: center;
+    padding-left: 34%;
+}
 
-    .input-rest {
-        margin-left: 33px;
-    }
+.input-rest {
+    margin-left: 33px;
+}
 
-    .heart-btn--rest {
-        padding-right: 25%;
-    }
+.heart-btn--rest {
+    padding-right: 25%;
+}
 
-    .section-rest {
-        width: 1055px;
-        background-color: #F6F6F6;
-    }
+.section-rest {
+    width: 1055px;
 
+    background-color: #F6F6F6;
+}
+
+.central-zone {
+    width: 634px;
+    top: -20px;
+    padding-left: 210.5px;
+}
+
+.checked-plat-btn:hover .checked-plat {
+    min-width: 90%;
+}
+
+}
+
+@media (min-width: 1380px) {
     .central-photo {
-        height: auto;
+        height: 324px;
     }
-
-    .la-note {
-        height: auto;
-    }
-
-    .central-zone {
-        width: 634px;
-        padding-left: 210.5px;
-    }
-
-    .menu, .plat {
-        width: 100%;
-    }
-
-    .checked-plat-btn:hover .checked-plat {
-        min-width: 90%;
-    }
-
+    
 }

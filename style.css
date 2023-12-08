@@ -2,10 +2,10 @@
 body {
   box-sizing: border-box;
   max-width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 0;
 }
 
 /* Shrikhand font */
@@ -43,19 +43,6 @@ body p {
   line-height: 19.92px;
 }
 
-/*body {
-    box-sizing: border-box;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0;
-}*/
-h1 {
-  margin-bottom: 0;
-  width: 90%;
-}
-
 .btn-shadow {
   box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
 }
@@ -67,7 +54,7 @@ a {
 }
 
 .fa-circle-check {
-  color: var(--tertiary-color);
+  color: rgb(153, 227, 208);
 }
 
 .fa-utensils .fa-handshake {
@@ -86,7 +73,6 @@ a {
   justify-content: center;
   align-items: center;
   width: 10%;
-  top: 9px;
 }
 
 .heart-btn--rest .like-btn--rest {
@@ -120,16 +106,16 @@ a {
 }
 
 .is-liked-rest-mob {
-  top: 0;
-  left: 0;
   display: none;
   position: absolute;
-  z-index: 1;
+  top: 0;
+  left: 0;
   background-clip: content-box;
   color: transparent;
   background-image: linear-gradient(rgb(146, 87, 219), rgb(255, 122, 217));
   -webkit-background-clip: text;
   transition: all 1s ease-in-out;
+  z-index: 1;
 }
 
 input[type=checkbox]:checked + .like-btn--rest::before,
@@ -145,10 +131,6 @@ input[type=checkbox]:checked + .like-btn--rest > .is-liked-rest-mob {
 input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   display: none;
   transition: all 1s;
-}
-
-.central-title {
-  box-sizing: border-box;
 }
 
 /* Like button ends */
@@ -197,14 +179,19 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   position: center;
 }
 
+.section-rest {
+  width: 90%;
+}
+
 .central-title {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: relative;
   width: 100%;
-  top: -60px;
+  top: -69px;
   padding: 20px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
@@ -219,7 +206,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   align-content: center;
   justify-content: center;
   align-items: center;
-  top: -20px;
+  top: -70px;
 }
 
 .menu {
@@ -227,6 +214,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  width: 100%;
   gap: 17px;
   padding: 0 0 20px 0;
 }
@@ -239,12 +227,12 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 
 .downline-title-plats {
   width: 40px;
-  border-bottom: #99E2D0 solid 4px;
+  border-bottom: rgb(153, 227, 208) solid 4px;
 }
 
 .plat {
   box-sizing: border-box;
-  width: 349px;
+  width: 100%;
   height: 69px;
   background: white;
   border-radius: 15px;
@@ -341,7 +329,7 @@ input.checking-plat {
 .choiced-plat {
   position: relative;
   left: 1px;
-  background-color: #99E2D0;
+  background-color: rgb(153, 227, 208);
   width: 69px;
   height: 69px;
   border-top-right-radius: 15px;
@@ -354,7 +342,7 @@ input.checking-plat {
 
 .circled-choiced {
   position: relative;
-  color: #99e2d0;
+  color: rgb(153, 227, 208);
   top: 25px;
   left: 0px;
   background: white;
@@ -400,8 +388,162 @@ footer div {
 
 /* Footer ends */
 @media (min-width: 376px) and (max-width: 1079px) {
+  /* Ajustements généraux pour les tablettes */
+  body {
+    padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
+  }
+  .l-hero-div, .l-restaurant {
+    padding-bottom: 30px; /* Ajout d'un espace en bas pour améliorer la lisibilité */
+  }
+  .l-footer {
+    width: auto; /* Ajustement de la largeur pour s'adapter à l'écran plus petit */
+  }
+  .l-restaurant {
+    gap: 20px;
+  }
+  /* Ajustements spécifiques pour les composants */
+  .btn {
+    width: 60%; /* Bouton prend toute la largeur de l'écran */
+  }
+  .wraper-steps-boxes {
+    width: 90%;
+  }
+  .steps-area--title {
+    width: 90%;
+    left: 0; /* Centrer le titre des étapes */
+  }
+  .container-steps-box {
+    width: 100%;
+  }
+  .steps-box {
+    width: unset; /* Boîte d'étapes prend toute la largeur de l'écran */
+    gap: 10px;
+  }
+  .restaurant {
+    width: 90%;
+    margin-bottom: 0;
+  }
+  .restaurant-area-title {
+    width: 90%;
+    left: 0;
+    padding: 30px 0 0;
+  }
+  .restaurant--a {
+    position: relative;
+    height: unset;
+    top: 0;
+    align-items: center;
+  }
+  .restaurant--figure {
+    height: 100%;
+    top: 0;
+  }
+  .restaurant--img {
+    object-position: 100% -40px;
+  }
+  .restaurant--label {
+    top: -3vh;
+    width: 90%;
+  }
+  .title-h3-homepage {
+    margin-bottom: auto;
+  }
+  .restuarant--label-info-p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .like-area {
+    top: -6.5vh;
+    left: 85%;
+  }
+  .restaurant--tag-new {
+    display: none; /* Masquer la balise "nouveau" sur les écrans plus petits */
+  }
+  .footer-a {
+    padding-left: 30px;
+  }
+  .footer-links {
+    align-items: left; /* Centrer les liens du pied de page */
+  }
+}
+@media (min-width: 1080px) {
+  .body {
+    overflow-x: hidden;
+    background-color: white;
+  }
+  .main-title {
+    width: 80%;
+    font-size: 40px;
+    padding: 40px;
+  }
+  .container-steps-box {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .steps-box {
+    width: -webkit-fill-available;
+  }
+  .l-restaurant {
+    align-items: center;
+  }
+  .container-restaurants {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    top: 17px;
+    max-width: 75%;
+    gap: 5%;
+  }
+  .restaurant-area-title {
+    left: -32%;
+  }
+  .restaurant {
+    max-width: 490px;
+    max-height: 251px;
+    margin-bottom: 7%;
+    flex: 1 1 380px;
+  }
+  .restaurant--a {
+    max-width: 100%;
+  }
+  .restaurant--figure {
+    height: inherit;
+    top: 6px;
+  }
+  .restaurant--img-a-l-f {
+    object-position: 24%;
+  }
+  .restaurant--label {
+    top: 0px;
+  }
+  .restuarant--label-info-p {
+    padding-bottom: 0;
+  }
+  .like-area {
+    top: -52px;
+    left: 87%;
+  }
+  .l-footer {
+    max-width: 1440px;
+  }
+  .footer-links {
+    flex-direction: row-reverse;
+  }
+  .footer-wraper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+}
+/* Layout */
+@media (min-width: 376px) and (max-width: 1079px) {
   .header-arrow {
     position: relative;
+  }
+  .central-title {
+    justify-content: center;
+    margin-top: 0;
   }
   .central-photo {
     display: flex;
@@ -410,54 +552,34 @@ footer div {
     overflow: hidden;
   }
   .central-photo img {
-    display: flex;
-    object-position: 100% -66px;
+    max-height: 360px;
   }
-  .central-title {
-    justify-content: space-evenly;
-    top: -70px;
-    width: -webkit-fill-available;
-    border-top-right-radius: 65px;
-    border-top-left-radius: 65px;
-  }
-  .restaurant-title {
-    width: auto;
+  .la-note {
+    height: auto;
   }
   .input-rest {
-    margin-left: 16px;
+    margin-left: 22px;
   }
-  .section-rest {
-    width: 90%;
-    margin-top: -4vh;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-  }
-  .central-zone {
-    position: relative;
+  .menu, .plat {
     width: 100%;
   }
-  .menu {
-    width: 100%;
-    padding-left: 20%;
-  }
-  .plat {
-    width: 80%;
-  }
-  .checked-plat {
-    width: 100%;
+  .checked-plat-btn:hover .checked-plat {
+    min-width: 90%;
   }
 }
 @media (min-width: 1080px) {
+  /* Module */
   .main-rest {
     background-color: white;
   }
   .central-title {
-    top: -40px;
     width: 1055px;
+    top: 0;
+  }
+  .central-photo {
+    height: 275px;
   }
   .restaurant-title {
-    width: auto;
     text-align: center;
     padding-left: 34%;
   }
@@ -471,21 +593,18 @@ footer div {
     width: 1055px;
     background-color: #F6F6F6;
   }
-  .central-photo {
-    height: auto;
-  }
-  .la-note {
-    height: auto;
-  }
   .central-zone {
     width: 634px;
+    top: -20px;
     padding-left: 210.5px;
-  }
-  .menu, .plat {
-    width: 100%;
   }
   .checked-plat-btn:hover .checked-plat {
     min-width: 90%;
+  }
+}
+@media (min-width: 1380px) {
+  .central-photo {
+    height: 324px;
   }
 }
 .btn {
@@ -848,6 +967,7 @@ input[type=checkbox]:checked + * .like {
 
 picture {
   display: flex;
+  width: 100%;
   top: 0;
 }
 
