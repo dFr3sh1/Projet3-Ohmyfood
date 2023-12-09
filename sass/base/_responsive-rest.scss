@@ -2,7 +2,7 @@
 @import '../responsive.scss';
 
 /* Layout */
-@media (min-width: 376px) and (max-width: $breakpoint-medium) {
+@media (min-width: 431px) and (max-width: $breakpoint-medium) {
 
 .header-arrow {
     position: relative;
@@ -47,7 +47,7 @@
 }
 
 .choiced-plat {
-    left: 16px;
+    left: 0;
 }
 
 }
@@ -97,6 +97,10 @@
     width: 634px;
     top: -20px;
     padding-left: 210.5px;
+}
+
+.choiced-plat {
+    left: 0;
 }
 
 .checked-plat-btn:hover .checked-plat {
