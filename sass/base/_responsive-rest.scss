@@ -30,9 +30,13 @@
 }
 
 .input-rest {
-    margin-left: 22px;
-    }
-    
+    margin-left: 33px;
+    margin-top: 7px;
+}
+
+.is-liked-rest-mob {
+    left: 0;
+}
 
 .menu, .plat {
     width: 100%;
@@ -41,6 +45,11 @@
 .checked-plat-btn:hover .checked-plat {
     min-width: 90%;
 }
+
+.choiced-plat {
+    left: 16px;
+}
+
 }
 
 @media (min-width: 1080px) {
@@ -66,7 +75,12 @@
 }
 
 .input-rest {
-    margin-left: 33px;
+    margin-top: 6px;
+    margin-left: 36px;
+}
+
+.is-liked-rest-mob {
+    left: 0;
 }
 
 .heart-btn--rest {

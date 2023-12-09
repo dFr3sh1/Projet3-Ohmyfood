@@ -97,13 +97,14 @@ body p {
   width: 34px;
   height: 32px;
   font-size: 30px;
+  text-align: center;
 }
 
 .is-liked-rest-mob {
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 1px;
   background-clip: content-box;
   color: transparent;
   background-image: linear-gradient(rgb(146, 87, 219), rgb(255, 122, 217));
@@ -168,7 +169,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 }
 
 .central-photo img {
-  position: center;
+  /*position: center;*/
   width: 100%;
   object-fit: cover;
 }
@@ -343,38 +344,6 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 
 /* Animation selected plat starts */
 /* Animation selected plat ends */
-/* Footer starts */
-footer {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  width: 375px;
-  padding: 22px 25px 22px 25px;
-  gap: 16px;
-  background-color: #353535;
-  color: white;
-}
-
-footer a {
-  display: flex;
-  gap: 15px;
-}
-
-footer a h3 {
-  margin: 0;
-  height: 17px;
-  padding-bottom: 16px;
-  font-family: "Shrikhand", sans-serif;
-}
-
-footer div {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-/* Footer ends */
 @media (min-width: 376px) and (max-width: 1079px) {
   /* Ajustements généraux pour les tablettes */
   body {
@@ -450,9 +419,9 @@ footer div {
   .footer-a {
     padding-left: 30px;
   }
-  .footer-links {
-    align-items: left; /* Centrer les liens du pied de page */
-  }
+  /*.footer-links {
+      align-items: left;
+  }*/
 }
 @media (min-width: 1080px) {
   .body {
@@ -546,13 +515,20 @@ footer div {
     height: auto;
   }
   .input-rest {
-    margin-left: 22px;
+    margin-left: 33px;
+    margin-top: 7px;
+  }
+  .is-liked-rest-mob {
+    left: 0;
   }
   .menu, .plat {
     width: 100%;
   }
   .checked-plat-btn:hover .checked-plat {
     min-width: 90%;
+  }
+  .choiced-plat {
+    left: 16px;
   }
 }
 @media (min-width: 1080px) {
@@ -573,7 +549,11 @@ footer div {
     padding-left: 34%;
   }
   .input-rest {
-    margin-left: 33px;
+    margin-top: 6px;
+    margin-left: 36px;
+  }
+  .is-liked-rest-mob {
+    left: 0;
   }
   .heart-btn--rest {
     padding-right: 25%;
@@ -769,13 +749,14 @@ input[type=checkbox] {
 }
 
 .like {
+  position: relative;
   display: block;
-  top: -3px;
+  top: -4px;
   left: -5px;
 }
 
 .like-size {
-  width: 30px;
+  width: 33px;
   height: 30px;
   font-size: 30px;
 }
@@ -1109,9 +1090,9 @@ picture {
   .footer-a {
     padding-left: 30px;
   }
-  .footer-links {
-    align-items: left; /* Centrer les liens du pied de page */
-  }
+  /*.footer-links {
+      align-items: left;
+  }*/
 }
 @media (min-width: 1080px) {
   .body {

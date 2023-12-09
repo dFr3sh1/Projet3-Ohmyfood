@@ -153,13 +153,14 @@ input[type="checkbox"] {
 }
 
 .like {
+    position: relative;
     display: block;
-    top: -3px;
+    top: -4px;
     left: -5px;
 }
 
 .like-size {
-    width: 30px;
+    width: 33px;
     height: 30px;
 
     font-size: 30px;

@@ -60,13 +60,14 @@
     height: 32px;
     
     font-size: 30px;
+    text-align: center;
 }
 
 .is-liked-rest-mob {
     display: none;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 1px;
 
     background-clip: content-box;
     
@@ -145,7 +146,7 @@ input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
 }
 
 .central-photo img {
-    position: center;
+    /*position: center;*/
 
     width: 100%;
 
