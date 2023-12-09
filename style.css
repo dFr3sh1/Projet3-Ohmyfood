@@ -18,8 +18,8 @@ body {
 /* Roboto font */
 @font-face {
   font-family: "Roboto";
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap") format("woff2");
-  font-weight: 300;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap") format("woff2");
+  font-weight: 300 700;
   font-style: normal;
 }
 body h1, body h2, body h3, body p {
@@ -43,6 +43,20 @@ body p {
   line-height: 19.92px;
 }
 
+/* Shrikhand font */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Roboto font */
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+}
 .btn-shadow {
   box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
 }
@@ -344,6 +358,20 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 
 /* Animation selected plat starts */
 /* Animation selected plat ends */
+/* Shrikhand font */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Roboto font */
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+}
 @media (min-width: 376px) and (max-width: 1079px) {
   /* Ajustements généraux pour les tablettes */
   body {
@@ -571,6 +599,20 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
     min-width: 90%;
   }
 }
+/* Shrikhand font */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Roboto font */
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+}
 .btn {
   width: 218px;
   height: 50px;
@@ -578,6 +620,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   border-radius: 25px;
   background: linear-gradient(rgb(255, 122, 217), rgb(146, 87, 219));
   color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -588,6 +631,20 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   transition: all 2ms;
 }
 
+/* Shrikhand font */
+@font-face {
+  font-family: "Shrikhand";
+  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Roboto font */
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+}
 .l-footer {
   box-sizing: border-box;
   display: flex;
@@ -634,11 +691,6 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 /*Base starts*/
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - -  Composants starts - - - - */
-:root {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
-
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -807,13 +859,9 @@ input[type=checkbox]:checked + * .like {
 }
 
 .main-title {
-  width: 275px;
+  width: 75%;
   padding-top: 39px;
   margin: 0;
-  font-family: "Roboto";
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
   letter-spacing: 0em;
   text-align: center;
 }
@@ -821,9 +869,7 @@ input[type=checkbox]:checked + * .like {
 .subhead {
   padding: 18px 0 28px 0;
   margin: 0;
-  font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 300;
+  width: 86%;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
@@ -954,6 +1000,7 @@ picture {
   border-radius: 2px;
   background-color: rgb(153, 227, 208);
   color: #008766;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   line-height: 28px;
 }
@@ -980,8 +1027,6 @@ picture {
 
 .restuarant--label-info-p {
   padding-bottom: 10px;
-  font-weight: 300;
-  font-size: 17px;
 }
 
 /*- - - - - - - - - - - Restaurants ends - - - - - - - - - - - - - - - */
@@ -997,6 +1042,7 @@ picture {
 .footer-a {
   display: flex;
   gap: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-a:hover {

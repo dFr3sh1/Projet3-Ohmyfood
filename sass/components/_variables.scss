@@ -1,3 +1,5 @@
+@import'../fonts.scss';
+
 $purple-color: rgba(146, 87, 219, 1);
 $pink-color: rgba(255, 122, 217,1);
 $green-pastel-color: rgba(153, 227, 208, 1);
@@ -7,4 +9,4 @@ $tertiaire-color: $green-pastel-color;
 $gradient-theme-color: linear-gradient($second-main-color, $main-theme-color);
 $font-stack: ('Roboto', sans-serif);
 $font-logo: ('Shrikhand', sans-serif);
-$base-font-size: 16px;
+$base-font-size: 17px;

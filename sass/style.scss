@@ -1,5 +1,4 @@
 @import 'base/_base.scss';
-@import 'base/fonts';
 @import 'base/typographie';
 @import 'base/restaurants';
 @import 'base/responsive-rest';
@@ -20,462 +19,452 @@
 
       /* - - - -  Composants starts - - - - */
 
-:root {
-        font-family: $font-stack;
-        font-size: $base-font-size;
-    }
+body {
+    max-width: 1440px;
+    margin: 0 auto;
 
-    body {
-        max-width: 1440px;
-        margin: 0 auto;
-        overflow-x: hidden;
-    }
+    overflow-x: hidden;
 
-    .loader-container {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
+}
 
-        background-color: rgba(255, 255, 255, 1); /* Fond semi-transparent pour le loader */
-    
-        animation: fadeOut 3s forwards; /* Animation de disparition après 3 secondes */
-        z-index: 100;
-    }
-    
-    .loader {
-        width: 50px;
-        height: 50px;
+.loader-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 
-        border: 8px solid rgba(235, 235, 235, 1); 
-        border-top: 8px solid $pink-color; /* Couleur principale 2 */
-        border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1); /* Fond semi-transparent pour le loader */
 
-        animation: spin 1.5s linear infinite;
-    }
-    
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-    
-    @keyframes fadeOut {
-        0% { opacity: 1; }
-        100% { opacity: 1; display: none; }
-    }
-    
-    * h1 h2 h3 {
-        font-family: $font-logo;
-    
-        color: rgba(0, 0, 0, 1)
-    }
+    animation: fadeOut 3s forwards; /* Animation de disparition après 3 secondes */
+    z-index: 100;
+}
 
-    %shadow {
-        box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
-    }
-    
-    .btn {
-        @extend %shadow;
+.loader {
+    width: 50px;
+    height: 50px;
 
-    }
-    
-    a {
-        box-sizing: border-box;
+    border: 8px solid rgba(235, 235, 235, 1); 
+    border-top: 8px solid $pink-color; /* Couleur principale 2 */
+    border-radius: 50%;
 
-        color: rgba(255, 255, 255,1);
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 1; display: none; }
+}
+
+* h1 h2 h3 {
+    font-family: $font-logo;
+
+    color: rgba(0, 0, 0, 1)
+}
+
+%shadow {
+    box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+    @extend %shadow;
+
+}
+
+a {
+    box-sizing: border-box;
+
+    color: rgba(255, 255, 255,1);
+
+    text-decoration: none;
+
+    cursor: pointer;
     
-        text-decoration: none;
-    
-        cursor: pointer;
-        
-    }
-    
-    
-    .posrel {
-        position: relative;
-    }
+}
+
+
+.posrel {
+    position: relative;
+}
 
 /* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
 
 input[type="checkbox"] {
-    top: -5px;
-    left: -1px;
-    z-index: 2;
+top: -5px;
+left: -1px;
+z-index: 2;
 
-    border: none;
-    outline: none;
+border: none;
+outline: none;
 
-    opacity: 0;
+opacity: 0;
 
-    cursor: pointer;
-    cursor: pointer;
+cursor: pointer;
+cursor: pointer;
 }
 
 .is-liked {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    top: -15px;
-    left: 1px;
+display: none;
+position: absolute;
+z-index: 1;
+top: -15px;
+left: 1px;
 
-    background-clip: content-box;
-    
-    color: transparent;
-    background-image: linear-gradient($main-theme-color, $second-main-color);
-    
-    -webkit-background-clip: text;
+background-clip: content-box;
 
-    transition: all 1s ease-in-out;
+color: transparent;
+background-image: linear-gradient($main-theme-color, $second-main-color);
+
+-webkit-background-clip: text;
+
+transition: all 1s ease-in-out;
 }
 
 .like-area {
-    top: -52px;
-    left: 77vw;
+top: -52px;
+left: 77vw;
 }
 
 .btn-like {
-    box-sizing: border-box;
-    position: relative;
-    top: -40px;
-    left: 0px;
+box-sizing: border-box;
+position: relative;
+top: -40px;
+left: 0px;
 
-    outline: none;
-    border: none;
+outline: none;
+border: none;
 
-    fill: transparent;
-    background: transparent;
+fill: transparent;
+background: transparent;
 }
 
 .like {
-    position: relative;
-    display: block;
-    top: -4px;
-    left: -5px;
+position: relative;
+display: block;
+top: -4px;
+left: -5px;
 }
 
 .like-size {
-    width: 33px;
-    height: 30px;
+width: 33px;
+height: 30px;
 
-    font-size: 30px;
+font-size: 30px;
 }
 
 input[type=checkbox] {
-    &:checked + .btn-like::before {
-        animation: ease-in 0.4s forwards;
-    }
+&:checked + .btn-like::before {
+    animation: ease-in 0.4s forwards;
+}
 
-    &:checked + .btn-like::after {
-        animation: ease-in 0.4s forwards;
-    }
+&:checked + .btn-like::after {
+    animation: ease-in 0.4s forwards;
+}
 
-    &:checked + * .is-liked {
-        display: block;
-        transition: all 2s;
-    }
+&:checked + * .is-liked {
+    display: block;
+    transition: all 2s;
+}
 
-    &:checked + * .like {
-        display: none;
-        transition: all 2s;
-    }
+&:checked + * .like {
+    display: none;
+    transition: all 2s;
+}
 
 }
 
 
 /* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
 
-            /* - - - -  Composants ends - - - - */
-    
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-                        /* Base ends */
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
+        /* - - - -  Composants ends - - - - */
 
-    
-    /*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
-    
-    
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-                    /* Modules starts */
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-    
-    /*- - - - - - - - - - - - - - - Header begins - - - - - - - - - - - - - - -*/
-    
-    .logo--img {
-        width: 197px;
-        height: 36px;
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
+                    /* Base ends */
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-        object-fit: contain;
+
+/*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
+                /* Modules starts */
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/*- - - - - - - - - - - - - - - Header begins - - - - - - - - - - - - - - -*/
+
+.logo--img {
+    width: 197px;
+    height: 36px;
+
+    object-fit: contain;
+}
+
+/*- - - - - - - - - - - - - - - Header ends - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - Main starts - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - Steps starts - - - - - - - - - - - - - - -*/
+.homepage-location-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 23px 0;
+    width: 100%;
+    
+    gap: 17px;
+
+    background-color: rgba(235, 235, 235, 1);
+    box-shadow: inset 0px 2px 5px -5px;
+}
+
+.main-title {
+    width: 75%;
+
+    padding-top: 39px;
+    margin: 0;
+    
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.subhead {
+    padding: 18px 0 28px 0;
+    margin: 0;
+    width: 86%;
+
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.steps-area {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+    .steps-area--title {
+        position: relative;
+        width: 90%;
+
+        padding: 28px 0 0 0;
+        margin-bottom: 33px;
     }
+.wraper-steps-boxes {
+    width: 75%
+}
+
+.container-steps-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps-box {
+    @extend %shadow;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 97%;
+    height: 73px;
+
+    margin-bottom: 22px;
+    margin-left: 10px;
     
-    /*- - - - - - - - - - - - - - - Header ends - - - - - - - - - - - - - - -*/
-    
-    /*- - - - - - - - - - - - - - - Main starts - - - - - - - - - - - - - - -*/
-    
-    /*- - - - - - - - - - - - - - - Steps starts - - - - - - - - - - - - - - -*/
-    .homepage-location-icon {
+    border-radius: 20px;
+    border: none;
+
+    background: rgba(245, 245, 245, 1);     
+}
+
+    .steps-box--number {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        left: -16px;
+
+        border-radius: 50%;
+
+        background-color: $main-theme-color;
+        color: rgba(255, 255, 255, 1);
+        
+        text-align: center;
+        font-size: 14.2px;
+        line-height: 24.62px;           
+    }
+
+    .steps-box--icon {
+        padding-right: 28px;
+    }
+
+    .steps-box--instruction {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+/*- - - - - - - - - - - - - - - Steps ends - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - Restaurants starts - - - - - - - - - - - - - - - */
+
+.restaurant-area-title {
+    left: -100px;
+
+    margin: 30px 0 16px;
+}
+
+.container-restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;    
+}
+
+.restaurant {
+    box-sizing: border-box;
+    width: 90vw;
+
+    margin-bottom: -3vh;
+
+}   
+
+    .restaurant--a {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        padding: 23px 0;
-        width: 100%;
-        
-        gap: 17px;
-    
-        background-color: rgba(235, 235, 235, 1);
-        box-shadow: inset 0px 2px 5px -5px;
-    }
-    
-    .main-title {
-        width: 275px;
-    
-        padding-top: 39px;
-        margin: 0;
-        
-        font-family: 'Roboto';
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: center;
-    }
-    
-    .subhead {
-        padding: 18px 0 28px 0;
-        margin: 0;
-    
-        font-family: 'Roboto';
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 21px;
-        letter-spacing: 0em;
-        text-align: center;
-    }
-    
-    .steps-area {
+        align-items: flex-start;
+        height: 251px;
+
+        border-radius: 15px;
+
         background-color: rgba(255, 255, 255, 1);
-    }
-    
-        .steps-area--title {
-            position: relative;
-            width: 90%;
-    
-            padding: 28px 0 0 0;
-            margin-bottom: 33px;
-        }
-    .wraper-steps-boxes {
-        width: 75%
+        color: rgba(0, 0, 0, 1);
     }
 
-    .container-steps-box {
+    .restaurant--figure {
         display: flex;
         flex-direction: column;
-    }
-    
-    .steps-box {
-        @extend %shadow;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        width: 97%;
-        height: 73px;
-    
-        margin-bottom: 22px;
-        margin-left: 10px;
+        width: 100%;
+        top: 10px;
         
-        border-radius: 20px;
-        border: none;
-    
-        background: rgba(245, 245, 245, 1);     
-    }
-    
-        .steps-box--number {
-            position: relative;
-            width: 24px;
-            height: 24px;
-            left: -16px;
-    
-            border-radius: 50%;
-    
-            background-color: $main-theme-color;
-            color: rgba(255, 255, 255, 1);
-            
-            text-align: center;
-            font-size: 14.2px;
-            line-height: 24.62px;           
-        }
-    
-        .steps-box--icon {
-            padding-right: 28px;
-        }
-    
-        .steps-box--instruction {
-            font-size: 16px;
-            font-weight: 500;
-        }
-    
-    /*- - - - - - - - - - - - - - - Steps ends - - - - - - - - - - - - - - -*/
-    
-    /*- - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -*/
-    
-    /*- - - - - - - - - - - Restaurants starts - - - - - - - - - - - - - - - */
-    
-    .restaurant-area-title {
-        left: -100px;
-    
-        margin: 30px 0 16px;
-    }
-
-    .container-restaurants {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 7px;    
-    }
-    
-    .restaurant {
-        box-sizing: border-box;
-        width: 90vw;
-
-        margin-bottom: -3vh;
-
-    }   
-    
-        .restaurant--a {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            height: 251px;
-
-            border-radius: 15px;
-    
-            background-color: rgba(255, 255, 255, 1);
-            color: rgba(0, 0, 0, 1);
-        }
-    
-        .restaurant--figure {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            top: 10px;
-            
-            margin: 0;
-        }
-
-        picture {
-            display: flex;
-            width: 100%;
-            top: 0;
-        }
-    
-        .restaurant--img {
-            width: 100%;
-            min-height: 183px;
-            vertical-align: middle;
-            object-fit: cover;
-            flex: 1;
-    
-            border-radius: 15px 15px 0 0;
-        }
-    
-        .hide-new-restaurant-tag {
-            object-position: 100% 150%;
-            display: none;
-        }
-    
-        .restaurant--tag-new {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            width: 80px;
-            height: 29px;
-    
-            border-radius: 2px;
-    
-            background-color: $tertiaire-color;
-            color:#008766;
-    
-            text-align: center;
-            line-height: 28px;
-        }
-    
-        .restaurant--label {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: center;
-            width: 88%;
-            top: 5px;
-    
-            padding: 0 20px 0;
-            margin: 0;
-            
-        }
-    
-        .restaurant--label-info {
-            align-items: flex-start;
-    
-            padding-bottom: 0;
-        }
-
-        .title-h3-hp {
-            margin-bottom: -12px;
-        }
-    
-        .restuarant--label-info-p {
-            padding-bottom: 10px;
-
-            font-weight: 300;
-            font-size: 17px;
-        }
-    
-        /*- - - - - - - - - - - Restaurants ends - - - - - - - - - - - - - - - */
-    
-    /*- - - - - - - - - - - - - - - Main ends - - - - - - - - - - - - - - -*/
-    
-    
-    /*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
-    
-    
-    /*- - - - - - - - - - - - - - - Footer starts - - - - - - - - - - - - - - -*/
-    
-    .footer-links{
-        display: flex;
-        flex-direction: column;
-        
-        gap: 7px;
-    }
-    
-    .footer-a {
-        display: flex;
-        gap: 15px;
-    }
-
-    .footer-a:hover {
-        box-shadow: 0px 30px 100px 0px rgba(250, 250, 250, 0.15);
-    }
-    
-    .footer--title {
         margin: 0;
-        height: 17px;
-        padding-bottom: 16px;
-
-        font-family: $font-logo;
     }
+
+    picture {
+        display: flex;
+        width: 100%;
+        top: 0;
+    }
+
+    .restaurant--img {
+        width: 100%;
+        min-height: 183px;
+        vertical-align: middle;
+        object-fit: cover;
+        flex: 1;
+
+        border-radius: 15px 15px 0 0;
+    }
+
+    .hide-new-restaurant-tag {
+        object-position: 100% 150%;
+        display: none;
+    }
+
+    .restaurant--tag-new {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 80px;
+        height: 29px;
+
+        border-radius: 2px;
+
+        background-color: $tertiaire-color;
+        color:#008766;
+        font-family: $font-stack;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .restaurant--label {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 88%;
+        top: 5px;
+
+        padding: 0 20px 0;
+        margin: 0;
+        
+    }
+
+    .restaurant--label-info {
+        align-items: flex-start;
+
+        padding-bottom: 0;
+    }
+
+    .title-h3-hp {
+        margin-bottom: -12px;
+    }
+
+    .restuarant--label-info-p {
+        padding-bottom: 10px;
+    }
+
+    /*- - - - - - - - - - - Restaurants ends - - - - - - - - - - - - - - - */
+
+/*- - - - - - - - - - - - - - - Main ends - - - - - - - - - - - - - - -*/
+
+
+/*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
+
+
+/*- - - - - - - - - - - - - - - Footer starts - - - - - - - - - - - - - - -*/
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
     
-    
-    /*- - - - - - - - - - - - - - - Footer ends - - - - - - - - - - - - - - -*/
-    
-    /*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
-    
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-                    /* Modules ends */
-    /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-    @import './responsive.scss';
+    gap: 7px;
+}
+
+.footer-a {
+    display: flex;
+    gap: 15px;
+
+    font-family: $font-stack;
+}
+
+.footer-a:hover {
+    box-shadow: 0px 30px 100px 0px rgba(250, 250, 250, 0.15);
+}
+
+.footer--title {
+    margin: 0;
+    height: 17px;
+    padding-bottom: 16px;
+
+    font-family: $font-logo;
+}
+
+
+/*- - - - - - - - - - - - - - - Footer ends - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - -  - - - -  - - - - - - - - - - - - - - - - -*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
+                /* Modules ends */
+/* - - - - - - - - - - - - - - - - - - - - - - - -  */
+@import './responsive.scss';
