@@ -844,6 +844,10 @@ input[type=checkbox]:checked + * .like {
   object-fit: contain;
 }
 
+span {
+  font-family: "Roboto", sans-serif;
+}
+
 /*- - - - - - - - - - - - - - - Header ends - - - - - - - - - - - - - - -*/
 /*- - - - - - - - - - - - - - - Main starts - - - - - - - - - - - - - - -*/
 /*- - - - - - - - - - - - - - - Steps starts - - - - - - - - - - - - - - -*/
