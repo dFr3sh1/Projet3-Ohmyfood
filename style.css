@@ -103,15 +103,8 @@ body p {
 
 .input-rest {
   position: absolute;
-  top: 0px;
-  margin-left: 3px;
   width: 27px;
   height: 21px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
 }
 
 .like-size--rest {
@@ -535,11 +528,14 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 /* Layout */
 @media (min-width: 431px) and (max-width: 1079px) {
   .section-rest {
-    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .central-title {
     justify-content: center;
-    gap: 114px;
+    gap: 30px;
   }
   .central-photo {
     display: flex;
@@ -559,11 +555,16 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   .is-liked-rest-mob {
     left: 0;
   }
+  .central-zone {
+    width: 90%;
+  }
   .menu {
+    flex-wrap: wrap;
+    align-content: center;
     width: 90%;
   }
   .plat {
-    width: 80%;
+    max-width: 633px;
   }
   .checked-plat-btn:hover .checked-plat {
     min-width: 90%;
@@ -596,7 +597,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
     left: 0;
   }
   .heart-btn--rest {
-    padding-right: 25%;
+    padding-right: 34%;
   }
   .section-rest {
     width: 1055px;

@@ -53,16 +53,8 @@ body p {
 
 .input-rest {
     position: absolute;
-    top: 0px;
-    margin-left: 3px;
     width: 27px;
-    height: 21px;
-
-    border: none;
-    outline: none;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;    
+    height: 21px; 
 }
 
 .like-size--rest {
