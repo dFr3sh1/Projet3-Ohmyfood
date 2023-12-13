@@ -47,7 +47,7 @@ $breakpoint-large: 1440px;
     
     .restaurant {
         width: 90%;
-        margin-bottom: -20px;
+        margin-bottom: -10px;
     }
     
     .restaurant-area-title {
@@ -75,8 +75,8 @@ $breakpoint-large: 1440px;
     }
 
     .restaurant--label {
-        top: -1vh;
         width: 90%;
+        padding-bottom: 15px;
 
     }
 
@@ -159,9 +159,9 @@ $breakpoint-large: 1440px;
             max-width: 100%;
         }
 
-        .restaurant--figure {
-            height: inherit;
-            top: 6px;
+        .restaurant--img {
+            min-height: 183px;
+            /*top: 6px;*/
         }
 
         .restaurant--img-a-l-f {

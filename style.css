@@ -414,7 +414,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   }
   .restaurant {
     width: 90%;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
   }
   .restaurant-area-title {
     width: 90%;
@@ -435,8 +435,8 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
     object-position: 100%;
   }
   .restaurant--label {
-    top: -1vh;
     width: 90%;
+    padding-bottom: 15px;
   }
   .title-h3-homepage {
     margin-bottom: auto;
@@ -499,9 +499,9 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   .restaurant--a {
     max-width: 100%;
   }
-  .restaurant--figure {
-    height: inherit;
-    top: 6px;
+  .restaurant--img {
+    min-height: 183px;
+    /*top: 6px;*/
   }
   .restaurant--img-a-l-f {
     object-position: 24%;
@@ -991,7 +991,7 @@ span {
 .restaurant {
   box-sizing: border-box;
   width: 90vw;
-  margin-bottom: -3vh;
+  margin-bottom: -1.5vh;
 }
 
 .restaurant--a {
@@ -1021,7 +1021,7 @@ picture {
 
 .restaurant--img {
   width: 100%;
-  min-height: 183px;
+  /*min-height: 183px;*/
   vertical-align: middle;
   object-fit: cover;
   flex: 1;
@@ -1136,7 +1136,7 @@ picture {
   }
   .restaurant {
     width: 90%;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
   }
   .restaurant-area-title {
     width: 90%;
@@ -1157,8 +1157,8 @@ picture {
     object-position: 100%;
   }
   .restaurant--label {
-    top: -1vh;
     width: 90%;
+    padding-bottom: 15px;
   }
   .title-h3-homepage {
     margin-bottom: auto;
@@ -1221,9 +1221,9 @@ picture {
   .restaurant--a {
     max-width: 100%;
   }
-  .restaurant--figure {
-    height: inherit;
-    top: 6px;
+  .restaurant--img {
+    min-height: 183px;
+    /*top: 6px;*/
   }
   .restaurant--img-a-l-f {
     object-position: 24%;
