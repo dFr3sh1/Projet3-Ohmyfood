@@ -2,15 +2,15 @@
 @import '../responsive.scss';
 
 /* Layout */
-@media (min-width: 431px) and (max-width: $breakpoint-medium) {
+@media (min-width: 431px) and (max-width: $breakpoint-medium) { 
 
-.header-arrow {
-    position: relative;
-    }    
+.section-rest {
+    width: -webkit-fill-available;
+}
 
 .central-title {
     justify-content: center;
-    margin-top: -30px;
+    gap: 114px;
     
 }
 
@@ -30,7 +30,6 @@
 }
 
 .input-rest {
-    margin-left: 33px;
     margin-top: 7px;
 }
 
@@ -38,8 +37,12 @@
     left: 0;
 }
 
-.menu, .plat {
-    width: 100%;
+.menu {
+    width: 90%;
+}
+
+.plat {
+    width: 80%;
 }
 
 .checked-plat-btn:hover .checked-plat {
@@ -76,7 +79,6 @@
 
 .input-rest {
     margin-top: 6px;
-    margin-left: 36px;
 }
 
 .is-liked-rest-mob {

@@ -65,12 +65,18 @@ body p {
   color: rgb(153, 227, 208);
 }
 
-.fa-utensils .fa-handshake {
+.fa-utensils .fa-handshake-angle {
   color: #fafafa;
 }
 
 .fa-arrow-left {
+  position: absolute;
+  left: 0;
   color: black;
+}
+
+body p {
+  font-size: 15.04px;
 }
 
 /* Like button starts */
@@ -80,14 +86,15 @@ body p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: 27px;
+  padding-right: 20px;
 }
 
 .heart-btn--rest .like-btn--rest {
   box-sizing: border-box;
   position: relative;
-  width: 33px;
-  height: 32px;
+  width: 27px;
+  height: 25px;
   background: transparent;
   fill: transparent;
   outline: none;
@@ -98,8 +105,8 @@ body p {
   position: absolute;
   top: 0px;
   margin-left: 3px;
-  width: 32px;
-  height: 27px;
+  width: 27px;
+  height: 21px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -108,9 +115,9 @@ body p {
 }
 
 .like-size--rest {
-  width: 34px;
-  height: 32px;
-  font-size: 30px;
+  width: 27px;
+  height: 25px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -118,7 +125,6 @@ body p {
   display: none;
   position: absolute;
   top: 0px;
-  left: 1px;
   background-clip: content-box;
   color: transparent;
   background-image: linear-gradient(rgb(146, 87, 219), rgb(255, 122, 217));
@@ -148,17 +154,16 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 50%;
+  max-width: 100%;
   height: 63px;
-  margin-left: 3%;
+  margin: 0 3%;
 }
 
 .header-img-rest {
   position: relative;
   width: 162px;
-  margin-left: 35%;
 }
 
 /* Header ends */
@@ -189,7 +194,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 }
 
 .section-rest {
-  width: 90%;
+  /*width: 90%;*/
 }
 
 .central-title {
@@ -200,11 +205,17 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  top: -69px;
+  margin-top: -55px;
   padding: 20px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   background: #F6F6F6;
+}
+
+.restaurant-title {
+  font-size: 28px;
+  font-style: italic;
+  line-height: 40.82px;
 }
 
 .central-zone {
@@ -215,17 +226,16 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   align-content: center;
   justify-content: center;
   align-items: center;
-  top: -70px;
+  padding: 0 13px 30px;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: stretch;
   width: 100%;
   gap: 17px;
-  padding: 0 0 20px 0;
 }
 
 .titles-plats {
@@ -293,23 +303,21 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   align-items: flex-start;
   min-width: 100%;
   margin-right: 0;
-  transition: transform 0.5s;
+  transition: transform 0.5s, min-width 2s ease-in-out; /* Added transition for min-width */
 }
 
 .checked-plat-btn:hover .checked-plat {
   min-width: 80%;
-  transition: all ease-in-out 2s;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.text-ellipsis {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
+/*.text-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}*/
 .plat-description {
   box-sizing: border-box;
   display: flex;
@@ -372,7 +380,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   font-weight: 300 700;
   font-style: normal;
 }
-@media (min-width: 430px) and (max-width: 1079px) {
+@media (min-width: 431px) and (max-width: 1079px) {
   /* Ajustements généraux pour les tablettes */
   body {
     padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
@@ -511,24 +519,27 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   .l-footer {
     max-width: 1440px;
   }
-  .footer-links {
-    flex-direction: row-reverse;
-  }
   .footer-wraper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
     gap: 50px;
   }
+  .footer-links {
+    flex-direction: row;
+  }
+  .marge-left {
+    padding-left: 30px;
+  }
 }
 /* Layout */
 @media (min-width: 431px) and (max-width: 1079px) {
-  .header-arrow {
-    position: relative;
+  .section-rest {
+    width: -webkit-fill-available;
   }
   .central-title {
     justify-content: center;
-    margin-top: -30px;
+    gap: 114px;
   }
   .central-photo {
     display: flex;
@@ -543,14 +554,16 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
     height: auto;
   }
   .input-rest {
-    margin-left: 33px;
     margin-top: 7px;
   }
   .is-liked-rest-mob {
     left: 0;
   }
-  .menu, .plat {
-    width: 100%;
+  .menu {
+    width: 90%;
+  }
+  .plat {
+    width: 80%;
   }
   .checked-plat-btn:hover .checked-plat {
     min-width: 90%;
@@ -578,7 +591,6 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   }
   .input-rest {
     margin-top: 6px;
-    margin-left: 36px;
   }
   .is-liked-rest-mob {
     left: 0;
@@ -616,6 +628,30 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   font-weight: 300 700;
   font-style: normal;
 }
+/*.btn {
+    width: 218px;
+    height: 50px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: $gradient-theme-color;
+    color: rgba(255, 255, 255, 1);
+
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+
+    &:hover {
+        background: linear-gradient(
+        rgba($second-main-color, 1.3),
+        rgba($main-theme-color, 1.3)
+        ); /* Increase brightness by 10% */ /*
+box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.25);
+transition: all 0.2s ease-in-out; /* Smoother animation */ /*
+}
+}*/
 .btn {
   width: 218px;
   height: 50px;
@@ -627,11 +663,11 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Added transition property */
 }
 .btn:hover {
-  background: linear-gradient(#9257db, #ff7ad9);
-  box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.25);
-  transition: all 2ms;
+  background: linear-gradient(#ff80db, #955cdc); /* Increased brightness by 10% */
+  box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.2);
 }
 
 /* Shrikhand font */
@@ -764,8 +800,8 @@ a {
 
 /* - - - - - - - - - - - - - - Like button starts — - - - - - - - - - - - - - -  */
 input[type=checkbox] {
-  top: -5px;
-  left: -1px;
+  /*top: -5px;
+  left: -1px;*/
   z-index: 2;
   border: none;
   outline: none;
@@ -788,15 +824,14 @@ input[type=checkbox] {
 }
 
 .like-area {
-  top: -52px;
+  top: -55px;
   left: 77vw;
 }
 
 .btn-like {
   box-sizing: border-box;
   position: relative;
-  top: -40px;
-  left: 0px;
+  top: -32px;
   outline: none;
   border: none;
   fill: transparent;
@@ -806,14 +841,15 @@ input[type=checkbox] {
 .like {
   position: relative;
   display: block;
-  top: -4px;
+  top: -5px;
   left: -5px;
 }
 
 .like-size {
-  width: 33px;
-  height: 30px;
-  font-size: 30px;
+  width: 27px;
+  height: 25px;
+  font-size: 25px;
+  text-align: center;
 }
 
 input[type=checkbox]:checked + .btn-like::before {
@@ -963,7 +999,7 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 251px;
+  /*height: 251px;*/
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -973,7 +1009,7 @@ span {
   display: flex;
   flex-direction: column;
   width: 100%;
-  top: 10px;
+  /*top: 10px;*/
   margin: 0;
 }
 
@@ -1017,9 +1053,8 @@ picture {
   flex-direction: row;
   align-items: center;
   width: 88%;
-  top: 5px;
   padding: 0 20px 0;
-  margin: 0;
+  /*margin-top: 5px;*/
 }
 
 .restaurant--label-info {
@@ -1032,7 +1067,7 @@ picture {
 }
 
 .restuarant--label-info-p {
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
 }
 
 /*- - - - - - - - - - - Restaurants ends - - - - - - - - - - - - - - - */
@@ -1067,7 +1102,7 @@ picture {
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* Modules ends */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  */
-@media (min-width: 430px) and (max-width: 1079px) {
+@media (min-width: 431px) and (max-width: 1079px) {
   /* Ajustements généraux pour les tablettes */
   body {
     padding: 10px; /* Marge intérieure réduite pour les écrans plus petits */
@@ -1206,14 +1241,17 @@ picture {
   .l-footer {
     max-width: 1440px;
   }
-  .footer-links {
-    flex-direction: row-reverse;
-  }
   .footer-wraper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
     gap: 50px;
+  }
+  .footer-links {
+    flex-direction: row;
+  }
+  .marge-left {
+    padding-left: 30px;
   }
 }
 
