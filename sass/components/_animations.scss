@@ -23,7 +23,7 @@
 @mixin fadeInAnimation($index) {
     &:nth-child(#{$index}) {
         animation: fadeInFromBottom 2s ease-in-out forwards;
-        animation-delay: #{($index - 1) * 0.2s + 0.1s};
+        animation-delay: #{($index - 1) * 0.1s + 0.1s};
     }
 }
 

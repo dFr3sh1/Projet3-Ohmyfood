@@ -446,10 +446,12 @@ span {
     gap: 15px;
 
     font-family: $font-stack;
+    font-weight: 500;
 }
 
 .footer-a:hover {
     box-shadow: 0px 30px 100px 0px rgba(250, 250, 250, 0.15);
+    border-radius: 25%;
 }
 
 .footer--title {
@@ -458,6 +460,10 @@ span {
     padding-bottom: 16px;
 
     font-family: $font-logo;
+}
+
+.footer-mentions {
+    font-weight: 400;
 }
 
 
