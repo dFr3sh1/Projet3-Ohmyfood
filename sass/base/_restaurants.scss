@@ -287,7 +287,7 @@ input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
 }
 
 .checked-plat-btn:hover .checked-plat {
-    min-width: 80%;
+    min-width: calc(100% - 69px);
 
     text-overflow: ellipsis;
     overflow: hidden;

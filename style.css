@@ -305,7 +305,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 }
 
 .checked-plat-btn:hover .checked-plat {
-  min-width: 80%;
+  min-width: calc(100% - 69px);
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -570,12 +570,6 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   }
   .plat {
     max-width: 633px;
-  }
-  .checked-plat-btn:hover .checked-plat {
-    min-width: 90%;
-  }
-  .choiced-plat {
-    left: 0;
   }
 }
 @media (min-width: 1080px) {
