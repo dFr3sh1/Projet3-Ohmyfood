@@ -45,9 +45,11 @@ to {
 // Apply the animation using the mixin
 .menu {
 .starter, .dish, .dessert {
+
     
     @for $i from 1 through 18 {
     @include fadeInAnimation($i);
     }
 }
+
 }

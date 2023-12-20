@@ -80,6 +80,11 @@ body p {
 }
 
 /* Like button starts */
+.header-arrow {
+  display: flex;
+  align-items: center;
+}
+
 .heart-btn--rest {
   position: relative;
   display: flex;
