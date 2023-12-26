@@ -311,11 +311,12 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   white-space: nowrap;
 }
 
-/*.text-ellipsis {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}*/
+.text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .plat-description {
   box-sizing: border-box;
   display: flex;
