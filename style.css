@@ -766,11 +766,13 @@ transition: all 0.2s ease-in-out; /* Smoother animation */ /*
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  transition: background 0.3s ease, box-shadow 0.3s ease; /* Added transition property */
+  z-index: 3;
+  transition: background 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Added filter property to transition */
 }
 .btn:hover {
   background: linear-gradient(#ff84dc, #975fdd); /* Increased brightness by 10% */
-  box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 15px 4px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.1); /* Increase brightness by 1.1 times */
 }
 
 /* Shrikhand font */
@@ -914,7 +916,6 @@ input[type=checkbox] {
 }
 
 .is-liked {
-  display: none;
   position: absolute;
   z-index: 1;
   top: -15px;
@@ -922,8 +923,9 @@ input[type=checkbox] {
   background-clip: content-box;
   color: transparent;
   background-image: linear-gradient(rgb(146, 87, 219), rgb(255, 122, 217));
+  opacity: 0;
   -webkit-background-clip: text;
-  transition: all 1s ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .like-area {
@@ -942,10 +944,9 @@ input[type=checkbox] {
 }
 
 .like {
-  position: relative;
-  display: block;
-  top: -6px;
-  left: -5px;
+  position: absolute;
+  top: -15px;
+  left: 1px;
 }
 
 .like-size {
@@ -956,18 +957,18 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked + .btn-like::before {
-  animation: ease-in 0.4s forwards;
+  animation: ease-in-out 300ms forwards;
 }
 input[type=checkbox]:checked + .btn-like::after {
-  animation: ease-in 0.4s forwards;
+  animation: ease-in-out 300ms forwards;
 }
 input[type=checkbox]:checked + * .is-liked {
-  display: block;
-  transition: all 2s;
+  opacity: 1;
+  transition: all 300ms;
 }
 input[type=checkbox]:checked + * .like {
-  display: none;
-  transition: all 2s;
+  opacity: 0;
+  transition: all 300ms;
 }
 
 /* - - - - - - - - - - - - - - Like button ends — - - - - - - - - - - - - - -  */
@@ -1167,10 +1168,6 @@ picture {
 
 .title-h3-hp {
   margin-bottom: -12px;
-}
-
-.restuarant--label-info-p {
-  /*padding-bottom: 10px;*/
 }
 
 /*- - - - - - - - - - - Restaurants ends - - - - - - - - - - - - - - - */
