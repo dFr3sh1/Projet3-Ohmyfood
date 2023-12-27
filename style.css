@@ -445,7 +445,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
     padding-bottom: 0;
   }
   .like-area {
-    top: -4.8vh;
+    top: -6.8vh;
     left: 85%;
   }
   .restaurant--tag-new {
@@ -919,7 +919,7 @@ input[type=checkbox] {
 .is-liked {
   position: absolute;
   z-index: 1;
-  top: -15px;
+  top: 0px;
   left: 1px;
   background-clip: content-box;
   color: transparent;
@@ -937,7 +937,7 @@ input[type=checkbox] {
 .btn-like {
   box-sizing: border-box;
   position: relative;
-  top: -32px;
+  top: -44px;
   outline: none;
   border: none;
   fill: transparent;
@@ -946,12 +946,12 @@ input[type=checkbox] {
 
 .like {
   position: absolute;
-  top: -15px;
+  top: 0px;
   left: 1px;
 }
 
 .like-size {
-  width: 27px;
+  width: 25px;
   height: 25px;
   font-size: 25px;
   text-align: center;
@@ -1275,7 +1275,7 @@ picture {
     padding-bottom: 0;
   }
   .like-area {
-    top: -4.8vh;
+    top: -6.8vh;
     left: 85%;
   }
   .restaurant--tag-new {
