@@ -89,6 +89,7 @@ body p {
   position: relative;
   display: flex;
   top: 13px;
+  right: 13px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
