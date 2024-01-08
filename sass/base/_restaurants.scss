@@ -170,7 +170,7 @@ input[type="checkbox"]:checked + .like-btn--rest > .like-rest {
     justify-content: space-between;
     align-items: center;
     
-    width: 100%;
+    min-width: 421px;
     margin-top: -55px;
     padding: 20px;
 

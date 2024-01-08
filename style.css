@@ -202,7 +202,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  min-width: 421px;
   margin-top: -55px;
   padding: 20px;
   border-top-right-radius: 40px;
@@ -542,6 +542,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   .central-title {
     justify-content: center;
     gap: 30px;
+    width: 100%;
   }
   .central-photo {
     display: flex;
