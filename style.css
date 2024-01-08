@@ -196,7 +196,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
 }
 
 .section-rest {
-  /*width: 90%;*/
+  width: 100%;
 }
 
 .central-title {
@@ -206,7 +206,7 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-width: 421px;
+  width: 100%;
   margin-top: -55px;
   padding: 20px;
   border-top-right-radius: 40px;
