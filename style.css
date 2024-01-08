@@ -445,7 +445,6 @@ input[type=checkbox]:checked + .like-btn--rest > .like-rest {
     padding-bottom: 0;
   }
   .like-area {
-    top: -6.8vh;
     left: 85%;
   }
   .restaurant--tag-new {
@@ -931,7 +930,7 @@ input[type=checkbox] {
 }
 
 .like-area {
-  top: -55px;
+  top: -60px;
   left: 77vw;
 }
 
@@ -1276,7 +1275,6 @@ picture {
     padding-bottom: 0;
   }
   .like-area {
-    top: -6.8vh;
     left: 85%;
   }
   .restaurant--tag-new {
